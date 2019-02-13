@@ -1,0 +1,13 @@
+wget http://ftp.ncbi.nlm.nih.gov/genomes/refseq/assembly_summary_refseq.txt
+Retrieve the assembly summary file from the NCBI online database.
+
+grep "Bifidobacterium longum" assembly_summary_refseq.txt | awk 'BEGIN {FS="\t"};{print $8,$20}'
+There are 184 B. longum genomes available. There are 23 B. longum infantis genomes available.
+
+grep "Bifidobacterium longum subsp. infantis" assembly_summary_refseq.txt | 
+awk 'BEGIN {FS="\t"};{print $20}' > b_infantis_ftps.txt
+Write just the ftp addresses to a file for easy genome downloading.
+
+while read line; do wget --recursive --no-host-directories --cut-dirs=6 $line; 
+done < b_infantis_ftps.txt
+This downloads all the genomes for all the B. longum infantis species.
