@@ -11,3 +11,9 @@ Write just the ftp addresses to a file for easy genome downloading.
 while read line; do wget --recursive --no-host-directories --cut-dirs=6 $line; 
 done < b_infantis_ftps.txt
 This downloads all the genomes for all the B. longum infantis species.
+
+gunzip */*protein.faa.gz | cat */*protein.faa > all_protein_genomes.faa
+This concatenates all the protein genomes in fasta format into one file named all_protein_genomes.faa.
+
+gunzip */*genomic.fna.gz | cat */*genomic.fna > all_dna_genomes.faa
+This concatenates all the dna genomes in fasta format into one file named all_dna_genomes.faa.
