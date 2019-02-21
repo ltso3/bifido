@@ -1,0 +1,24 @@
+B7GNP2: mandelate racemase/muconate lactonizing enzyme, C-terminal domain protein
+F6C8A7: oxidoreductase, short chain dehydrogenase/reductase family
+B7GNQ8: haloacid dehalogenase domain protein hydrolase
+B7GNR0: β-lactamase domain protein
+B7GNR3: ABC transporter ATP-binding component
+B7GNR1: ABC transporter permease component
+B7GNQ9: ABC transporter substrate binding component
+B7GNR2: ABC transporter permease component
+E8MNY5: ABC transporter substrate binding component
+B7GNQ0: exo-α-sialidase
+B7GNQ1: dihydrodipicolinate synthase
+B7GNP9: extracellular solute-binding protein, family 1
+E8MNY6: ABC transporter substrate binding component
+B7GNN4: galactoside transport protein
+B7GNP0: dihydrodipicolinate synthetase
+B7GNP6: extracellular solute-binding protein, family 1
+B7GNP4: ABC transporter permease component
+B7GNP5: ABC transporter permease component
+B7GNN9: fucose operon protein
+B7GNN7: glycosyl hydrolase
+B7GNN8: α-1,3/4-fucosidase
+B7GNQ6: ABC transporter substrate binding component
+B7GNP3: no name
+B7GNQ7: glycoside hydrolase, family 20

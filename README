@@ -17,3 +17,9 @@ This concatenates all the protein genomes in fasta format into one file named al
 
 gunzip */*genomic.fna.gz | cat */*genomic.fna > all_dna_genomes.faa
 This concatenates all the dna genomes in fasta format into one file named all_dna_genomes.faa.
+
+makeblastdb -in all_dna_genomes.faa -dbtype 'nucl' -out blast_all_dna_genomes.faa -parse_seqids
+This creates a blast database of the all_dna_genomes.faa file.
+
+time blastn -db blast/blast_all_dna_genomes.faa -query hmo_genes.faa -out blast_output
+This blasts the first five HMO genes against the b. infantis genomes.
