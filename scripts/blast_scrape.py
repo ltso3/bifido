@@ -1,6 +1,7 @@
 import re
 import pandas as pd 
 import numpy as np
+import seaborn as sns
 
 cols = ["query", "genome", "identity", "alignment_length", "mismatches", "gaps", \
         "q_start", "q_end", "s_start", "s_end", "evalue", "bit_score"]
@@ -16,29 +17,25 @@ for line in f.readlines():
         query, genome, identity, length, mismatches, gaps, \
         q_start, q_end, s_start, s_end, evalue, bit_score = line.split()
         if query not in matchDict:
-            matchDict[query] = {genome: {"identity": identity, "length": length, "mismatches": mismatches, \
+            # inner value cannot be a dictionary bc keys are replaced, must be a list
+            matchDict[query] = [[genome, {"identity": identity, "length": length, "mismatches": mismatches, \
                                          "gaps": gaps, "q_start": q_start, "q_end": q_end, "s_start": s_end, \
-                                         "evalue": evalue, "bit_score": bit_score}}
+                                         "evalue": evalue, "bit_score": bit_score}]]
         else:
-            matchDict[query][genome] = {"identity": identity, "length": length, "mismatches": mismatches, \
+            matchDict[query].append([genome, {"identity": identity, "length": length, "mismatches": mismatches, \
                                         "gaps": gaps, "q_start": q_start, "q_end": q_end, "s_start": s_end, \
-                                         "evalue": evalue, "bit_score": bit_score}
-
-# dictionary of (hmo_gene, list of (species, e value)
-# plot as a heatmap
-# pull out query, genome, evalue
+                                         "evalue": evalue, "bit_score": bit_score}])
+        
 queries = [query for query in matchDict.keys() for i in range(len(matchDict[query]))]
-genomes = [genome for genome in matchDict[query] for query in matchDict.keys()]
+genomes = [genome[0]+"_"+genome[1]["s_start"] for query in matchDict.keys() for genome in matchDict[query]]
+lengths = [genome[1]["length"] for query in matchDict.keys() for genome in matchDict[query]]
 
-df = pd.DataFrame(np.nan, index = range(0,len(queries)), columns = cols)
+df = pd.DataFrame(np.nan, index = range(0,len(queries)), columns = ["query", "genome", "length"])
+df["query"] = queries
+df["genome"] = genomes
+df["length"] = lengths
 
-print(len(queries))
-print(len(genomes))
-print(len(matchDict["NC_011593.1:c2617928-2616333"]))
-print(matchDict["NC_011593.1:c2617928-2616333"])
-# evals = [genome[1]["evalue"] for genome in matchDict.values()]
+df_pivot = df.pivot("query", "genome", "length")
 
-listy = ['NC_011593.1_cds_WP_012578586.1_2437', {'identity': '100.000', 'length': '1119', 'mismatches': '0', 'gaps': '0', 'q_start': '1', 'q_end': '1119', 's_start': '1119', 'evalue': '0.0', 'bit_score': '2067'}]
-# print(listy[0])
-# print(len(genomes))
-# print(queries[:10])
+heatmap = sns.heatmap(df_pivot.isnull(), cbar=False)
+heatmap.figure.savefig("output.png")
