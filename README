@@ -12,6 +12,9 @@ while read line; do wget --recursive --no-host-directories --cut-dirs=6 $line;
 done < b_infantis_ftps.txt
 This downloads all the genomes for all the B. longum infantis species.
 
+mkdir genome | mv GCF* genome
+This moves all downloaded genomes into a separate folder named genome.
+
 gunzip */*protein.faa.gz | cat */*protein.faa > all_protein_genomes.faa
 This concatenates all the protein genomes in fasta format into one file named all_protein_genomes.faa.
 
@@ -22,4 +25,14 @@ makeblastdb -in all_dna_genomes.faa -dbtype 'nucl' -out blast_all_dna_genomes.fa
 This creates a blast database of the all_dna_genomes.faa file.
 
 time blastn -db blast/blast_all_dna_genomes.faa -query hmo_genes.faa -out blast_output
-This blasts the first five HMO genes against the b. infantis genomes.
+This blasts the thirty HMO genes against the b. infantis genomes.
+
+time blastn -db blast/blast_all_dna_genomes.faa -query hmo_genes.faa -out blast_output_fmt -outfmt 7 
+This blasts the thirty HMO genes against the b. infantis genomes into a tabular output file.
+
+time blastn -db blast/blast_all_dna_genomes.faa -query hmo_genes.faa -out blast_output_fmt -max_target_seqs -outfmt 7
+This blasts the thirty HMO genes against the b. infantis genomes into a tabular output file, increasing
+the maximum number of aligned sequences to keep. No difference from the previous output.
+
+ssh -F $HOME/engaging-cluster/linux/config eofe4.mit.edu
+This logs into the engaging cluster. The alias engaging performs this same task.

@@ -1,0 +1,19 @@
+#!/bin/bash
+# Download bifido genomes
+
+# download assembly summary reference
+wget http://ftp.ncbi.nlm.nih.gov/genomes/refseq/assembly_summary_refseq.txt
+
+# pipe  b. longum infantis genome addresses into file
+grep "Bifidobacterium longum subsp. infantis" assembly_summary_refseq.txt |
+awk 'BEGIN {FS="\t"};{print $20}' > b_infantis_ftps.txt
+
+# download b. longum infantis genomes
+while read line; do wget --recursive --no-host-directories --cut-dirs=6 $line;
+done < b_infantis_ftps.txt
+
+# move all genomes into a separate folder
+mkdir genome | mv GCF* genome
+
+# unzip all nucleotide genomes
+gunzip */*genomic.fna.gz | cat */*genomic.fna > all_dna_genomes.faa
