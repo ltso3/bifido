@@ -31,24 +31,32 @@ genomes = [genome[0]+"_"+genome[1]["s_start"] for query in matchDict.keys() for 
 lengths = [genome[1]["length"] for query in matchDict.keys() for genome in matchDict[query]]
 
 # need to map query names to blon numbers for easier visualization
+map = open("/Users/laurentso/Desktop/repos/bifido/scripts/blon_map.txt", "r")
+map_dict = {}
+for line in map.readlines():
+   blon, nc = line.split()
+   map_dict[nc] = blon
+queries_map = [map_dict[query] for query in queries]
 
 df = pd.DataFrame(np.nan, index = range(0,len(queries)), columns = ["query", "genome", "length"])
-df["query"] = queries
+df["query"] = queries_map
 df["genome"] = genomes
 df["length"] = lengths
 
 df_pivot = df.pivot("genome", "query", "length")
 
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots(figsize=(10,10))
 # black = present, beige = no hits (missing data)
-heatmap = sns.heatmap(df_pivot.isnull(), cbar=False)
+sns.set(font_scale=0.4)
+heatmap = sns.heatmap(df_pivot.isnull(), cbar=False, linewidths=.5)
 heatmap.set(yticks=[])
-heatmap.set(xticks=[])
 fig = heatmap.get_figure()
 fig.savefig("missing.png")
 
 df_pivot.fillna(value=0, inplace=True)
 heatmap = sns.heatmap(df_pivot.astype(int))
 heatmap.set(yticks=[])
-heatmap.set(xticks=[])
 fig = heatmap.get_figure()
 fig.savefig("existing.png")
