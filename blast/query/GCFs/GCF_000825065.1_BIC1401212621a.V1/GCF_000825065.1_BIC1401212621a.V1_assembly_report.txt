@@ -1,0 +1,79 @@
+# Assembly name:  BIC1401212621a.V1
+# Organism name:  Bifidobacterium longum subsp. infantis (high GC Gram+)
+# Infraspecific name:  strain=BIC1401212621a
+# Taxid:          1682
+# BioSample:      SAMEA2747186
+# BioProject:     PRJEB7117
+# Submitter:      CHUV-UNIL
+# Date:           2014-12-19
+# Assembly type:  n/a
+# Release type:   major
+# Assembly level: Contig
+# Genome representation: full
+# WGS project:    CCWS01
+# Genome coverage: 571x
+# GenBank assembly accession: GCA_000825065.1
+# RefSeq assembly accession: GCF_000825065.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000825075.1	GCF_000825075.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+CCWS01000001	unplaced-scaffold	na	na	CCWS01000001.1	=	NZ_CCWS01000001.1	Primary Assembly	107325	na
+CCWS01000002	unplaced-scaffold	na	na	CCWS01000002.1	=	NZ_CCWS01000002.1	Primary Assembly	248254	na
+CCWS01000003	unplaced-scaffold	na	na	CCWS01000003.1	=	NZ_CCWS01000003.1	Primary Assembly	2489	na
+CCWS01000004	unplaced-scaffold	na	na	CCWS01000004.1	=	NZ_CCWS01000004.1	Primary Assembly	49178	na
+CCWS01000005	unplaced-scaffold	na	na	CCWS01000005.1	=	NZ_CCWS01000005.1	Primary Assembly	51931	na
+CCWS01000006	unplaced-scaffold	na	na	CCWS01000006.1	=	NZ_CCWS01000006.1	Primary Assembly	5282	na
+CCWS01000007	unplaced-scaffold	na	na	CCWS01000007.1	=	NZ_CCWS01000007.1	Primary Assembly	87447	na
+CCWS01000008	unplaced-scaffold	na	na	CCWS01000008.1	=	NZ_CCWS01000008.1	Primary Assembly	75809	na
+CCWS01000009	unplaced-scaffold	na	na	CCWS01000009.1	=	NZ_CCWS01000009.1	Primary Assembly	68467	na
+CCWS01000010	unplaced-scaffold	na	na	CCWS01000010.1	=	NZ_CCWS01000010.1	Primary Assembly	70159	na
+CCWS01000011	unplaced-scaffold	na	na	CCWS01000011.1	=	NZ_CCWS01000011.1	Primary Assembly	1432	na
+CCWS01000012	unplaced-scaffold	na	na	CCWS01000012.1	=	NZ_CCWS01000012.1	Primary Assembly	100252	na
+CCWS01000013	unplaced-scaffold	na	na	CCWS01000013.1	=	NZ_CCWS01000013.1	Primary Assembly	17958	na
+CCWS01000014	unplaced-scaffold	na	na	CCWS01000014.1	=	NZ_CCWS01000014.1	Primary Assembly	132059	na
+CCWS01000015	unplaced-scaffold	na	na	CCWS01000015.1	=	NZ_CCWS01000015.1	Primary Assembly	67169	na
+CCWS01000016	unplaced-scaffold	na	na	CCWS01000016.1	=	NZ_CCWS01000016.1	Primary Assembly	122113	na
+CCWS01000017	unplaced-scaffold	na	na	CCWS01000017.1	=	NZ_CCWS01000017.1	Primary Assembly	22857	na
+CCWS01000018	unplaced-scaffold	na	na	CCWS01000018.1	=	NZ_CCWS01000018.1	Primary Assembly	4520	na
+CCWS01000019	unplaced-scaffold	na	na	CCWS01000019.1	=	NZ_CCWS01000019.1	Primary Assembly	239227	na
+CCWS01000020	unplaced-scaffold	na	na	CCWS01000020.1	=	NZ_CCWS01000020.1	Primary Assembly	92390	na
+CCWS01000021	unplaced-scaffold	na	na	CCWS01000021.1	=	NZ_CCWS01000021.1	Primary Assembly	3577	na
+CCWS01000022	unplaced-scaffold	na	na	CCWS01000022.1	=	NZ_CCWS01000022.1	Primary Assembly	28275	na
+CCWS01000023	unplaced-scaffold	na	na	CCWS01000023.1	=	NZ_CCWS01000023.1	Primary Assembly	6067	na
+CCWS01000024	unplaced-scaffold	na	na	CCWS01000024.1	=	NZ_CCWS01000024.1	Primary Assembly	18826	na
+CCWS01000025	unplaced-scaffold	na	na	CCWS01000025.1	=	NZ_CCWS01000025.1	Primary Assembly	140148	na
+CCWS01000026	unplaced-scaffold	na	na	CCWS01000026.1	=	NZ_CCWS01000026.1	Primary Assembly	2023	na
+CCWS01000027	unplaced-scaffold	na	na	CCWS01000027.1	=	NZ_CCWS01000027.1	Primary Assembly	268373	na
+CCWS01000028	unplaced-scaffold	na	na	CCWS01000028.1	=	NZ_CCWS01000028.1	Primary Assembly	3220	na
+CCWS01000029	unplaced-scaffold	na	na	CCWS01000029.1	=	NZ_CCWS01000029.1	Primary Assembly	88423	na
+CCWS01000030	unplaced-scaffold	na	na	CCWS01000030.1	=	NZ_CCWS01000030.1	Primary Assembly	19660	na
+CCWS01000031	unplaced-scaffold	na	na	CCWS01000031.1	=	NZ_CCWS01000031.1	Primary Assembly	2527	na
+CCWS01000032	unplaced-scaffold	na	na	CCWS01000032.1	=	NZ_CCWS01000032.1	Primary Assembly	101978	na
+CCWS01000033	unplaced-scaffold	na	na	CCWS01000033.1	=	NZ_CCWS01000033.1	Primary Assembly	92487	na
+CCWS01000034	unplaced-scaffold	na	na	CCWS01000034.1	=	NZ_CCWS01000034.1	Primary Assembly	1329	na
+CCWS01000035	unplaced-scaffold	na	na	CCWS01000035.1	=	NZ_CCWS01000035.1	Primary Assembly	11341	na
+CCWS01000036	unplaced-scaffold	na	na	CCWS01000036.1	=	NZ_CCWS01000036.1	Primary Assembly	1589	na
+CCWS01000037	unplaced-scaffold	na	na	CCWS01000037.1	=	NZ_CCWS01000037.1	Primary Assembly	14855	na
+CCWS01000038	unplaced-scaffold	na	na	CCWS01000038.1	=	NZ_CCWS01000038.1	Primary Assembly	1586	na
+CCWS01000039	unplaced-scaffold	na	na	CCWS01000039.1	=	NZ_CCWS01000039.1	Primary Assembly	83276	na
+CCWS01000040	unplaced-scaffold	na	na	CCWS01000040.1	=	NZ_CCWS01000040.1	Primary Assembly	25018	na
+CCWS01000041	unplaced-scaffold	na	na	CCWS01000041.1	=	NZ_CCWS01000041.1	Primary Assembly	2204	na
+CCWS01000042	unplaced-scaffold	na	na	CCWS01000042.1	=	NZ_CCWS01000042.1	Primary Assembly	93875	na
+CCWS01000043	unplaced-scaffold	na	na	CCWS01000043.1	=	NZ_CCWS01000043.1	Primary Assembly	52384	na
+CCWS01000044	unplaced-scaffold	na	na	CCWS01000044.1	=	NZ_CCWS01000044.1	Primary Assembly	12059	na
+CCWS01000045	unplaced-scaffold	na	na	CCWS01000045.1	=	NZ_CCWS01000045.1	Primary Assembly	6016	na
+CCWS01000046	unplaced-scaffold	na	na	CCWS01000046.1	=	NZ_CCWS01000046.1	Primary Assembly	5945	na
+CCWS01000047	unplaced-scaffold	na	na	CCWS01000047.1	=	NZ_CCWS01000047.1	Primary Assembly	1886	na
+CCWS01000048	unplaced-scaffold	na	na	CCWS01000048.1	=	NZ_CCWS01000048.1	Primary Assembly	101329	na
+CCWS01000049	unplaced-scaffold	na	na	CCWS01000049.1	=	NZ_CCWS01000049.1	Primary Assembly	1293	na
+CCWS01000050	unplaced-scaffold	na	na	CCWS01000050.1	=	NZ_CCWS01000050.1	Primary Assembly	28447	na
+CCWS01000051	unplaced-scaffold	na	na	CCWS01000051.1	=	NZ_CCWS01000051.1	Primary Assembly	5235	na

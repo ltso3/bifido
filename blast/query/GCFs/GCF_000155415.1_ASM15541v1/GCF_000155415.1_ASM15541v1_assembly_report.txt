@@ -1,0 +1,49 @@
+# Assembly name:  ASM15541v1
+# Organism name:  Bifidobacterium longum subsp. infantis CCUG 52486 (high GC Gram+)
+# Infraspecific name:  strain=CCUG 52486
+# Taxid:          537937
+# BioSample:      SAMN02463677
+# BioProject:     PRJNA30065
+# Submitter:      Broad Institute
+# Date:           2008-8-28
+# Assembly type:  n/a
+# Release type:   major
+# Assembly level: Scaffold
+# Genome representation: full
+# WGS project:    ABQQ01
+# GenBank assembly accession: GCA_000155415.1
+# RefSeq assembly accession: GCF_000155415.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000155425.1	GCF_000155425.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+supercont2.22	unplaced-scaffold	na	na	DS990259.1	=	NZ_DS990259.1	Primary Assembly	197018	na
+supercont2.21	unplaced-scaffold	na	na	DS990258.1	=	NZ_DS990258.1	Primary Assembly	525	na
+supercont2.20	unplaced-scaffold	na	na	DS990257.1	=	NZ_DS990257.1	Primary Assembly	549	na
+supercont2.19	unplaced-scaffold	na	na	DS990256.1	=	NZ_DS990256.1	Primary Assembly	676	na
+supercont2.18	unplaced-scaffold	na	na	DS990255.1	=	NZ_DS990255.1	Primary Assembly	737	na
+supercont2.17	unplaced-scaffold	na	na	DS990254.1	=	NZ_DS990254.1	Primary Assembly	872	na
+supercont2.16	unplaced-scaffold	na	na	DS990253.1	=	NZ_DS990253.1	Primary Assembly	1142	na
+supercont2.15	unplaced-scaffold	na	na	DS990252.1	=	NZ_DS990252.1	Primary Assembly	1397	na
+supercont2.14	unplaced-scaffold	na	na	DS990251.1	=	NZ_DS990251.1	Primary Assembly	1681	na
+supercont2.13	unplaced-scaffold	na	na	DS990250.1	=	NZ_DS990250.1	Primary Assembly	1785	na
+supercont2.12	unplaced-scaffold	na	na	DS990249.1	=	NZ_DS990249.1	Primary Assembly	2587	na
+supercont2.11	unplaced-scaffold	na	na	DS990248.1	=	NZ_DS990248.1	Primary Assembly	3421	na
+supercont2.10	unplaced-scaffold	na	na	DS990247.1	=	NZ_DS990247.1	Primary Assembly	3947	na
+supercont2.9	unplaced-scaffold	na	na	DS990246.1	=	NZ_DS990246.1	Primary Assembly	5235	na
+supercont2.8	unplaced-scaffold	na	na	DS990245.1	=	NZ_DS990245.1	Primary Assembly	7502	na
+supercont2.7	unplaced-scaffold	na	na	DS990244.1	=	NZ_DS990244.1	Primary Assembly	81253	na
+supercont2.6	unplaced-scaffold	na	na	DS990243.1	=	NZ_DS990243.1	Primary Assembly	103877	na
+supercont2.5	unplaced-scaffold	na	na	DS990242.1	=	NZ_DS990242.1	Primary Assembly	128590	na
+supercont2.4	unplaced-scaffold	na	na	DS990241.1	=	NZ_DS990241.1	Primary Assembly	380898	na
+supercont2.3	unplaced-scaffold	na	na	DS990240.1	=	NZ_DS990240.1	Primary Assembly	221298	na
+supercont2.2	unplaced-scaffold	na	na	DS990239.1	=	NZ_DS990239.1	Primary Assembly	476126	na
+supercont2.1	unplaced-scaffold	na	na	DS990238.1	=	NZ_DS990238.1	Primary Assembly	859734	na

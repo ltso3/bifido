@@ -1,0 +1,88 @@
+# Assembly name:  ASM168612v1
+# Organism name:  Bifidobacterium longum subsp. infantis (high GC Gram+)
+# Infraspecific name:  strain=IN-F29
+# Taxid:          1682
+# BioSample:      SAMD00047617
+# BioProject:     PRJDB4597
+# Submitter:      Yakult Central Institute
+# Date:           2016-6-9
+# Assembly type:  n/a
+# Release type:   major
+# Assembly level: Contig
+# Genome representation: full
+# WGS project:    BCYG01
+# Assembly method: ABySS v. 1.3.5
+# Genome coverage: 90x
+# Sequencing technology: Illumina MiSeq
+# GenBank assembly accession: GCA_001686125.1
+# RefSeq assembly accession: GCF_001686125.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_001686135.1	GCF_001686135.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+BCYG01000001.1	unplaced-scaffold	na	na	BCYG01000001.1	=	NZ_BCYG01000001.1	Primary Assembly	21958	na
+BCYG01000002.1	unplaced-scaffold	na	na	BCYG01000002.1	=	NZ_BCYG01000002.1	Primary Assembly	1426	na
+BCYG01000003.1	unplaced-scaffold	na	na	BCYG01000003.1	=	NZ_BCYG01000003.1	Primary Assembly	220	na
+BCYG01000004.1	unplaced-scaffold	na	na	BCYG01000004.1	=	NZ_BCYG01000004.1	Primary Assembly	64528	na
+BCYG01000005.1	unplaced-scaffold	na	na	BCYG01000005.1	=	NZ_BCYG01000005.1	Primary Assembly	217	na
+BCYG01000006.1	unplaced-scaffold	na	na	BCYG01000006.1	=	NZ_BCYG01000006.1	Primary Assembly	24359	na
+BCYG01000007.1	unplaced-scaffold	na	na	BCYG01000007.1	=	NZ_BCYG01000007.1	Primary Assembly	179	na
+BCYG01000008.1	unplaced-scaffold	na	na	BCYG01000008.1	=	NZ_BCYG01000008.1	Primary Assembly	141	na
+BCYG01000009.1	unplaced-scaffold	na	na	BCYG01000009.1	=	NZ_BCYG01000009.1	Primary Assembly	170	na
+BCYG01000010.1	unplaced-scaffold	na	na	BCYG01000010.1	=	NZ_BCYG01000010.1	Primary Assembly	17533	na
+BCYG01000011.1	unplaced-scaffold	na	na	BCYG01000011.1	=	NZ_BCYG01000011.1	Primary Assembly	6992	na
+BCYG01000012.1	unplaced-scaffold	na	na	BCYG01000012.1	=	NZ_BCYG01000012.1	Primary Assembly	134	na
+BCYG01000013.1	unplaced-scaffold	na	na	BCYG01000013.1	=	NZ_BCYG01000013.1	Primary Assembly	29442	na
+BCYG01000014.1	unplaced-scaffold	na	na	BCYG01000014.1	=	NZ_BCYG01000014.1	Primary Assembly	16395	na
+BCYG01000015.1	unplaced-scaffold	na	na	BCYG01000015.1	=	NZ_BCYG01000015.1	Primary Assembly	157	na
+BCYG01000016.1	unplaced-scaffold	na	na	BCYG01000016.1	=	NZ_BCYG01000016.1	Primary Assembly	3791	na
+BCYG01000017.1	unplaced-scaffold	na	na	BCYG01000017.1	=	NZ_BCYG01000017.1	Primary Assembly	67166	na
+BCYG01000018.1	unplaced-scaffold	na	na	BCYG01000018.1	=	NZ_BCYG01000018.1	Primary Assembly	16102	na
+BCYG01000019.1	unplaced-scaffold	na	na	BCYG01000019.1	=	NZ_BCYG01000019.1	Primary Assembly	748	na
+BCYG01000020.1	unplaced-scaffold	na	na	BCYG01000020.1	=	NZ_BCYG01000020.1	Primary Assembly	241278	na
+BCYG01000021.1	unplaced-scaffold	na	na	BCYG01000021.1	=	NZ_BCYG01000021.1	Primary Assembly	181624	na
+BCYG01000022.1	unplaced-scaffold	na	na	BCYG01000022.1	=	NZ_BCYG01000022.1	Primary Assembly	18544	na
+BCYG01000023.1	unplaced-scaffold	na	na	BCYG01000023.1	=	NZ_BCYG01000023.1	Primary Assembly	312	na
+BCYG01000024.1	unplaced-scaffold	na	na	BCYG01000024.1	=	NZ_BCYG01000024.1	Primary Assembly	203701	na
+BCYG01000025.1	unplaced-scaffold	na	na	BCYG01000025.1	=	NZ_BCYG01000025.1	Primary Assembly	4129	na
+BCYG01000026.1	unplaced-scaffold	na	na	BCYG01000026.1	=	NZ_BCYG01000026.1	Primary Assembly	1592	na
+BCYG01000027.1	unplaced-scaffold	na	na	BCYG01000027.1	=	NZ_BCYG01000027.1	Primary Assembly	112368	na
+BCYG01000028.1	unplaced-scaffold	na	na	BCYG01000028.1	=	NZ_BCYG01000028.1	Primary Assembly	29731	na
+BCYG01000029.1	unplaced-scaffold	na	na	BCYG01000029.1	=	NZ_BCYG01000029.1	Primary Assembly	2131	na
+BCYG01000030.1	unplaced-scaffold	na	na	BCYG01000030.1	=	NZ_BCYG01000030.1	Primary Assembly	62429	na
+BCYG01000031.1	unplaced-scaffold	na	na	BCYG01000031.1	=	NZ_BCYG01000031.1	Primary Assembly	6012	na
+BCYG01000032.1	unplaced-scaffold	na	na	BCYG01000032.1	=	NZ_BCYG01000032.1	Primary Assembly	5341	na
+BCYG01000033.1	unplaced-scaffold	na	na	BCYG01000033.1	=	NZ_BCYG01000033.1	Primary Assembly	1584	na
+BCYG01000034.1	unplaced-scaffold	na	na	BCYG01000034.1	=	NZ_BCYG01000034.1	Primary Assembly	31318	na
+BCYG01000035.1	unplaced-scaffold	na	na	BCYG01000035.1	=	NZ_BCYG01000035.1	Primary Assembly	4525	na
+BCYG01000036.1	unplaced-scaffold	na	na	BCYG01000036.1	=	NZ_BCYG01000036.1	Primary Assembly	94844	na
+BCYG01000037.1	unplaced-scaffold	na	na	BCYG01000037.1	=	NZ_BCYG01000037.1	Primary Assembly	258	na
+BCYG01000038.1	unplaced-scaffold	na	na	BCYG01000038.1	=	NZ_BCYG01000038.1	Primary Assembly	1464	na
+BCYG01000039.1	unplaced-scaffold	na	na	BCYG01000039.1	=	NZ_BCYG01000039.1	Primary Assembly	64840	na
+BCYG01000040.1	unplaced-scaffold	na	na	BCYG01000040.1	=	NZ_BCYG01000040.1	Primary Assembly	163184	na
+BCYG01000041.1	unplaced-scaffold	na	na	BCYG01000041.1	=	NZ_BCYG01000041.1	Primary Assembly	707	na
+BCYG01000042.1	unplaced-scaffold	na	na	BCYG01000042.1	=	NZ_BCYG01000042.1	Primary Assembly	238327	na
+BCYG01000043.1	unplaced-scaffold	na	na	BCYG01000043.1	=	NZ_BCYG01000043.1	Primary Assembly	58116	na
+BCYG01000044.1	unplaced-scaffold	na	na	BCYG01000044.1	=	NZ_BCYG01000044.1	Primary Assembly	101053	na
+BCYG01000045.1	unplaced-scaffold	na	na	BCYG01000045.1	=	NZ_BCYG01000045.1	Primary Assembly	99196	na
+BCYG01000046.1	unplaced-scaffold	na	na	BCYG01000046.1	=	NZ_BCYG01000046.1	Primary Assembly	75156	na
+BCYG01000047.1	unplaced-scaffold	na	na	BCYG01000047.1	=	NZ_BCYG01000047.1	Primary Assembly	28819	na
+BCYG01000048.1	unplaced-scaffold	na	na	BCYG01000048.1	=	NZ_BCYG01000048.1	Primary Assembly	15160	na
+BCYG01000049.1	unplaced-scaffold	na	na	BCYG01000049.1	=	NZ_BCYG01000049.1	Primary Assembly	3745	na
+BCYG01000050.1	unplaced-scaffold	na	na	BCYG01000050.1	=	NZ_BCYG01000050.1	Primary Assembly	131188	na
+BCYG01000051.1	unplaced-scaffold	na	na	BCYG01000051.1	=	NZ_BCYG01000051.1	Primary Assembly	2222	na
+BCYG01000052.1	unplaced-scaffold	na	na	BCYG01000052.1	=	NZ_BCYG01000052.1	Primary Assembly	5659	na
+BCYG01000053.1	unplaced-scaffold	na	na	BCYG01000053.1	=	NZ_BCYG01000053.1	Primary Assembly	21256	na
+BCYG01000054.1	unplaced-scaffold	na	na	BCYG01000054.1	=	NZ_BCYG01000054.1	Primary Assembly	7278	na
+BCYG01000055.1	unplaced-scaffold	na	na	BCYG01000055.1	=	NZ_BCYG01000055.1	Primary Assembly	94085	na
+BCYG01000056.1	unplaced-scaffold	na	na	BCYG01000056.1	=	NZ_BCYG01000056.1	Primary Assembly	3871	na
+BCYG01000057.1	unplaced-scaffold	na	na	BCYG01000057.1	=	NZ_BCYG01000057.1	Primary Assembly	48132	na
+BCYG01000058.1	unplaced-scaffold	na	na	BCYG01000058.1	=	NZ_BCYG01000058.1	Primary Assembly	206784	na
