@@ -1,3 +1,4 @@
+
 import re
 import pandas as pd 
 import numpy as np
@@ -34,26 +35,9 @@ for query in matchDict.keys():
                 if genome[0]+"!"+query not in filterDict:
                         filterDict[genome[0]+"!"+query] = int(genome[1]["length"])
 
-# queries = []
-# lengthDict = {}
-# lengths are not matching up to genomes and queries
-# for key in filterDict.keys():
-#         queries.append(key.split("!")[1])
-#         if key.split("!")[0] not in lengthDict:
-#                 lengthDict[key.split("!")[0]] = [filterDict[key.split("!")[0]+"!"+key.split("!")[1]]]
-#         else:
-#                 lengthDict[key.split("!")[0]].append(filterDict[key.split("!")[0]+"!"+key.split("!")[1]])
-
 queries = [key.split("!")[1] for key in filterDict.keys()]
 genomes = [key.split("!")[0] for key in filterDict.keys()]
 lengths = [length for length in filterDict.values()]
-
-print(len(queries))
-print(len(genomes))
-print(len(lengths))
-print(queries[:5])
-print(genomes[:5])
-print(lengths[:5])
 
 # need to map query names to blon numbers for easier visualization
 map = open("/Users/laurentso/Desktop/repos/bifido/scripts/blast/blon_map.txt", "r")
@@ -69,24 +53,16 @@ df["genome"] = genomes
 df["length"] = lengths
 
 df_pivot = df.pivot_table(index="genome", columns="query", values="length")
-df_pivot.to_csv("test.csv", sep=',')
 
 fig, ax = plt.subplots(figsize=(10,10))
 # black = present, beige = no hits (missing data)
 sns.set(font_scale=0.4)
 heatmap = sns.heatmap(df_pivot.isnull(), cbar=False, linewidths=.5)
 fig = heatmap.get_figure()
-fig.savefig("missing.png")
+fig.savefig("output/missing.png")
 
 df_pivot.fillna(value=0, inplace=True)
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(df_pivot.astype(int))
 fig = heatmap.get_figure()
-fig.savefig("existing1.png")
-
-df_pivot1 = df.pivot_table(index="query", columns="genome", values="length")
-
-df_pivot1.fillna(value=0, inplace=True)
-heatmap = sns.heatmap(df_pivot1.astype(int))
-fig = heatmap.get_figure()
-fig.savefig("existing2.png")
+fig.savefig("output/existing.png")
