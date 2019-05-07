@@ -29,3 +29,8 @@ write.csv(total, file = "total_longum.csv")
 write.csv(five, file="five_longum.csv")
 write.csv(ten, file="ten_longum.csv")
 write.csv(twentyfive, file="twentyfive_longum.csv")
+
+# plot log abundance of samples
+plot(log(total$`b. longum`))
+
+         

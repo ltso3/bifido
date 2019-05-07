@@ -37,7 +37,7 @@ the maximum number of aligned sequences to keep. No difference from the previous
 ssh -F $HOME/engaging-cluster/linux/config eofe4.mit.edu
 This logs into the engaging cluster. The alias engaging performs this same task.
 
-ncbi-blast-2.8.1+/bin/makeblastdb -in echo/batch001/all_dna_genomes_echo.faa -d$
+ncbi-blast-2.8.1+/bin/makeblastdb -in echo/batch001/all_dna_genomes_echo.faa -dbtype nucl
 -out echo/batch001/blast/blast_all_dna_genomes_echo.faa -parse_seqids
 This creates a blast database of all the ECHO samples in batch 001.
 
