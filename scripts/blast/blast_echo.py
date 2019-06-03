@@ -4,11 +4,11 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-cols = ["query", "genome", "identity", "alignment_length", "mismatches", "gaps", \
-        "q_start", "q_end", "s_start", "s_end", "evalue", "bit_score"]
-
 # read in blast output in a tabular format
 f = open("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/blast_output_fmt", "r")
+
+cols = ["query", "genome", "identity", "alignment_length", "mismatches", "gaps", \
+        "q_start", "q_end", "s_start", "s_end", "evalue", "bit_score"]
 
 matchDict = {}
 for line in f.readlines():
@@ -34,9 +34,15 @@ for query in matchDict.keys():
                 if genome[0]+"!"+query not in filterDict:
                         filterDict[genome[0]+"!"+query] = int(genome[1]["length"])
 
-queries = [key.split("!")[1] for key in filterDict.keys()]
-genomes = [key.split("!")[0] for key in filterDict.keys()]
-lengths = [length for length in filterDict.values()]
+broadDict = {}
+for genome_query in filterDict.keys():
+        if genome_query.split("!")[0].split("_")[0]+"!"+genome_query.split("!")[1] not in broadDict:
+                broadDict[genome_query.split("!")[0].split("_")[0]+"!"+genome_query.split("!")[1]] = \
+                        filterDict[genome_query]
+
+queries = [key.split("!")[1] for key in broadDict.keys()]
+genomes = [key.split("!")[0] for key in broadDict.keys()]
+lengths = [length for length in broadDict.values()]
 
 df = pd.DataFrame(np.nan, index = range(0,len(queries)), columns = ["query", "genome", "length"])
 df["query"] = queries
@@ -44,6 +50,8 @@ df["genome"] = genomes
 df["length"] = lengths
 
 df_pivot = df.pivot_table(index="genome", columns="query", values="length")
+
+df_pivot.to_csv("output/df_pivot.csv", setp = '\t')
 
 df_pivot.fillna(value=0, inplace=True)
 plt.subplots(figsize=(20,15))
