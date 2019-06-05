@@ -1,0 +1,22 @@
+#!/bin/bash
+# blast echo samples
+
+# for each sample in a batch
+for filename in rawfastq/*L001_R1*; do
+    # unzip fastq file into fasta file
+    f=${filename##*/}
+    gunzip -c $filename | sed -n '1~4s/^@/>/p;2~4p' > ${f%.fastq.gz}.fasta
+    
+    # make blastdb using fasta files
+    makeblastdb -in ${f%.fastq.gz}.fasta -dbtype 'nucl' -out db/blast_${f%.fastq.gz}.faa -parse_seqids
+    
+    # blast 30 HMO gene query against single sample
+    blastn -db db/blast_${f%.fastq.gz}.faa -query query/hmo_genes.faa -out output/${f%.fastq.gz}_output -outfmt 7
+
+    # delete blastdb files to save space
+    rm -r db/blast_*
+
+    # delete fasta file to save space
+    rm *.fasta
+
+done
