@@ -31,21 +31,77 @@ for line in blons.readlines():
    queries.append(nc)
    blon_names.append(blon)
 
-df = pd.DataFrame(np.nan, index = [i.split('_L001')[0] for i in match_dict.keys()], columns = queries)
-for key in match_dict.keys():
-    df.loc[key.split('_L001')[0]] = pd.Series(match_dict[key])
-df.columns = blon_names
+# lengths = open("/Users/laurentso/Desktop/repos/bifido/blast_broad/query/hmo_genes_lengths.txt", "r")
+# len_dict = {}
+# for line in lengths.readlines():
+#     if re.search("^NC", line):
+#        blon = line.split()[0]
+#     else:
+#         len_dict[blon] = line
 
-log_df = df.copy()
-for key in match_dict.keys():
-    log_df.loc[key.split('_L001')[0]] = [math.log(num+0.00000000001) for num in pd.Series(match_dict[key])]
+# df = pd.DataFrame(np.nan, index = [i.split('_S')[0] for i in match_dict.keys()], columns = queries)
+# for key in match_dict.keys():
+#     df.loc[key.split('_S')[0]] = pd.Series(match_dict[key])
+# df.columns = blon_names
 
-plt.subplots(figsize=(20,15))
-heatmap = sns.heatmap(df.astype(int))
-fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho.png")
+# log_df = df.copy()
+# for key in match_dict.keys():
+#     log_df.loc[key.split('_S')[0]] = [math.log(num+0.00000000001) for num in pd.Series(match_dict[key])]
 
-plt.subplots(figsize=(20,15))
-heatmap = sns.heatmap(log_df.astype(int)) #, cmap="YlGnBu")
-fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log.png")
+# normalized_df = df.copy()
+# for key in match_dict.keys():
+#     norms = [int(num)/int(len) for num, len in zip(pd.Series(match_dict[key]), len_dict.values())]
+#     normalized_df.loc[key.split('_S')[0]] = [math.log(num+0.00000000001) for num in norms]
+
+# normalized_df.to_csv("output/normalized.tsv", sep = '\t')
+
+# # normal results
+# plt.subplots(figsize=(20,15))
+# heatmap = sns.heatmap(df.astype(int))
+# fig = heatmap.get_figure()
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho.png")
+
+# # logged results
+# plt.subplots(figsize=(20,15))
+# heatmap = sns.heatmap(log_df.astype(int)) #, cmap="YlGnBu")
+# fig = heatmap.get_figure()
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log.png")
+
+# # logged and normalized results
+# plt.subplots(figsize=(20,15))
+# heatmap = sns.heatmap(normalized_df.astype(int)) #, cmap="YlGnBu")
+# fig = heatmap.get_figure()
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_norm.png")
+
+# ---------------------------------------------------------------------------------------------------------
+
+mapping = pd.read_csv('/Users/laurentso/Desktop/repos/bifido/scripts/metadata/master_fecal_samples.csv')
+metadata = pd.read_csv('/Users/laurentso/Desktop/repos/bifido/scripts/metadata/metadata_with_brain.csv')
+
+
+# need to get a dictionary of sample id to subject id
+ids = list(zip(mapping["SampleID"], mapping["SubjectID"]))
+id_dict = {}
+for sample, subject in ids:
+    if sample.startswith("M"):
+        id_dict[sample] = str(subject)+"_m"
+    else:
+        id_dict[sample] = subject
+
+# need to create dataframe with ids as subject ids and age (metadata)
+children = [i for i in match_dict.keys() if not i.startswith("M")]
+samples = [re.sub('-', '_', i.split('_S')[0]) for i in children]
+subjects = [id_dict[sample] for sample in samples]
+meta_df = pd.DataFrame(np.nan, index = subjects, columns = ["age"])
+meta_df.sort_index(inplace=True)
+
+# need to make key into an index
+
+for key in subjects:
+    if key in list(metadata["subject"]):
+        index = metadata.index[metadata['subject'] == key]
+        meta_df.loc[key] = metadata.iloc[index[0]]['correctedAgeDays'] / 365
+    else:
+        meta_df.loc[key] = "NA"
+
+print(meta_df)
