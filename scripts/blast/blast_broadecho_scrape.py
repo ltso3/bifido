@@ -1,4 +1,5 @@
 import re
+import math
 import pandas as pd 
 import numpy as np
 from os import listdir
@@ -35,7 +36,16 @@ for key in match_dict.keys():
     df.loc[key.split('_L001')[0]] = pd.Series(match_dict[key])
 df.columns = blon_names
 
+log_df = df.copy()
+for key in match_dict.keys():
+    log_df.loc[key.split('_L001')[0]] = [math.log(num+0.00000000001) for num in pd.Series(match_dict[key])]
+
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(df.astype(int))
 fig = heatmap.get_figure()
 fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho.png")
+
+plt.subplots(figsize=(20,15))
+heatmap = sns.heatmap(log_df.astype(int)) #, cmap="YlGnBu")
+fig = heatmap.get_figure()
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log.png")
