@@ -11,7 +11,7 @@ for filename in rawfastq/*L001_R1*; do
     makeblastdb -in ${f%.fastq.gz}.fasta -dbtype 'nucl' -out db/blast_${f%.fastq.gz}.faa -parse_seqids
     
     # blast 30 HMO gene query against single sample
-    blastn -db db/blast_${f%.fastq.gz}.faa -query query/hmo_genes.faa -out output/${f%.fastq.gz}_output -outfmt 7
+    blastn -db db/blast_${f%.fastq.gz}.faa -query query/hmo_genes.faa -perc_identity 95 -out output/${f%.fastq.gz}_output -outfmt 7
 
     # delete blastdb files to save space
     rm -r db/blast_*

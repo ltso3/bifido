@@ -1,0 +1,36 @@
+#!/bin/bash
+# Download bifido genomes
+
+# pipe b. longum infantis genome addresses into file
+grep "Bifidobacterium longum subsp. infantis" assembly_summary_refseq.txt |
+awk 'BEGIN {FS="\t"};{print $20}' > infantis_ftps.txt
+
+# download b. longum infantis genomes
+while read line; do wget --recursive --no-host-directories --cut-dirs=6 $line;
+done < infantis_ftps.txt
+
+# # move all genomes into a separate folder
+mkdir infantis 
+mv GCF* infantis
+
+# # need to delete files with _from_ to avoid extra genomic.fna files
+find infantis/* -name '*_from_*' -delete
+ 
+# # blast each genome against the 30 HMO genes
+for filename in infantis/*; do
+    f=${filename##*/}
+    # unzip all nucleotide genomes
+    gunzip $filename/*genomic.fna.gz
+    mv $filename/*genomic.fna genomes/infantis_$f.fna
+    # makeblastdb
+    # makeblastdb -in $filename/${f}_genomic.fna -dbtype 'nucl' -out db/blast_$f.faa -parse_seqids
+    # # blast
+    # blastn -db db/blast_$f.faa -query hmo_genes.faa -perc_identity 95 -out ${f}_output -outfmt 7
+    # # delete blast db files
+    # rm db/blast_*
+    #delete genomes
+    # rm -r breves
+done
+
+rm -r infantis
+rm infantis_ftps.txt

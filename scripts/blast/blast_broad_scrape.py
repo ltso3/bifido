@@ -8,15 +8,15 @@ cols = ["query", "genome", "identity", "alignment_length", "mismatches", "gaps",
         "q_start", "q_end", "s_start", "s_end", "evalue", "bit_score"]
 
 # read in blast output in a tabular format
-# f = open("/Users/laurentso/Desktop/repos/bifido/blast_broad/output/blast_output_fmt", "r")
-f = open("/Users/laurentso/Desktop/repos/bifido/blast_broad/output/blast_output_reversed_fmt", "r")
+f = open("/Users/laurentso/Desktop/repos/bifido/blast_broad/output/blast_output_fmt", "r")
+# f = open("/Users/laurentso/Desktop/repos/bifido/blast_broad/output/blast_output_reversed_fmt", "r")
 
 matchDict = {}
 for line in f.readlines():
     # need to reformat as if starts with NC, split the line
     # first is the query, next are the according columns
-        # if re.search("^NC", line):
-        if re.search("^reversed!NC", line):
+        if re.search("^NC", line):
+        # if re.search("^reversed!NC", line):
                 query, genome, identity, length, mismatches, gaps, \
                 q_start, q_end, s_start, s_end, evalue, bit_score = line.split()
                 if query not in matchDict:
@@ -39,8 +39,8 @@ map_dict = {}
 for line in map.readlines():
    blon, nc = line.split()
    map_dict[nc] = blon
-# queries_map = [map_dict[query] for query in queries]
-queries_map = [map_dict[query.split("!")[1]] for query in queries]
+queries_map = [map_dict[query] for query in queries]
+# queries_map = [map_dict[query.split("!")[1]] for query in queries]
 
 # need to set genomes as index and queries as columns
 df = pd.DataFrame(1, index = range(0,len(all_genomes)), columns = queries_map)
@@ -63,5 +63,5 @@ df.fillna(value=0, inplace=True)
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(df.astype(int))
 fig = heatmap.get_figure()
-# fig.savefig("output/existing_broad.png")
-fig.savefig("output/existing_broad_reversed.png")
+fig.savefig("output/existing_broad.png")
+# fig.savefig("output/existing_broad_reversed.png")

@@ -15,5 +15,8 @@ done < b_infantis_ftps.txt
 # move all genomes into a separate folder
 mkdir genome | mv GCF* genome
 
+# need to delete files with _from_ to avoid extra genomic.fna files
+find longum_genomes/* -name '*_from_*' -delete
+
 # unzip all nucleotide genomes
 gunzip */*genomic.fna.gz | cat */*genomic.fna > all_dna_genomes.faa
