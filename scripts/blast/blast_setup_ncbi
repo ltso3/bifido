@@ -2,7 +2,7 @@
 # Download bifido genomes
 
 # pipe b. longum infantis genome addresses into file
-grep "Bifidobacterium longum subsp. longum" assembly_summary_refseq.txt |
+grep "Bifidobacterium longum subsp. suis" assembly_summary_refseq.txt |
 awk 'BEGIN {FS="\t"};{print $20}' > suis_ftps.txt
 
 # download b. longum infantis genomes
@@ -21,16 +21,14 @@ for filename in suis/*; do
     f=${filename##*/}
     # unzip all nucleotide genomes
     gunzip $filename/*genomic.fna.gz
-    mv $filename/*genomic.fna genomes/suis_$f.fna
+    # mv $filename/*genomic.fna genomes/suis_$f.fna
     # makeblastdb
-    # makeblastdb -in $filename/${f}_genomic.fna -dbtype 'nucl' -out db/blast_$f.faa -parse_seqids
-    # # blast
-    # blastn -db db/blast_$f.faa -query hmo_genes.faa -perc_identity 95 -out ${f}_output -outfmt 7
-    # # delete blast db files
-    # rm db/blast_*
-    #delete genomes
-    # rm -r breves
+    makeblastdb -in $filename/${f}_genomic.fna -dbtype 'nucl' -out db/blast_$f.faa -parse_seqids
+    # blast
+    blastn -db db/blast_$f.faa -query query/hmo_genes.faa -perc_identity 95 -out ${f}_output -outfmt 7
+    # delete blast db files
+    rm db/blast_*
 done
 
-rm -r suis
 rm suis_ftps.txt
+# rm -r suis

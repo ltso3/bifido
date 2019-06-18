@@ -7,12 +7,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # read in all blast files, one for each sample
-blast_output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/blast_ncbi/blongum_output")]
+blast_output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/blast_ncbi/out")]
 
 match_dict = {}
 for filename in blast_output:
     match_dict[filename] = {}
-    f = open('/Users/laurentso/Desktop/repos/bifido/blast_ncbi/blongum_output/{}'.format(filename))
+    f = open('/Users/laurentso/Desktop/repos/bifido/blast_ncbi/out/{}'.format(filename))
     for line in f.readlines():
         if re.search("^# Query:", line): # if line with the HMO query
             query = "NC_011593.1:"+(line.split(":")[2].split()[0].strip())
@@ -61,12 +61,12 @@ for key in match_dict.keys():
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(df.astype(int))#, vmin=0.0, vmax = 2)
 fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/blongum.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/suis.png")
 
 # logged and normalized results
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(normalized_df.astype(int)) #, cmap="YlGnBu")
 fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/blongum_log_norm.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/suis_log_norm.png")
 
 
