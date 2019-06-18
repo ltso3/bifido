@@ -1,5 +1,6 @@
 library(ape)
-library(dendextend)
+library(ggplot2)
+library(svglite)
 
 n <- as.matrix(read.table("~/Desktop/repos/bifido/ani/ANIm_output/ANIm_percentage_identity.tab", 
                           head=T, row.names = 1))
@@ -23,6 +24,7 @@ for(i in 1:length(categs)) {
 
 png('root.png', width = 4000, height = 4400)
 plot(root, main="Neighbor Joining", tip.color=tipcol)
+ggsave(filename='root.svg')
 dev.off()
 
 write.tree(root, file="tree.tre")
