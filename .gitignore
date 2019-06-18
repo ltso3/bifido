@@ -4,5 +4,3 @@ blast/query
 blast/query/all_bifidum_genomes.faa
 blast/query/all_breve_genomes.faa
 blast/query/all_longum_genomes.faa
-ani/ANIm_output/ANIm_alignment_lengths.eps
-ani/ani_ada
