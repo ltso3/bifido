@@ -2,26 +2,26 @@
 # Download bifido genomes
 
 # pipe b. longum infantis genome addresses into file
-grep "Bifidobacterium longum subsp. infantis" assembly_summary_refseq.txt |
-awk 'BEGIN {FS="\t"};{print $20}' > infantis_ftps.txt
+grep "Bifidobacterium longum subsp. longum" assembly_summary_refseq.txt |
+awk 'BEGIN {FS="\t"};{print $20}' > suis_ftps.txt
 
 # download b. longum infantis genomes
 while read line; do wget --recursive --no-host-directories --cut-dirs=6 $line;
-done < infantis_ftps.txt
+done < suis_ftps.txt
 
 # # move all genomes into a separate folder
-mkdir infantis 
-mv GCF* infantis
+mkdir suis 
+mv GCF* suis
 
 # # need to delete files with _from_ to avoid extra genomic.fna files
-find infantis/* -name '*_from_*' -delete
+find suis/* -name '*_from_*' -delete
  
 # # blast each genome against the 30 HMO genes
-for filename in infantis/*; do
+for filename in suis/*; do
     f=${filename##*/}
     # unzip all nucleotide genomes
     gunzip $filename/*genomic.fna.gz
-    mv $filename/*genomic.fna genomes/infantis_$f.fna
+    mv $filename/*genomic.fna genomes/suis_$f.fna
     # makeblastdb
     # makeblastdb -in $filename/${f}_genomic.fna -dbtype 'nucl' -out db/blast_$f.faa -parse_seqids
     # # blast
@@ -32,5 +32,5 @@ for filename in infantis/*; do
     # rm -r breves
 done
 
-rm -r infantis
-rm infantis_ftps.txt
+rm -r suis
+rm suis_ftps.txt
