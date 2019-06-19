@@ -55,18 +55,20 @@ df.columns = blon_names
 normalized_df = df.copy()
 for key in match_dict.keys():
     norms = [int(num)/int(len) for num, len in zip(pd.Series(match_dict[key]), len_dict.values())]
-    normalized_df.loc[key.split('_S')[0]] = [math.log(num+0.00000000001) for num in norms]
+    normalized_df.loc[key] = [math.log(num+0.00000000001) for num in norms]
+
+normalized_df.to_csv("output/blongum.csv", sep=',')
 
 # normal results
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(df.astype(int))#, vmin=0.0, vmax = 2)
 fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/suis.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/blongum.png")
 
 # logged and normalized results
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(normalized_df.astype(int)) #, cmap="YlGnBu")
 fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/suis_log_norm.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/blongum_log_norm.png")
 
 
