@@ -1,0 +1,163 @@
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2595355-2593832 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 4 hits found
+NC_011593.1:c2595355-2593832	NB551033:120:HK2TMBGX9:1:23304:19696:2679#0/2	97.315	149	4	0	856	1004	1	149	4.89e-65	254
+NC_011593.1:c2595355-2593832	NB551033:120:HK2TMBGX9:1:23304:19696:2679#0/1	97.315	149	4	0	856	1004	149	1	4.89e-65	254
+NC_011593.1:c2595355-2593832	NB551033:120:HK2TMBGX9:2:22106:13237:16316#0/2	95.918	147	6	0	412	558	3	149	1.37e-60	239
+NC_011593.1:c2595355-2593832	NB551033:120:HK2TMBGX9:2:22106:13237:16316#0/1	95.918	147	6	0	412	558	151	5	1.37e-60	239
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2597106-2595574 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2598562-2597207 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 3 hits found
+NC_011593.1:c2598562-2597207	NB551033:120:HK2TMBGX9:3:21507:7410:12328#0/2	100.000	150	0	0	907	1056	150	1	2.58e-72	278
+NC_011593.1:c2598562-2597207	NB551033:120:HK2TMBGX9:3:21507:7410:12328#0/1	100.000	149	0	0	789	937	1	149	9.26e-72	276
+NC_011593.1:c2598562-2597207	NB551033:120:HK2TMBGX9:4:13404:3728:16929#0/2	96.104	77	3	0	577	653	77	1	9.87e-27	126
+# BLASTN 2.9.0+
+# Query: NC_011593.1:2598858-2601929 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 20 hits found
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:3:11407:21200:6171#0/1	100.000	150	0	0	1898	2047	150	1	5.84e-72	278
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:1:23104:11517:4918#0/1	99.333	150	1	0	2435	2584	150	1	2.72e-70	272
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:4:23602:26443:2210#0/2	99.329	149	1	0	364	512	2	150	9.78e-70	270
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:1:23104:11517:4918#0/2	99.320	147	1	0	2211	2357	1	147	1.26e-68	267
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:2:12109:24392:14660#0/2	98.000	150	3	0	2682	2831	1	150	5.88e-67	261
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:1:23111:8300:17635#0/2	99.301	143	1	0	2161	2303	143	1	2.12e-66	259
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:1:23111:8300:17635#0/1	97.351	151	4	0	2080	2230	1	151	7.61e-66	257
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:3:11407:21200:6171#0/2	97.333	150	4	0	1594	1743	1	150	2.74e-65	255
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:1:11206:10582:3122#0/2	98.462	130	2	0	71	200	130	1	1.66e-57	230
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:1:11206:10582:3122#0/1	98.462	130	2	0	71	200	1	130	1.66e-57	230
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:3:21406:20933:18547#0/2	96.992	133	4	0	1273	1405	1	133	7.72e-56	224
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:4:22403:15760:2739#0/1	96.970	132	4	0	2297	2428	1	132	2.78e-55	222
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:3:21406:20933:18547#0/1	98.276	116	2	0	1428	1543	116	1	1.01e-49	204
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:2:11303:2577:12188#0/2	97.414	116	3	0	2954	3069	116	1	4.68e-48	198
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:2:11303:2577:12188#0/1	97.414	116	3	0	2954	3069	1	116	4.68e-48	198
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:4:12609:5692:14345#0/2	99.057	106	1	0	1018	1123	1	106	7.83e-46	191
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:4:12609:5692:14345#0/1	99.057	106	1	0	1018	1123	106	1	7.83e-46	191
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:4:23602:26443:2210#0/1	97.059	102	3	0	772	873	102	1	2.84e-40	172
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:4:22403:15760:2739#0/2	100.000	92	0	0	2446	2537	92	1	1.02e-39	171
+NC_011593.1:2598858-2601929	NB551033:120:HK2TMBGX9:2:12109:24392:14660#0/1	98.529	68	1	0	2790	2857	68	1	1.04e-24	121
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2604454-2602106 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2605922-2604486 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2606381-2605944 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2607314-2606418 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2608249-2607458 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2609546-2608269 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+NC_011593.1:c2609546-2608269	NB551033:120:HK2TMBGX9:4:11412:9772:19976#0/1	95.161	62	3	0	283	344	3	64	2.03e-18	99.0
+NC_011593.1:c2609546-2608269	NB551033:120:HK2TMBGX9:1:21110:17719:18170#0/1	95.918	49	2	0	296	344	149	101	7.34e-13	80.5
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2610356-2609697 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2611458-2610496 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2612430-2611477 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2614109-2612517 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2615274-2614312 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2616246-2615293 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2617928-2616333 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2619247-2618063 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2620369-2619413 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2622143-2620551 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2624124-2622520 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2626110-2624512 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 4 hits found
+NC_011593.1:c2626110-2624512	NB551033:120:HK2TMBGX9:4:22407:23184:8174#0/2	100.000	30	0	0	1555	1584	115	144	1.54e-05	56.5
+NC_011593.1:c2626110-2624512	NB551033:120:HK2TMBGX9:2:13312:21348:11076#0/2	100.000	30	0	0	1555	1584	83	54	1.54e-05	56.5
+NC_011593.1:c2626110-2624512	NB551033:120:HK2TMBGX9:4:22407:23184:8174#0/1	100.000	30	0	0	1555	1584	53	24	1.54e-05	56.5
+NC_011593.1:c2626110-2624512	NB551033:120:HK2TMBGX9:2:13312:21348:11076#0/1	100.000	30	0	0	1555	1584	111	140	1.54e-05	56.5
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2626386-2626264 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2628158-2626563 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2630269-2628314 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2631106-2630366 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2632432-2631140 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2633881-2632562 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2634683-2633865 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2635627-2634680 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2636747-2635629 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0804-1F-1A_S46.faa
+# 0 hits found
+# BLAST processed 31 queries

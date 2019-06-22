@@ -4,25 +4,29 @@
 # for each sample in a batch
 for filename in kneaddata/*kneaddata_paired_1*; do
     f=${filename##*/} # name without the path
-    spath=${filename%_kneaddata_paired}
-    sample=${f%_kneaddata_paired*} # sample name 
+    spath=${filename%%_kneaddata_paired*}
+    sample=${f%%_kneaddata_paired*} # sample name 
 
     # concatenate paired_1 and paired_2 files
-    cat ${sample}_kneaddata_paired_1.fastq.gz ${sample}_kneaddata_paired_2.fastq.gz > $sample
+    cat ${spath}_kneaddata_paired_1.fastq.gz ${spath}_kneaddata_paired_2.fastq.gz > ${sample}.fastq.gz
 
     # unzip fastq file into fasta file
-    gunzip -c $spath | sed -n '1~4s/^@/>/p;2~4p' > ${sample}.fasta
+    gunzip -c ${sample}.fastq.gz | sed -n '1~4s/^@/>/p;2~4p' > ${sample}.fasta
     
+    # truncate sequence ids
+    sed -i 's/:N:0.*#/#/g' ${sample}.fasta
+
     # make blastdb using fasta files
     makeblastdb -in ${sample}.fasta -dbtype 'nucl' -out db/blast_${sample}.faa -parse_seqids
     
     # blast 30 HMO gene query against single sample
-    blastn -db db/blast_${sample}.faa -query query/hmo_genes.faa -perc_identity 95 -out output/${sample}_output -outfmt 7
+    blastn -db db/blast_${sample}.faa -query query/hmo_genes.faa -perc_identity 95 -out output/${sample} -outfmt 7
 
     # delete blastdb files to save space
     rm -r db/blast_*
 
     # delete fasta file to save space
     rm *.fasta
+    rm *.fastq.gz
 
 done

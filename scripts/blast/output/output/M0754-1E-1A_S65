@@ -1,0 +1,157 @@
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2595355-2593832 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+NC_011593.1:c2595355-2593832	NB551033:109:HG7V5BGX9:2:22203:3885:16444#0/2	99.138	116	1	0	548	663	1	116	2.54e-52	209
+NC_011593.1:c2595355-2593832	NB551033:109:HG7V5BGX9:4:12509:4835:1317#0/1	97.170	106	3	0	842	947	106	1	1.99e-43	180
+NC_011593.1:c2595355-2593832	NB551033:109:HG7V5BGX9:4:12509:4835:1317#0/2	97.143	105	3	0	842	946	1	105	7.16e-43	178
+NC_011593.1:c2595355-2593832	NB551033:109:HG7V5BGX9:2:22203:3885:16444#0/1	97.030	101	3	0	607	707	101	1	1.20e-40	171
+NC_011593.1:c2595355-2593832	NB551033:109:HG7V5BGX9:2:21201:10722:16525#0/1	96.970	66	2	0	166	231	66	1	7.37e-23	111
+NC_011593.1:c2595355-2593832	NB551033:109:HG7V5BGX9:2:21201:10722:16525#0/2	96.923	65	2	0	166	230	1	65	2.65e-22	110
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2597106-2595574 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+NC_011593.1:c2597106-2595574	NB551033:109:HG7V5BGX9:1:22306:1842:3011#0/2	100.000	66	0	0	1	66	26	91	3.43e-26	122
+NC_011593.1:c2597106-2595574	NB551033:109:HG7V5BGX9:1:22306:1842:3011#0/1	100.000	49	0	0	18	66	49	1	9.66e-17	91.6
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2598562-2597207 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+NC_011593.1:c2598562-2597207	NB551033:109:HG7V5BGX9:3:23509:2411:13488#0/2	99.219	128	1	0	645	772	1	128	4.81e-59	231
+NC_011593.1:c2598562-2597207	NB551033:109:HG7V5BGX9:3:23509:2411:13488#0/1	100.000	119	0	0	654	772	119	1	1.04e-55	220
+# BLASTN 2.9.0+
+# Query: NC_011593.1:2598858-2601929 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 18 hits found
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:12308:11284:19919#0/2	100.000	151	0	0	905	1055	1	151	3.83e-73	279
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:12308:11284:19919#0/1	99.338	151	1	0	965	1115	151	1	1.78e-71	274
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:13311:10894:3868#0/2	98.675	151	2	0	1076	1226	151	1	8.30e-70	268
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:21308:1878:8102#0/1	98.675	151	2	0	1364	1514	1	151	8.30e-70	268
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:13311:10894:3868#0/1	98.667	150	2	0	1071	1220	1	150	2.99e-69	267
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:11108:21313:19559#0/1	100.000	141	0	0	1654	1794	141	1	1.39e-67	261
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:21308:1878:8102#0/2	97.987	149	3	0	1444	1592	149	1	5.00e-67	259
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:1:12103:12004:14658#0/1	100.000	138	0	0	916	1053	138	1	6.46e-66	255
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:1:12103:12004:14658#0/2	100.000	137	0	0	916	1052	1	137	2.32e-65	254
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:23309:12800:10581#0/2	99.237	131	1	0	1824	1954	1	131	2.34e-60	237
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:23309:12800:10581#0/1	99.237	131	1	0	1824	1954	131	1	2.34e-60	237
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:11108:21313:19559#0/2	97.692	130	3	0	1461	1590	1	130	1.82e-56	224
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:3:12612:25358:14488#0/2	99.187	123	1	0	252	374	1	123	6.55e-56	222
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:11103:9137:3797#0/2	100.000	77	0	0	1742	1818	1	77	5.25e-32	143
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:11103:9137:3797#0/1	100.000	76	0	0	1743	1818	76	1	1.89e-31	141
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:3:12612:25358:14488#0/1	98.529	68	1	0	307	374	68	1	2.46e-25	121
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:11102:21030:10706#0/2	98.305	59	1	0	2588	2646	59	1	2.48e-20	104
+NC_011593.1:2598858-2601929	NB551033:109:HG7V5BGX9:2:11102:21030:10706#0/1	98.305	59	1	0	2588	2646	1	59	2.48e-20	104
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2604454-2602106 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2605922-2604486 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2606381-2605944 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2607314-2606418 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2608249-2607458 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2609546-2608269 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2610356-2609697 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2611458-2610496 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2612430-2611477 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2614109-2612517 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2615274-2614312 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2616246-2615293 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2617928-2616333 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2619247-2618063 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2620369-2619413 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2622143-2620551 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2624124-2622520 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2626110-2624512 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2626386-2626264 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2628158-2626563 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2630269-2628314 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2631106-2630366 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2632432-2631140 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2633881-2632562 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2634683-2633865 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2635627-2634680 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLASTN 2.9.0+
+# Query: NC_011593.1:c2636747-2635629 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome
+# Database: db/blast_M0754-1E-1A_S65.faa
+# 0 hits found
+# BLAST processed 31 queries

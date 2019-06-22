@@ -7,12 +7,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # read in all blast files, one for each sample
-blast_output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/echo_output")]
+blast_output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/output")]
 
 match_dict = {}
 for filename in blast_output:
     match_dict[filename] = {}
-    f = open('/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/echo_output/{}'.format(filename))
+    f = open('/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/output/{}'.format(filename))
     for line in f.readlines():
         if re.search("^# Query:", line): # if line with the HMO query
             query = "NC_011593.1:"+(line.split(":")[2].split()[0].strip())
@@ -67,19 +67,19 @@ normalized_df.to_csv("output/normalized.tsv", sep = '\t')
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(df.astype(int))
 fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_1.png")
 
 # logged results
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(log_df.astype(int)) #, cmap="YlGnBu")
 fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_1.png")
 
 # logged and normalized results
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(normalized_df.astype(int)) #, cmap="YlGnBu")
 fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_norm.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_norm_1.png")
 
 # ---------------------------------------------------------------------------------------------------------
 
@@ -140,4 +140,4 @@ norm_df = norm_df.drop('adj_index', 1)
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(norm_df.astype(int)) #, cmap="YlGnBu")
 fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_norm_adj.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_norm_adj_1.png")
