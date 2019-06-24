@@ -7,12 +7,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # read in all blast files, one for each sample
-blast_output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/output")]
+blast_output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/echo_output")]
 
 match_dict = {}
 for filename in blast_output:
     match_dict[filename] = {}
-    f = open('/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/output/{}'.format(filename))
+    f = open('/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/echo_output/{}'.format(filename))
     for line in f.readlines():
         if re.search("^# Query:", line): # if line with the HMO query
             query = "NC_011593.1:"+(line.split(":")[2].split()[0].strip())
@@ -141,3 +141,13 @@ plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(norm_df.astype(int)) #, cmap="YlGnBu")
 fig = heatmap.get_figure()
 fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_norm_adj_1.png")
+
+# just samples with blon 2355 to focus in on infantis
+df_2355 = norm_df.copy()
+df_2355 = df_2355[df_2355['Blon_2355'] > -12]
+
+plt.subplots(figsize=(20,15))
+heatmap = sns.heatmap(df_2355.astype(int)) #, cmap="YlGnBu")
+fig = heatmap.get_figure()
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_norm_adj_2355.png")
+
