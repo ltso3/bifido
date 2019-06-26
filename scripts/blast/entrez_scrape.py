@@ -7,7 +7,7 @@ Entrez.email = "ltso@wellesley.edu"
 
 handle = open("/Users/laurentso/Desktop/repos/bifido/blast/output/blast_output_infantis_protein.xml")
 records = NCBIXML.parse(handle)
-map_dict = {}
+mapping = []
 with open('protein_hits.faa', 'w') as f:
         for record in records:
                 query_id = record.query
@@ -29,9 +29,9 @@ with open('protein_hits.faa', 'w') as f:
                                                                 hit_id = Entrez.efetch(db="protein", id=gi, rettype="acc").read().strip()
                                         else:
                                                 seq = Entrez.efetch(db="protein", id=hit_id, rettype="fasta", retmode="text")
-                                except
-                                        time.sleep(200)
-                                        if err.code == 400:
+                                except HTTPError as err:
+                                        time.sleep(500)
+                                        if alignment.hit_id.split("|")[0] == "pdb":
                                                 gis = Entrez.esearch(db="protein", term=hit_id, retmode="txt")
                                                 for gi in Entrez.read(gis)['IdList']:
                                                         acc = Entrez.efetch(db="protein", id=gi, rettype="acc")
@@ -42,9 +42,9 @@ with open('protein_hits.faa', 'w') as f:
                                                                 hit_id = Entrez.efetch(db="protein", id=gi, rettype="acc").read().strip()
                                         else:
                                                 seq = Entrez.efetch(db="protein", id=hit_id, rettype="fasta", retmode="text")
-                        map_dict[hit_id] = query_id
+                        mapping.append((hit_id, query_id))
                         print(seq.read(), file=f, end='')
 
 f = open("protein_mapping.txt","w")
-f.write(str(map_dict))
+f.write(str(mapping))
 f.close()
