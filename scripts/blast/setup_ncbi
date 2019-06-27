@@ -1,0 +1,41 @@
+#!/bin/bash
+# Download bifido genomes
+
+# pipe b. longum infantis genome addresses into file
+# need to exclude those with subsp. in the title for bifidobacterium longum
+# grep "Bifidobacterium longum subsp. infantis" assembly_summary_refseq.txt |
+# grep -Ei "Bifidobacterium longum" assembly_summary_refseq.txt| grep -Eiv "subsp" |
+# awk 'BEGIN {FS="\t"};{print $20}' > ftps.txt
+
+# download b. longum infantis genomes
+# while read line; do wget --recursive --no-host-directories --cut-dirs=6 $line;
+# done < ftps.txt
+
+# # move all genomes into a separate folder
+# mkdir genomes 
+# mv GCF* genomes/
+
+# # need to delete files with _from_ to avoid extra genomic.fna files
+# find genomes/* -name '*_from_*' -delete
+ 
+# # blast each genome against the 30 HMO genes
+for filename in genomes/*; do
+    f=${filename##*/}
+    # unzip all nucleotide genomes
+    # gunzip $filename/*protein.faa.gz 
+    # mv $filename/*protein.faa .
+    # gunzip $filename/*genomic.fna.gz
+    # mv $filename/*genomic.fna genomes/blongum_$f.fna
+    # makeblastdb
+    makeblastdb -in $filename/${f}_genomic.fna -dbtype 'nucl' -out db/blast_$f.faa -parse_seqids
+    # # blast
+    blastn -db db/blast_$f.faa -query query/hmo_genes.faa -perc_identity 95 -num_threads 6 -out out/${f} -outfmt 5
+    # # delete blast db files
+    rm db/blast_*
+done
+# cat *protein.faa > all_protein_genomes.faa
+
+# rm ftps.txt
+# rm -r genomes/GCF*
+# rm -r genomes
+# rm -r suis

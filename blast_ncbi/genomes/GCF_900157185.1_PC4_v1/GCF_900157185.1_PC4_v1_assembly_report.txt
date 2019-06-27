@@ -1,0 +1,97 @@
+# Assembly name:  PC4_v1
+# Organism name:  Bifidobacterium longum (high GC Gram+)
+# Isolate:  PC4
+# Taxid:          216816
+# BioSample:      SAMEA51826168
+# BioProject:     PRJEB18553
+# Submitter:      University of Tromso
+# Date:           2017-2-8
+# Assembly type:  n/a
+# Release type:   major
+# Assembly level: Contig
+# Genome representation: full
+# WGS project:    FTRR01
+# Genome coverage: 180x
+# GenBank assembly accession: GCA_900157185.1
+# RefSeq assembly accession: GCF_900157185.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_900157184.1	GCF_900157184.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+FTRR01000069.1	unplaced-scaffold	na	na	FTRR01000069.1	=	NZ_FTRR01000069.1	Primary Assembly	510	na
+FTRR01000068.1	unplaced-scaffold	na	na	FTRR01000068.1	=	NZ_FTRR01000068.1	Primary Assembly	542	na
+FTRR01000064.1	unplaced-scaffold	na	na	FTRR01000064.1	=	NZ_FTRR01000064.1	Primary Assembly	625	na
+FTRR01000063.1	unplaced-scaffold	na	na	FTRR01000063.1	=	NZ_FTRR01000063.1	Primary Assembly	638	na
+FTRR01000061.1	unplaced-scaffold	na	na	FTRR01000061.1	=	NZ_FTRR01000061.1	Primary Assembly	687	na
+FTRR01000057.1	unplaced-scaffold	na	na	FTRR01000057.1	=	NZ_FTRR01000057.1	Primary Assembly	873	na
+FTRR01000056.1	unplaced-scaffold	na	na	FTRR01000056.1	=	NZ_FTRR01000056.1	Primary Assembly	892	na
+FTRR01000055.1	unplaced-scaffold	na	na	FTRR01000055.1	=	NZ_FTRR01000055.1	Primary Assembly	954	na
+FTRR01000054.1	unplaced-scaffold	na	na	FTRR01000054.1	=	NZ_FTRR01000054.1	Primary Assembly	1023	na
+FTRR01000053.1	unplaced-scaffold	na	na	FTRR01000053.1	=	NZ_FTRR01000053.1	Primary Assembly	1052	na
+FTRR01000022.1	unplaced-scaffold	na	na	FTRR01000022.1	=	NZ_FTRR01000022.1	Primary Assembly	46855	na
+FTRR01000021.1	unplaced-scaffold	na	na	FTRR01000021.1	=	NZ_FTRR01000021.1	Primary Assembly	49118	na
+FTRR01000066.1	unplaced-scaffold	na	na	FTRR01000066.1	=	NZ_FTRR01000066.1	Primary Assembly	561	na
+FTRR01000028.1	unplaced-scaffold	na	na	FTRR01000028.1	=	NZ_FTRR01000028.1	Primary Assembly	23475	na
+FTRR01000019.1	unplaced-scaffold	na	na	FTRR01000019.1	=	NZ_FTRR01000019.1	Primary Assembly	50006	na
+FTRR01000014.1	unplaced-scaffold	na	na	FTRR01000014.1	=	NZ_FTRR01000014.1	Primary Assembly	70099	na
+FTRR01000020.1	unplaced-scaffold	na	na	FTRR01000020.1	=	NZ_FTRR01000020.1	Primary Assembly	49244	na
+FTRR01000058.1	unplaced-scaffold	na	na	FTRR01000058.1	=	NZ_FTRR01000058.1	Primary Assembly	815	na
+FTRR01000011.1	unplaced-scaffold	na	na	FTRR01000011.1	=	NZ_FTRR01000011.1	Primary Assembly	88365	na
+FTRR01000013.1	unplaced-scaffold	na	na	FTRR01000013.1	=	NZ_FTRR01000013.1	Primary Assembly	83216	na
+FTRR01000037.1	unplaced-scaffold	na	na	FTRR01000037.1	=	NZ_FTRR01000037.1	Primary Assembly	3220	na
+FTRR01000001.1	unplaced-scaffold	na	na	FTRR01000001.1	=	NZ_FTRR01000001.1	Primary Assembly	254226	na
+FTRR01000018.1	unplaced-scaffold	na	na	FTRR01000018.1	=	NZ_FTRR01000018.1	Primary Assembly	51871	na
+FTRR01000051.1	unplaced-scaffold	na	na	FTRR01000051.1	=	NZ_FTRR01000051.1	Primary Assembly	1088	na
+FTRR01000026.1	unplaced-scaffold	na	na	FTRR01000026.1	=	NZ_FTRR01000026.1	Primary Assembly	25642	na
+FTRR01000050.1	unplaced-scaffold	na	na	FTRR01000050.1	=	NZ_FTRR01000050.1	Primary Assembly	1293	na
+FTRR01000008.1	unplaced-scaffold	na	na	FTRR01000008.1	=	NZ_FTRR01000008.1	Primary Assembly	123059	na
+FTRR01000010.1	unplaced-scaffold	na	na	FTRR01000010.1	=	NZ_FTRR01000010.1	Primary Assembly	98933	na
+FTRR01000065.1	unplaced-scaffold	na	na	FTRR01000065.1	=	NZ_FTRR01000065.1	Primary Assembly	623	na
+FTRR01000002.1	unplaced-scaffold	na	na	FTRR01000002.1	=	NZ_FTRR01000002.1	Primary Assembly	248194	na
+FTRR01000031.1	unplaced-scaffold	na	na	FTRR01000031.1	=	NZ_FTRR01000031.1	Primary Assembly	10540	na
+FTRR01000023.1	unplaced-scaffold	na	na	FTRR01000023.1	=	NZ_FTRR01000023.1	Primary Assembly	40781	na
+FTRR01000048.1	unplaced-scaffold	na	na	FTRR01000048.1	=	NZ_FTRR01000048.1	Primary Assembly	1347	na
+FTRR01000005.1	unplaced-scaffold	na	na	FTRR01000005.1	=	NZ_FTRR01000005.1	Primary Assembly	194331	na
+FTRR01000004.1	unplaced-scaffold	na	na	FTRR01000004.1	=	NZ_FTRR01000004.1	Primary Assembly	194355	na
+FTRR01000044.1	unplaced-scaffold	na	na	FTRR01000044.1	=	NZ_FTRR01000044.1	Primary Assembly	1848	na
+FTRR01000017.1	unplaced-scaffold	na	na	FTRR01000017.1	=	NZ_FTRR01000017.1	Primary Assembly	60340	na
+FTRR01000067.1	unplaced-scaffold	na	na	FTRR01000067.1	=	NZ_FTRR01000067.1	Primary Assembly	553	na
+FTRR01000062.1	unplaced-scaffold	na	na	FTRR01000062.1	=	NZ_FTRR01000062.1	Primary Assembly	640	na
+FTRR01000006.1	unplaced-scaffold	na	na	FTRR01000006.1	=	NZ_FTRR01000006.1	Primary Assembly	145228	na
+FTRR01000012.1	unplaced-scaffold	na	na	FTRR01000012.1	=	NZ_FTRR01000012.1	Primary Assembly	87387	na
+FTRR01000024.1	unplaced-scaffold	na	na	FTRR01000024.1	=	NZ_FTRR01000024.1	Primary Assembly	39431	na
+FTRR01000003.1	unplaced-scaffold	na	na	FTRR01000003.1	=	NZ_FTRR01000003.1	Primary Assembly	211916	na
+FTRR01000034.1	unplaced-scaffold	na	na	FTRR01000034.1	=	NZ_FTRR01000034.1	Primary Assembly	6383	na
+FTRR01000016.1	unplaced-scaffold	na	na	FTRR01000016.1	=	NZ_FTRR01000016.1	Primary Assembly	68410	na
+FTRR01000007.1	unplaced-scaffold	na	na	FTRR01000007.1	=	NZ_FTRR01000007.1	Primary Assembly	140088	na
+FTRR01000025.1	unplaced-scaffold	na	na	FTRR01000025.1	=	NZ_FTRR01000025.1	Primary Assembly	28781	na
+FTRR01000036.1	unplaced-scaffold	na	na	FTRR01000036.1	=	NZ_FTRR01000036.1	Primary Assembly	4460	na
+FTRR01000027.1	unplaced-scaffold	na	na	FTRR01000027.1	=	NZ_FTRR01000027.1	Primary Assembly	24959	na
+FTRR01000029.1	unplaced-scaffold	na	na	FTRR01000029.1	=	NZ_FTRR01000029.1	Primary Assembly	14796	na
+FTRR01000047.1	unplaced-scaffold	na	na	FTRR01000047.1	=	NZ_FTRR01000047.1	Primary Assembly	1432	na
+FTRR01000030.1	unplaced-scaffold	na	na	FTRR01000030.1	=	NZ_FTRR01000030.1	Primary Assembly	12727	na
+FTRR01000035.1	unplaced-scaffold	na	na	FTRR01000035.1	=	NZ_FTRR01000035.1	Primary Assembly	6188	na
+FTRR01000015.1	unplaced-scaffold	na	na	FTRR01000015.1	=	NZ_FTRR01000015.1	Primary Assembly	69164	na
+FTRR01000032.1	unplaced-scaffold	na	na	FTRR01000032.1	=	NZ_FTRR01000032.1	Primary Assembly	10287	na
+FTRR01000059.1	unplaced-scaffold	na	na	FTRR01000059.1	=	NZ_FTRR01000059.1	Primary Assembly	775	na
+FTRR01000042.1	unplaced-scaffold	na	na	FTRR01000042.1	=	NZ_FTRR01000042.1	Primary Assembly	2023	na
+FTRR01000033.1	unplaced-scaffold	na	na	FTRR01000033.1	=	NZ_FTRR01000033.1	Primary Assembly	6390	na
+FTRR01000009.1	unplaced-scaffold	na	na	FTRR01000009.1	=	NZ_FTRR01000009.1	Primary Assembly	107266	na
+FTRR01000038.1	unplaced-scaffold	na	na	FTRR01000038.1	=	NZ_FTRR01000038.1	Primary Assembly	3084	na
+FTRR01000049.1	unplaced-scaffold	na	na	FTRR01000049.1	=	NZ_FTRR01000049.1	Primary Assembly	1329	na
+FTRR01000046.1	unplaced-scaffold	na	na	FTRR01000046.1	=	NZ_FTRR01000046.1	Primary Assembly	1589	na
+FTRR01000060.1	unplaced-scaffold	na	na	FTRR01000060.1	=	NZ_FTRR01000060.1	Primary Assembly	734	na
+FTRR01000039.1	unplaced-scaffold	na	na	FTRR01000039.1	=	NZ_FTRR01000039.1	Primary Assembly	2489	na
+FTRR01000040.1	unplaced-scaffold	na	na	FTRR01000040.1	=	NZ_FTRR01000040.1	Primary Assembly	2208	na
+FTRR01000041.1	unplaced-scaffold	na	na	FTRR01000041.1	=	NZ_FTRR01000041.1	Primary Assembly	2200	na
+FTRR01000043.1	unplaced-scaffold	na	na	FTRR01000043.1	=	NZ_FTRR01000043.1	Primary Assembly	2016	na
+FTRR01000052.1	unplaced-scaffold	na	na	FTRR01000052.1	=	NZ_FTRR01000052.1	Primary Assembly	1087	na
+FTRR01000045.1	unplaced-scaffold	na	na	FTRR01000045.1	=	NZ_FTRR01000045.1	Primary Assembly	1730	na

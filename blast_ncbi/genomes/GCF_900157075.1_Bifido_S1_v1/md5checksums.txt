@@ -1,0 +1,14 @@
+28d170b0559bc0ff6210ce514afdf26e  ./GCF_900157075.1_Bifido_S1_v1_assembly_report.txt
+9d1f5ed579bccf20489521fdab515ccc  ./GCF_900157075.1_Bifido_S1_v1_assembly_stats.txt
+47db0c3040dc7ac8fcdea2a2fc79ef97  ./GCF_900157075.1_Bifido_S1_v1_cds_from_genomic.fna.gz
+81e46cd6b5e74490e137bcde125da3fa  ./GCF_900157075.1_Bifido_S1_v1_feature_count.txt.gz
+90926c3fcde1da0fdffd261c9b43360d  ./GCF_900157075.1_Bifido_S1_v1_feature_table.txt.gz
+ce079b152a7d4f69fbecf806ae29a38f  ./GCF_900157075.1_Bifido_S1_v1_genomic.fna.gz
+f0c88b571f90f4a67b8b4776a3e4f557  ./GCF_900157075.1_Bifido_S1_v1_genomic.gbff.gz
+6dbfa2455948c6749c72b87cd766c112  ./GCF_900157075.1_Bifido_S1_v1_genomic.gff.gz
+01a4e82027de9716f4f1ea060482c385  ./GCF_900157075.1_Bifido_S1_v1_protein.faa.gz
+9e8cfc45bfa98902c049f48a14e4261b  ./GCF_900157075.1_Bifido_S1_v1_protein.gpff.gz
+c22e18bf338fa4d9114501e1b44b6ee8  ./GCF_900157075.1_Bifido_S1_v1_rna_from_genomic.fna.gz
+32c97b51a3485dabe7901e228bfa324d  ./GCF_900157075.1_Bifido_S1_v1_translated_cds.faa.gz
+522e09cd91911dd27542607a8b0df8ea  ./GCF_900157075.1_Bifido_S1_v1_wgsmaster.gbff.gz
+5ffe8f43a3bfdb8dbdb950bbc10eb001  ./annotation_hashes.txt

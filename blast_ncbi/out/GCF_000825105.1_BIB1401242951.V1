@@ -1,0 +1,2079 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.3.0+</BlastOutput_version>
+  <BlastOutput_reference>Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), &quot;A greedy algorithm for aligning DNA sequences&quot;, J Comput Biol 2000; 7(1-2):203-14.</BlastOutput_reference>
+  <BlastOutput_db>db/blast_GCF_000825105.1_BIB1401242951.V1.faa</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>blon_2331 NC_011593.1:c2595355-2593832 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</BlastOutput_query-def>
+  <BlastOutput_query-len>1524</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_sc-match>1</Parameters_sc-match>
+      <Parameters_sc-mismatch>-2</Parameters_sc-mismatch>
+      <Parameters_gap-open>0</Parameters_gap-open>
+      <Parameters_gap-extend>0</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>blon_2331 NC_011593.1:c2595355-2593832 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1524</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000042.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000042.1</Hit_accession>
+  <Hit_len>52320</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2815.41</Hsp_bit-score>
+      <Hsp_score>1524</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1524</Hsp_query-to>
+      <Hsp_hit-from>50421</Hsp_hit-from>
+      <Hsp_hit-to>48898</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1524</Hsp_identity>
+      <Hsp_positive>1524</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1524</Hsp_align-len>
+      <Hsp_qseq>ATGAGCAACGAAAATACCGCGGTCGGCGACGTCCGCAAGAAGGGCGGGCTCGGCCAGCGCATCGCCTACGCATGCGGCAACTTGGGGCAGGCCGCCTTCTACAACGCAATGAGCACGTACTTCGTCACGTACGTCACCAGCTGCCTGTTCGTCAGCTACAGCAAGGCTCTCGCCGCCCAGATGATCGCCGTCATCACCGGCCTGATCGTTGTTATCCGCATCGCCGAGATCTTCATCGATCCGTTGCTGGGCAACCTCGTGGACAACACCACCACCAAGTGGGGCCGTTTCCGCCCGTGGCAGTTCATCGGCGGTCTGGTCTCCTCCGTGCTGATCATGCTCATCTTCTCTGGTATGTTCGGACTGGTCAACGTGAACACCACGCTGTTCATCGTGCTGTTCGTCATCACGTTCATCGTGCTTGACGTGTTCTACTCCCTGCGTGACATCTCCTACTGGGGCATGATCCCGGCGTTGTCCTCCGACTCCCACGAACGTTCCACCTACACCGCCCTCGGCACCTTCACCGGCTCCATCGGCTACAACGGCATCACCGTCATCGTCATCCCGATCGTCAGCTACTTCACCTGGACGTTCACCGGCGCCAAGGGCCAGGGCCAGGCCGGATGGACCTCCTTCGGCTTCATCGTCGCGCTCCTCGGCCTGATCACCGCCTGGGCCGTCGCCTTCGGCACCAAGGAAAGCACCAACGCGCTGCGCGCCAAGGCCCAGAAGAACGGCAACCCGTTCGAGGCGTTCAAGGCCCTGTTCCAGAACGACCAGCTGCTGTGGGTCGCCCTGTCCTACCTGCTGTACGCCATCGCAAACGTCATCACGACCGGTGTGATGTACTACCTCTTCGTGTTCGTGCTTGACGAGCCGGCCGCCTTCTCCGTCACCGGTATCATCCCGCTGATCGCCGGATTCATCATGGCGCCGCTGTACCCGATTCTCAACCGCTGGATTCCCCGTCGCTACCTGTTCGCCGGCGGCATGGTCTCCATGATCATCGGCTACACGATGCTCGCCCTGTTCTCCAGCAACCTGCCGGTCGTCATCGTCGCCCTGATCTTCTTCTATGTGCCTGCGCAGTTCATCCAGATGACCGCGATCCTGTCGCTGACCGACTCCATCGAGTACGGCCAGCTGAAGAACGGCAAGCGCAACGAGGCGGTCACCCTGTCGGTGCGTCCCATGCTCGACAAGATCGGCGGCGCGATGTCCAACGGTGTGGTCGGTGCCGTTGCCCTCGCGGCTGGCATGACCGGTCATGCCACGGCAGCCGACATGACCGCGTCCAACATCACCACGTTCAAGACCTTCGCCTTCTACATCCCGCTTGTTCTCATCATCCTCAGCCTCGTCGTGTTCTGGTTCAAGGTCAAGATCGACGAGAAGATGCACGCGCAGATCGTTGACGAGCTCGAAGCCAAGCTCGCTTCCGGCGAGATCGTCGACGATGAGGCGCAGACCGTGGAGGCCGTCGAGGCCATCAACGAGGAGACGCCGGCGGCCAAGAACTGA</Hsp_qseq>
+      <Hsp_hseq>ATGAGCAACGAAAATACCGCGGTCGGCGACGTCCGCAAGAAGGGCGGGCTCGGCCAGCGCATCGCCTACGCATGCGGCAACTTGGGGCAGGCCGCCTTCTACAACGCAATGAGCACGTACTTCGTCACGTACGTCACCAGCTGCCTGTTCGTCAGCTACAGCAAGGCTCTCGCCGCCCAGATGATCGCCGTCATCACCGGCCTGATCGTTGTTATCCGCATCGCCGAGATCTTCATCGATCCGTTGCTGGGCAACCTCGTGGACAACACCACCACCAAGTGGGGCCGTTTCCGCCCGTGGCAGTTCATCGGCGGTCTGGTCTCCTCCGTGCTGATCATGCTCATCTTCTCTGGTATGTTCGGACTGGTCAACGTGAACACCACGCTGTTCATCGTGCTGTTCGTCATCACGTTCATCGTGCTTGACGTGTTCTACTCCCTGCGTGACATCTCCTACTGGGGCATGATCCCGGCGTTGTCCTCCGACTCCCACGAACGTTCCACCTACACCGCCCTCGGCACCTTCACCGGCTCCATCGGCTACAACGGCATCACCGTCATCGTCATCCCGATCGTCAGCTACTTCACCTGGACGTTCACCGGCGCCAAGGGCCAGGGCCAGGCCGGATGGACCTCCTTCGGCTTCATCGTCGCGCTCCTCGGCCTGATCACCGCCTGGGCCGTCGCCTTCGGCACCAAGGAAAGCACCAACGCGCTGCGCGCCAAGGCCCAGAAGAACGGCAACCCGTTCGAGGCGTTCAAGGCCCTGTTCCAGAACGACCAGCTGCTGTGGGTCGCCCTGTCCTACCTGCTGTACGCCATCGCAAACGTCATCACGACCGGTGTGATGTACTACCTCTTCGTGTTCGTGCTTGACGAGCCGGCCGCCTTCTCCGTCACCGGTATCATCCCGCTGATCGCCGGATTCATCATGGCGCCGCTGTACCCGATTCTCAACCGCTGGATTCCCCGTCGCTACCTGTTCGCCGGCGGCATGGTCTCCATGATCATCGGCTACACGATGCTCGCCCTGTTCTCCAGCAACCTGCCGGTCGTCATCGTCGCCCTGATCTTCTTCTATGTGCCTGCGCAGTTCATCCAGATGACCGCGATCCTGTCGCTGACCGACTCCATCGAGTACGGCCAGCTGAAGAACGGCAAGCGCAACGAGGCGGTCACCCTGTCGGTGCGTCCCATGCTCGACAAGATCGGCGGCGCGATGTCCAACGGTGTGGTCGGTGCCGTTGCCCTCGCGGCTGGCATGACCGGTCATGCCACGGCAGCCGACATGACCGCGTCCAACATCACCACGTTCAAGACCTTCGCCTTCTACATCCCGCTTGTTCTCATCATCCTCAGCCTCGTCGTGTTCTGGTTCAAGGTCAAGATCGACGAGAAGATGCACGCGCAGATCGTTGACGAGCTCGAAGCCAAGCTCGCTTCCGGCGAGATCGTCGACGATGAGGCGCAGACCGTGGAGGCCGTCGAGGCCATCAACGAGGAGACGCCGGCGGCCAAGAACTGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>NZ_CCWU01000038.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000038.1</Hit_accession>
+  <Hit_len>83212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>196.865</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>2.28614e-50</Hsp_evalue>
+      <Hsp_query-from>1374</Hsp_query-from>
+      <Hsp_query-to>1491</Hsp_query-to>
+      <Hsp_hit-from>7168</Hsp_hit-from>
+      <Hsp_hit-to>7285</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>114</Hsp_identity>
+      <Hsp_positive>114</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>GTTCAAGGTCAAGATCGACGAGAAGATGCACGCGCAGATCGTTGACGAGCTCGAAGCCAAGCTCGCTTCCGGCGAGATCGTCGACGATGAGGCGCAGACCGTGGAGGCCGTCGAGGCC</Hsp_qseq>
+      <Hsp_hseq>GTTCAAGGTCAAGATCGACGAGAAGATGCACGCGAAGATCGTTGACGAGCTCGACGCCAAGCTCGCTTCCGGCGAGATCGTCGACGATGAGGCGCAGACCGTGGAGGCCGCCGAAGCC</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||| ||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||| |||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>23</Statistics_hsp-len>
+      <Statistics_eff-space>4182353378</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>2</Iteration_iter-num>
+  <Iteration_query-ID>Query_2</Iteration_query-ID>
+  <Iteration_query-def>blon_2332 NC_011593.1:c2597106-2595574 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1533</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000042.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000042.1</Hit_accession>
+  <Hit_len>52320</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2824.65</Hsp_bit-score>
+      <Hsp_score>1529</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1533</Hsp_query-to>
+      <Hsp_hit-from>52171</Hsp_hit-from>
+      <Hsp_hit-to>50640</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1532</Hsp_identity>
+      <Hsp_positive>1532</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>1533</Hsp_align-len>
+      <Hsp_qseq>ATGAGCAACGAAAATGTCGCGGACGGTGACGTCCGCAGGAAGGGCGGGTTAGGCCAGCGCATCGCCTACGCGTTCGGCAACCTCGGTCAGGCCGCCTTCTACAACGCGATGAGCACGTACTTCATCGTGTACGTCACCAGCTGCCTGTTCTCGGGCGTTGACAAGGCGCTTGCGGCCAAGCTGATCGGCGTCATCACCAGCCTCGTGGTGATCATCCGCATCGCCGAGATCTTCGTCGATCCGCTGCTGGGCAACCTGGTGGACAACACCAACACCAAGTGGGGCCGTTTCCGCCCGTGGCAGTTCTTCGGCGGACTGGTCTCCTCCGTGCTGCTTGCCGTGGTTTTCAGCGGCATGTTTGGCCTGGTGAACGTTAACTCCACATTGTTCATCGTCGTGTTCGTCATCACGTTCATCGTGCTTGACGTGTTCTACTCCCTGCGTGACATCTCCTACTGGGGCATGATCCCGGCGTTGTCCTCCGACTCCCACGAGCGTTCCACCTACACTGCCCTCGGCTCCTTCACCGGCTCCATCGGCGGCAACGCCATCACCATCCTCGTGATTCCGGTCGTCACCTACTTCAGCTGGGTGTTCACCGGCGAGAACGCCGAGCACCAGTCGGGTTGGACCGCTTTCGGCATCATCGTCGCGGTGCTCGGCATCATGACCGCCTGGACCGTCGCCTTCGGCACCAGGGAAAACCAAAGCGCCCTTCGCGCCAACGCCGAAGACAACGGTGGTCCGTTGCAGGCGTTCAAGGCCGTGTTCCAGAACGACCAGCTGCTGTGGGTCGCCCTGTCCTACCTGCTGTACGCCATCGCGAACGTGACCACCACCGGTGTGCTTCTCTTCCTGTTCAAGTTCGTCCTTGACAATCAGGCCGCTTTCTCCGCGACCGGTGTCATCGCCATGATCGCGGGCCTGGTCATGTCCCCGCTGTACCCGATTCTGAACAGGTACATTCCGCGCCGCTACCTGTACATCGGCGGCATGGTCTCCATGATCGTGGCTTATGTGATGCTCGCCCTGTTCTCCAGCAACATCGTCCTGGTCTTCATCGCGCTGGTGCTCTTCTACGTTCCCGGCACGCTCATCATGATGACGGTCATCCTCTCCCTGACCGACTCCATCGAGTACGGCCAGCTGAAGAACGGCAAGCGCAACGAGGCCGTTACGCTTTCCATCCGCCCGATGCTCGATAAGATCGGTGGCGCTCTGTCGAACGGCATTGTCGGCTTCATCGCCCTTGCGGCCGGCATGACGGGTGACGCAACCGCCGCCGATATGACCCCGACGAATATCCACGTCTTCAAGATCTGCGCGTTCTATGCCCCGCTCATCCTGATCGTGCTCAGCCTGGTGGTGTTCGTCTCCAAGGTCAAGATCACCGAGAAGATGCACGCGCAGATCGTTGACGAGCTCGAAGCCAAGCTCGCTTCCGGCGAGATCGTCGACGATGAGGCGCAGCCCGTGGAGGCCGCCGAAGCCGCCGCAGCCGTCGGCGATGAGACGCAGACAGTCAAGAACTGA</Hsp_qseq>
+      <Hsp_hseq>ATGAGCAACGAAAATGTCGCGGACGGTGACGTCCGCAGGAAGGGCGGGTTAGGCCAGCGCATCGCCTACGCGTTCGGCAACCTCGGTCAGGCCGCCTTCTACAACGCGATGAGCACGTACTTCATCGTGTACGTCACCAGCTGCCTGTTCTCGGGCGTTGACAAGGCGCTTGCGGCCAAGCTGATCGGCGTCATCACCAGCCTCGTGGTGATCATCCGCATCGCCGAGATCTTCGTCGATCCGCTGCTGGGCAACCTGGTGGACAACACCAACACCAAGTGGGGCCGTTTCCGCCCGTGGCAGTTCTTCGGCGGACTGGTCTCCTCCGTGCTGCTTGCCGTGGTTTTCAGCGGCATGTTTGGCCTGGTGAACGTTAACTCCACATTGTTCATCGTCGTGTTCGTCATCACGTTCATCGTGCTTGACGTGTTCTACTCCCTGCGTGACATCTCCTACTGGGGCATGATCCCGGCGTTGTCCTCCGACTCCCACGAGCGTTCCACCTACACTGCCCTCGGCTCCTTCACCGGCTCCATCGGCGGCAACGCCATCACCATCCTCGTGATTCCGGTCGTCACCTACTTCAGCTGGGTGTTCACCGGCGAGAACGCCGAGCACCAGTCGGGTTGGACCGCTTTCGGCATCATCGTCGCGGTGCTCGGCATCATGACCGCCTGGACCGTCGCCTTCGGCACCAGGGAAAACCAAAGCGCCCTTCGCGCCAACGCCGAAGACAACGGTGGTCCGTTGCAGGCGTTCAAGGCCGTGTTCCAGAACGACCAGCTGCTGTGGGTCGCCCTGTCCTACCTGCTGTACGCCATCGCGAACGTGACCACCACCGGTGTGCTTCTCTTCCTGTTCAAGTTCGTCCTTGACAATCAGGCCGCTTTCTCCGCGACCGGTGTCATCGCCATGATCGCGGGCCTGGTCATGTCCCCGCTGTACCCGATTCTGAACAGGTACATTCCGCGCCGCTACCTGTACATCGGCGGCATGGTCTCCATGATCGTGGCTTATGTGATGCTCGCCCTGTTCTCCAGCAACATCGTCCTGGTCTTCATCGCGCTGGTGCTCTTCTACGTTCCCGGCACGCTCATCATGATGACGGTCATCCTCTCCCTGACCGACTCCATCGAGTACGGCCAGCTGAAGAACGGCAAGCGCAACGAGGCCGTTACGCTTTCCATCCGCCCGATGCTCGATAAGATCGGTGGCGCTCTGTCGAACGGCATTGTCGGCTTCATCGCCCTTGCGGCCGGCATGACGGGTGACGCAACCGCCGCCGATATGACCCCGACGAATATCCACGTCTTCAAGATCTGCGCGTTCTATGCCCCGCTCATCCTGATCGTGCTCAGCCTGGTGGTGTTCGTCTCCAAGGTCAAGATCACCGAGAAGATGCACGCGCAGATCGTTGACGAGCTCGAAGCCAAGCTCGCTTCCGGCGAGATCGTCGACGATGAGGCGCAGCCCGTGGAGGCCGCCGA-GCCGCCGCAGCCGTCGGCGATGAGACGCAGACAGTCAAGAACTGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>NZ_CCWU01000038.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000038.1</Hit_accession>
+  <Hit_len>83212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>187.632</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>1.38415e-47</Hsp_evalue>
+      <Hsp_query-from>1377</Hsp_query-from>
+      <Hsp_query-to>1492</Hsp_query-to>
+      <Hsp_hit-from>7171</Hsp_hit-from>
+      <Hsp_hit-to>7286</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>111</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>CAAGGTCAAGATCACCGAGAAGATGCACGCGCAGATCGTTGACGAGCTCGAAGCCAAGCTCGCTTCCGGCGAGATCGTCGACGATGAGGCGCAGCCCGTGGAGGCCGCCGAAGCCG</Hsp_qseq>
+      <Hsp_hseq>CAAGGTCAAGATCGACGAGAAGATGCACGCGAAGATCGTTGACGAGCTCGACGCCAAGCTCGCTTCCGGCGAGATCGTCGACGATGAGGCGCAGACCGTGGAGGCCGCCGAAGCCG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||  |||||||||||||||| ||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>23</Statistics_hsp-len>
+      <Statistics_eff-space>4207430780</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>3</Iteration_iter-num>
+  <Iteration_query-ID>Query_3</Iteration_query-ID>
+  <Iteration_query-def>blon_2333 NC_011593.1:c2598562-2597207 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1356</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000029.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000029.1</Hit_accession>
+  <Hit_len>1432</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2505.18</Hsp_bit-score>
+      <Hsp_score>1356</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1356</Hsp_query-to>
+      <Hsp_hit-from>51</Hsp_hit-from>
+      <Hsp_hit-to>1406</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>1356</Hsp_identity>
+      <Hsp_positive>1356</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1356</Hsp_align-len>
+      <Hsp_qseq>ATGTTTTCGATGGAGGATCGGCGCAGGGCCGTTGACCTGTATTTCACGGAGGGCATGACCATCAGGAAGGTCATTGCCGAGCTTGGTTACCCGTCCGAGGGCGCGCTGGTGAAATGGGTTCGCGAGGACCCGCGTTACACGGGCGCGTGCAGGCGTTCGTATACGCTGGAATGCAAGACGAATGCGGCCAGACGCGCGCTCGAGGGCGAGCCCCTCGCCCGCGTGGCGCGCGACGCGGGTTGCACGCCGACGAGCGTGTACCAGTGGATGCGCCGCTACCGGAGCGAGGGGATACTGGGACTGATGGACAGGAGAAACGCGCCGATGCCGGCCGAACCGATGCCCGCGGCCGGCGATGACGTGGAGGAGCTGCGCCGGCAGGTGGAGGTCCTGCGGCTGGAGAACGCGGTGATGCGGGAGACGATCGATGTTTTAAAAGCCGACGACCCGCGCCTCGACCCGTCCATGCTGACGAACAGGGAGAGGACGCGGGTCGTCGACGCGATCAGGGGTGAATTCGGCCTGGCGGCCTGTCTGAAGGCCGTGGGGCTGAAACGCAGCACCTACTATTACGAGCGCGGCGCGATCGCCGCGGGCGACAGGTACGCCGTGCTGCGGGCCCGCGTCGCCGGCCTGTTCGAGCAGGGTGGGCGCGCATGGGGATACCGGACCATCCACCGCATGCTGCGCCTTGACGAGTCCGACCCGATCGTCGTCTCGGAGAAGGTCGTCAGGCGGATCATGCGCGAGGGGGCCATGCGGCCCGTGTACCTGAAGCGGCCGAAGCGGTGGAGCTCCTACGCCGGCGAGATCGGCGAGGCCCCGGCGAACCTCGTGGAGCGGGACTTCCACGCCGACGCGCCGAACATGCTGTGGGTCACGGACGTCACCCAGTTCACCATGGACGGGTACAAGTGCTGGCTTTCCCCGGTGGTCGACTGCTTCGACGGGATGGTGGTCTCCTGGACCTTGTCGCGCTCCCCGAACGCCGACATGGCGAACCGGATGCTCCTTGACGCGGTCGCCACGCTCAGGGACGGGGAACATCCAATCATCCATTCCGACCGCGGCTGCCACTACCGGTGGGACGAATGGATCCGCATCTGCGAGGAGCACGGGCTGATCCGGTCGATGAGCGCCAAGGGATGCAGCCCGGACAACGCGGCCGCCGAGGGGTTCTTCGGCAGGCTCAAGAACGAGTTATTCTACGGGCGGGACTGGAGGGGCGTGGGCTACGAGGAGTTCCGCGAACGCCTGGCCGCCTACCTGACCCACTACAATGAAACCAGGATCAAGAAGTCACTGGACTGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_qseq>
+      <Hsp_hseq>ATGTTTTCGATGGAGGATCGGCGCAGGGCCGTTGACCTGTATTTCACGGAGGGCATGACCATCAGGAAGGTCATTGCCGAGCTTGGTTACCCGTCCGAGGGCGCGCTGGTGAAATGGGTTCGCGAGGACCCGCGTTACACGGGCGCGTGCAGGCGTTCGTATACGCTGGAATGCAAGACGAATGCGGCCAGACGCGCGCTCGAGGGCGAGCCCCTCGCCCGCGTGGCGCGCGACGCGGGTTGCACGCCGACGAGCGTGTACCAGTGGATGCGCCGCTACCGGAGCGAGGGGATACTGGGACTGATGGACAGGAGAAACGCGCCGATGCCGGCCGAACCGATGCCCGCGGCCGGCGATGACGTGGAGGAGCTGCGCCGGCAGGTGGAGGTCCTGCGGCTGGAGAACGCGGTGATGCGGGAGACGATCGATGTTTTAAAAGCCGACGACCCGCGCCTCGACCCGTCCATGCTGACGAACAGGGAGAGGACGCGGGTCGTCGACGCGATCAGGGGTGAATTCGGCCTGGCGGCCTGTCTGAAGGCCGTGGGGCTGAAACGCAGCACCTACTATTACGAGCGCGGCGCGATCGCCGCGGGCGACAGGTACGCCGTGCTGCGGGCCCGCGTCGCCGGCCTGTTCGAGCAGGGTGGGCGCGCATGGGGATACCGGACCATCCACCGCATGCTGCGCCTTGACGAGTCCGACCCGATCGTCGTCTCGGAGAAGGTCGTCAGGCGGATCATGCGCGAGGGGGCCATGCGGCCCGTGTACCTGAAGCGGCCGAAGCGGTGGAGCTCCTACGCCGGCGAGATCGGCGAGGCCCCGGCGAACCTCGTGGAGCGGGACTTCCACGCCGACGCGCCGAACATGCTGTGGGTCACGGACGTCACCCAGTTCACCATGGACGGGTACAAGTGCTGGCTTTCCCCGGTGGTCGACTGCTTCGACGGGATGGTGGTCTCCTGGACCTTGTCGCGCTCCCCGAACGCCGACATGGCGAACCGGATGCTCCTTGACGCGGTCGCCACGCTCAGGGACGGGGAACATCCAATCATCCATTCCGACCGCGGCTGCCACTACCGGTGGGACGAATGGATCCGCATCTGCGAGGAGCACGGGCTGATCCGGTCGATGAGCGCCAAGGGATGCAGCCCGGACAACGCGGCCGCCGAGGGGTTCTTCGGCAGGCTCAAGAACGAGTTATTCTACGGGCGGGACTGGAGGGGCGTGGGCTACGAGGAGTTCCGCGAACGCCTGGCCGCCTACCTGACCCACTACAATGAAACCAGGATCAAGAAGTCACTGGACTGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>NZ_CCWU01000042.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000042.1</Hit_accession>
+  <Hit_len>52320</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>91.6061</Hsp_bit-score>
+      <Hsp_score>49</Hsp_score>
+      <Hsp_evalue>9.86306e-19</Hsp_evalue>
+      <Hsp_query-from>1308</Hsp_query-from>
+      <Hsp_query-to>1356</Hsp_query-to>
+      <Hsp_hit-from>52320</Hsp_hit-from>
+      <Hsp_hit-to>52272</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>49</Hsp_align-len>
+      <Hsp_qseq>CTGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_qseq>
+      <Hsp_hseq>CTGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>NZ_CCWU01000011.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000011.1</Hit_accession>
+  <Hit_len>45664</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>91.6061</Hsp_bit-score>
+      <Hsp_score>49</Hsp_score>
+      <Hsp_evalue>9.86306e-19</Hsp_evalue>
+      <Hsp_query-from>1308</Hsp_query-from>
+      <Hsp_query-to>1356</Hsp_query-to>
+      <Hsp_hit-from>45664</Hsp_hit-from>
+      <Hsp_hit-to>45616</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>49</Hsp_align-len>
+      <Hsp_qseq>CTGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_qseq>
+      <Hsp_hseq>CTGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>NZ_CCWU01000002.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000002.1</Hit_accession>
+  <Hit_len>248190</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>91.6061</Hsp_bit-score>
+      <Hsp_score>49</Hsp_score>
+      <Hsp_evalue>9.86306e-19</Hsp_evalue>
+      <Hsp_query-from>1308</Hsp_query-from>
+      <Hsp_query-to>1356</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>49</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>49</Hsp_align-len>
+      <Hsp_qseq>CTGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_qseq>
+      <Hsp_hseq>CTGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>NZ_CCWU01000039.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000039.1</Hit_accession>
+  <Hit_len>24954</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>89.7595</Hsp_bit-score>
+      <Hsp_score>48</Hsp_score>
+      <Hsp_evalue>3.54739e-18</Hsp_evalue>
+      <Hsp_query-from>1309</Hsp_query-from>
+      <Hsp_query-to>1356</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>48</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>TGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_qseq>
+      <Hsp_hseq>TGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>NZ_CCWU01000030.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000030.1</Hit_accession>
+  <Hit_len>19595</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>89.7595</Hsp_bit-score>
+      <Hsp_score>48</Hsp_score>
+      <Hsp_evalue>3.54739e-18</Hsp_evalue>
+      <Hsp_query-from>1309</Hsp_query-from>
+      <Hsp_query-to>1356</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>48</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>TGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_qseq>
+      <Hsp_hseq>TGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>NZ_CCWU01000014.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000014.1</Hit_accession>
+  <Hit_len>120451</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>89.7595</Hsp_bit-score>
+      <Hsp_score>48</Hsp_score>
+      <Hsp_evalue>3.54739e-18</Hsp_evalue>
+      <Hsp_query-from>1309</Hsp_query-from>
+      <Hsp_query-to>1356</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>48</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>TGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_qseq>
+      <Hsp_hseq>TGGATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>NZ_CCWU01000031.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000031.1</Hit_accession>
+  <Hit_len>101918</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.0662</Hsp_bit-score>
+      <Hsp_score>46</Hsp_score>
+      <Hsp_evalue>4.58883e-17</Hsp_evalue>
+      <Hsp_query-from>1311</Hsp_query-from>
+      <Hsp_query-to>1356</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>46</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>46</Hsp_align-len>
+      <Hsp_qseq>GATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_qseq>
+      <Hsp_hseq>GATGAGCCCCGTGCAATACCGCAGAAGTCTTGGACTGGCCGCCTGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>3717094952</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>4</Iteration_iter-num>
+  <Iteration_query-ID>Query_4</Iteration_query-ID>
+  <Iteration_query-def>blon_2334 NC_011593.1:2598858-2601929 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>3072</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000043.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000043.1</Hit_accession>
+  <Hit_len>10536</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>5674.03</Hsp_bit-score>
+      <Hsp_score>3072</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>3072</Hsp_query-to>
+      <Hsp_hit-from>321</Hsp_hit-from>
+      <Hsp_hit-to>3392</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>3072</Hsp_identity>
+      <Hsp_positive>3072</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>3072</Hsp_align-len>
+      <Hsp_qseq>ATGACAGACGTCACACATGTCGATCGCGCATCGCAGGCTTGGCTGACCGACCCGACGGTGTTCGAGGTGAACCGGACTCCGGCCCATTCCAGCCACAAGTGGTACGCCCGTGACCCCCAGAGCGGACAATGGTCCGATCTCAAGCAGAGCCTTGACGGCGAGTGGCGGGTCGAAGTCGTTCAGGCCGCCGACATCAACCTCGAAGAGGAACCCGCGACGGCCGAGTCGTTCGACGACTCCTCGTTCGAGCGTATCCAGGTTCCGGGCCACCTGCAGACGGCCGGTCTGATGAACCACAAGTACGTGAACGTCCAGTATCCGTGGGACGGCCACGAGAACCCGTTGGAACCGAACATCCCGGAAAACAATCACGTCGCGCTCTACCGCAGGAAGTTCACCGTCTCCGCCCCCGTGGCAAACGCCAAGCAGGCCGGCGGATCGGTGTCGATCGTGTTCCACGGCATGGCCACGGCGATCTACGTGTGGGTCAACGGCGCGTTCGTCGGCTATGGCGAGGATGGCTTCACGCCCAACGAGTTCGACATCACCGGGCTGCTGCACGATGGGGAGAACGTCGTGGCCGTCGCCTGCTACGAATACTCCAGCGCCTCCTGGCTTGAGGATCAGGACTTCTGGCGCCTGCACGGCCTGTTCCGCTCCGTCGAACTCGCCGCCCGCCCGCACGTGCACATCGAGAACACGCAGATCGAAGCCGATTGGGATCCCGAGGCCGGCACCGCCTCCCTCGATGCCGCGCTGACCGTGCTCAACGCGACCGACGCGGCCACGGTCCGCGCGACCCTGAAGGACGCCGACGGCAACACGGTGTGGCAGACGACGGGCGACGCGGAGGCGCAGACCGCGCTCTCCAGCGGACCGCTGCAGGGCATCGAACCATGGAGCGCCGAAAGCCCGACGCTGTACGAGCTTGACGTCGACGTCATCGACCAGGCGGGCGACGTCATCGAATGCACGTCCCAGAAGGTCGGTTTCCGCCGCTTCCGCATCGAGGACGGCATCCTGACCATCAACGGCAAGCGCATCGTGTTCAAGGGCGCCGACCGCCACGAGTTCGACGCCGAACGCGGCCGCGCCATCACCGAGCAGGACATGATCGATGACGTGGTCTTCTGCAAGCGCCACAACATCAACTCCATCCGAACCTCGCACTACCCGAACCAGGAACGCTGGTACGAACTGTGCGACGAGTACGGCATCTACCTGATCGACGAGACCAACCTCGAAGCCCACGGCAGCTGGTCCCTGCCCGGAGACGTCCTCACCGAGGACACCATCGTGCCGGGCAGCAAGCGCGAATGGGAAGGCGCCTGCGTCGACCGCGTCAACAGCATGATGCGTCGTGACTACAACCACCCGAGCGTGCTGATCTGGTCGCTGGGCAACGAATCCTACGTGGGCGACGTGTTCCGCGCCATGTACAAGCACGTGCACGACATCGACCCGAACCGTCCGGTGCATTACGAGGGCGTGACCCACAACCGTGACTACGATGACGTCACCGACATCGAGACCCGCATGTACTCGCATGCCGACGAAATCGAGAAGTACCTGAAGGACGACCCGAAGAAGCCGTACCTCTCCTGCGAATACATGCACGCCATGGGCAACTCCGTGGGCAACATGGACGAATACACGGCGCTCGAACGCTACCCGAAGTATCAGGGCGGCTTCATCTGGGACTTCATCGACCAGGCCATCTACGCCACCCAGCCCGACGGCACCAGGAGCCTGCGCTACGGCGGAGACTTCGGCGACCGTCCGTCCGACTACGAGTTCTCCGGCGACGGCCTGCTGTTCGCCGACCGCAAGCCTTCCCCCAAGGCCCAGGAAGTCAAGCAGCTGTACTCGAACGTCCACATCGACGTGACGAAGGATTCGGTGTCCGTCAAGAACGACAACCTGTTCACCGCCACCGGCGACTACGTGTTCGTCCTGAGCGTTCTCGCCGACGGCAAGCCGGTCTGGCAGTCCACCCGGCGTTTCGACGTGCCCGCCGGTGAGACCCGCACGTTCGATGTCGCATGGCCGGTGGCGGCGTACCGCGCCGACGCCCGCGAACTGGTGCTGCAGGTTTCGCAGCGTCTCGCCAAGGCGACCGATTGGGCCGAGAGCGGCTACGAGCTCGCCTTCGGACAGGCGGTGGTGCCCGCGGACGCCACCGCGACGCCCGACACGAAGCCGGCCGATGGGACCATCACCGTGGGCCGTTGGAACGCCGGCGTGCGAGGCGCCGGACGCGAGGTCCTGCTGTCGCGCACCCAGGGCGGCATGGTCTCCTACACCTTCGCCGGCAACGAGTTCGTGCTGCGCCGTCCCGCAATCACCACCTTCCGTCCGCTGACCGACAACGATCGCGGCGCTGGTCATGGCTTCGAGCGCGTCCAGTGGCTGGGCGCCGGCCGCTACGCCCGCTGCGTGGACAACGTGCTCGAGCAGATCGACGACAGCACGCTCAAGGGCACGTACACGTATGAGCTCGCCACCGCGCAGCGCACCAAGGTGACCGTCTCCTACACGGCCCACACCGATGGCCGCGTGAACCTGCACGTCGAATACCCCGGAGAGCAGGGCGACCTGCCCACCATCCCGGCGTTCGGCATCGAATGGACGCTGCCTGTGCAGTACACGAACCTGAGGTTCTTCGGCACCGGCCCGGAGGAGACGTACCTGGACCGCAAACACGCCAAGCTCGGCGTGTGGAACACCAACGCCTTCGCCGATCATGCGCCGTACCTCATGCCGCAGGAGACGGGCAACCATGAGGATGTGCGTTGGGCCGAGATTACCGACGATCACGGCCACGGCATGCGCGTCAGCCGCGCCGATGGCGCCGCGCCGTTCGCGGTAAGCCTGTTGCCGTACTCCAGCTTCATGCTTGAGGAGGCCCAGCACCAGGACGAGCTGCCGAAGCCGAAGCACATGTTCCTGCGCGTCCTTGCCGCACAGATGGGCGTCGGCGGCGATGATTCCTGGATGTCGCCGGTGCACCCCCAGTACCATATCCCGGCGGACAAGCCGATCAGCCTCGACGTCGATCTCGAGCTGATCTGA</Hsp_qseq>
+      <Hsp_hseq>ATGACAGACGTCACACATGTCGATCGCGCATCGCAGGCTTGGCTGACCGACCCGACGGTGTTCGAGGTGAACCGGACTCCGGCCCATTCCAGCCACAAGTGGTACGCCCGTGACCCCCAGAGCGGACAATGGTCCGATCTCAAGCAGAGCCTTGACGGCGAGTGGCGGGTCGAAGTCGTTCAGGCCGCCGACATCAACCTCGAAGAGGAACCCGCGACGGCCGAGTCGTTCGACGACTCCTCGTTCGAGCGTATCCAGGTTCCGGGCCACCTGCAGACGGCCGGTCTGATGAACCACAAGTACGTGAACGTCCAGTATCCGTGGGACGGCCACGAGAACCCGTTGGAACCGAACATCCCGGAAAACAATCACGTCGCGCTCTACCGCAGGAAGTTCACCGTCTCCGCCCCCGTGGCAAACGCCAAGCAGGCCGGCGGATCGGTGTCGATCGTGTTCCACGGCATGGCCACGGCGATCTACGTGTGGGTCAACGGCGCGTTCGTCGGCTATGGCGAGGATGGCTTCACGCCCAACGAGTTCGACATCACCGGGCTGCTGCACGATGGGGAGAACGTCGTGGCCGTCGCCTGCTACGAATACTCCAGCGCCTCCTGGCTTGAGGATCAGGACTTCTGGCGCCTGCACGGCCTGTTCCGCTCCGTCGAACTCGCCGCCCGCCCGCACGTGCACATCGAGAACACGCAGATCGAAGCCGATTGGGATCCCGAGGCCGGCACCGCCTCCCTCGATGCCGCGCTGACCGTGCTCAACGCGACCGACGCGGCCACGGTCCGCGCGACCCTGAAGGACGCCGACGGCAACACGGTGTGGCAGACGACGGGCGACGCGGAGGCGCAGACCGCGCTCTCCAGCGGACCGCTGCAGGGCATCGAACCATGGAGCGCCGAAAGCCCGACGCTGTACGAGCTTGACGTCGACGTCATCGACCAGGCGGGCGACGTCATCGAATGCACGTCCCAGAAGGTCGGTTTCCGCCGCTTCCGCATCGAGGACGGCATCCTGACCATCAACGGCAAGCGCATCGTGTTCAAGGGCGCCGACCGCCACGAGTTCGACGCCGAACGCGGCCGCGCCATCACCGAGCAGGACATGATCGATGACGTGGTCTTCTGCAAGCGCCACAACATCAACTCCATCCGAACCTCGCACTACCCGAACCAGGAACGCTGGTACGAACTGTGCGACGAGTACGGCATCTACCTGATCGACGAGACCAACCTCGAAGCCCACGGCAGCTGGTCCCTGCCCGGAGACGTCCTCACCGAGGACACCATCGTGCCGGGCAGCAAGCGCGAATGGGAAGGCGCCTGCGTCGACCGCGTCAACAGCATGATGCGTCGTGACTACAACCACCCGAGCGTGCTGATCTGGTCGCTGGGCAACGAATCCTACGTGGGCGACGTGTTCCGCGCCATGTACAAGCACGTGCACGACATCGACCCGAACCGTCCGGTGCATTACGAGGGCGTGACCCACAACCGTGACTACGATGACGTCACCGACATCGAGACCCGCATGTACTCGCATGCCGACGAAATCGAGAAGTACCTGAAGGACGACCCGAAGAAGCCGTACCTCTCCTGCGAATACATGCACGCCATGGGCAACTCCGTGGGCAACATGGACGAATACACGGCGCTCGAACGCTACCCGAAGTATCAGGGCGGCTTCATCTGGGACTTCATCGACCAGGCCATCTACGCCACCCAGCCCGACGGCACCAGGAGCCTGCGCTACGGCGGAGACTTCGGCGACCGTCCGTCCGACTACGAGTTCTCCGGCGACGGCCTGCTGTTCGCCGACCGCAAGCCTTCCCCCAAGGCCCAGGAAGTCAAGCAGCTGTACTCGAACGTCCACATCGACGTGACGAAGGATTCGGTGTCCGTCAAGAACGACAACCTGTTCACCGCCACCGGCGACTACGTGTTCGTCCTGAGCGTTCTCGCCGACGGCAAGCCGGTCTGGCAGTCCACCCGGCGTTTCGACGTGCCCGCCGGTGAGACCCGCACGTTCGATGTCGCATGGCCGGTGGCGGCGTACCGCGCCGACGCCCGCGAACTGGTGCTGCAGGTTTCGCAGCGTCTCGCCAAGGCGACCGATTGGGCCGAGAGCGGCTACGAGCTCGCCTTCGGACAGGCGGTGGTGCCCGCGGACGCCACCGCGACGCCCGACACGAAGCCGGCCGATGGGACCATCACCGTGGGCCGTTGGAACGCCGGCGTGCGAGGCGCCGGACGCGAGGTCCTGCTGTCGCGCACCCAGGGCGGCATGGTCTCCTACACCTTCGCCGGCAACGAGTTCGTGCTGCGCCGTCCCGCAATCACCACCTTCCGTCCGCTGACCGACAACGATCGCGGCGCTGGTCATGGCTTCGAGCGCGTCCAGTGGCTGGGCGCCGGCCGCTACGCCCGCTGCGTGGACAACGTGCTCGAGCAGATCGACGACAGCACGCTCAAGGGCACGTACACGTATGAGCTCGCCACCGCGCAGCGCACCAAGGTGACCGTCTCCTACACGGCCCACACCGATGGCCGCGTGAACCTGCACGTCGAATACCCCGGAGAGCAGGGCGACCTGCCCACCATCCCGGCGTTCGGCATCGAATGGACGCTGCCTGTGCAGTACACGAACCTGAGGTTCTTCGGCACCGGCCCGGAGGAGACGTACCTGGACCGCAAACACGCCAAGCTCGGCGTGTGGAACACCAACGCCTTCGCCGATCATGCGCCGTACCTCATGCCGCAGGAGACGGGCAACCATGAGGATGTGCGTTGGGCCGAGATTACCGACGATCACGGCCACGGCATGCGCGTCAGCCGCGCCGATGGCGCCGCGCCGTTCGCGGTAAGCCTGTTGCCGTACTCCAGCTTCATGCTTGAGGAGGCCCAGCACCAGGACGAGCTGCCGAAGCCGAAGCACATGTTCCTGCGCGTCCTTGCCGCACAGATGGGCGTCGGCGGCGATGATTCCTGGATGTCGCCGGTGCACCCCCAGTACCATATCCCGGCGGACAAGCCGATCAGCCTCGACGTCGATCTCGAGCTGATCTGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>23</Statistics_hsp-len>
+      <Statistics_eff-space>8495666522</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>5</Iteration_iter-num>
+  <Iteration_query-ID>Query_5</Iteration_query-ID>
+  <Iteration_query-def>blon_2335 NC_011593.1:c2604454-2602106 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>2349</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000043.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000043.1</Hit_accession>
+  <Hit_len>10536</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>4338.9</Hsp_bit-score>
+      <Hsp_score>2349</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>2349</Hsp_query-to>
+      <Hsp_hit-from>5917</Hsp_hit-from>
+      <Hsp_hit-to>3569</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>2349</Hsp_identity>
+      <Hsp_positive>2349</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>2349</Hsp_align-len>
+      <Hsp_qseq>ATGAAACTCACTTTCGATGGGATTTCTTCGCATTGGGAGGAAGGAATCCCGTTCGGCAACGGTCGCATGGGGGCGGTCCTGTGCTCCGAACCGGACGCGGATGTGCTGTACCTCAACGACGACACCCTCTGGTCGGGCTATCCGCATGCGGAGACCTCGCCGTTGACGCCCGAAATCGTGGCCAAAGCCCGTCAGGCGTCGTCTCGCGGCGATTACGTGTCGGCCACGCGGATCATCCAGGACGCCACGCAGCGGGAGAAGGACGAGCAGATATACGAGCCGTTCGGCACGGCTTGCATCCGGTACTCGTCGGAGGCCGGCGAACGGAAGCATGTGAAGCGCAGCCTGGACCTCGCCAGGGCCCTCGCCGGCGAATCGTTCCGGCTGGGCGCCGCCGACGTCCATGTCGACGCATGGTGCAGCGCTCCCGATGATCTGCTGGTGTATGAGATGTCGTCGAGCGCGCCGGTCGATGCGAGCGTGAGCGTCACCGGCACTTTTCTCAAGCAGACCCGGATATCGTCGGGGTCTGATTCCGATGCGCGCCAGGCCACCCTCGTCGTCATGGGGCAGATGCCCGGACTCAATGTCGGATCATTGGCCCATGTCACCGATAATCCATGGGAGGACGAACGGGACGGCATCGGGATGGCGTATGCCGGCGCCTTCTCCCTCACCGTCACGGGCGGCGAGATCACGGTGATCGATGATGTTCTGCAGTGCTCGGGCGTCACCGGCTTGTCGCTTCGGTTCCGCAGCCTGAGCGGGTTCAAGGGAAGCGCCGAACAGCCGGAGCGGGACATGACGGTGCTCGCCGATCGGCTGGGCGAGACCATCGCCGCATGGCCGTCCGATTCGCGGGCGATGCTTGACCGTCACGTCGCCGACTACCGCCGGTTCTTCGACCGGGTCGGCGTGCGTCTCGGCCCGGCCCATGACGACGATGAGGAGGTGCCGTTCGCCGAGATCCTGCGCTCCAAGGAGGATACGCCGCACCGTCTGGAGACGCTCTCCGAGGCGATGTTCGATTTCGGCCGATACCTGCTGATCTCCTCGTCCAGGCCGCATACCCAGCCGTCGAATCTGCAGGGAATCTGGAACCATAAGGACTTCCCGAACTGGTATAGCGCCTACACGACGAACATCAACATCGAGATGAACTATTGGATGACCGGCCCATGCGCCCTCAAGGAGCTCATCGAACCGCTCGTCGCCATGAACAGGGAGCTGCTGGAACCGGGGCATGATGCGGCCGGCGCCATCCTCGGATGCGGTGGTTCCGCGGTCTTCCACAATGTCGATATCTGGCGCAGGGCGCTGCCGGCGAACGGAGAGCCGACGTGGGCGTTCTGGCCGTTCGGCCAGGCGTGGATGTGCCGGAACCTGTTCGATGAGTACCTGTTCAACCAGGATGAGTCGTATCTGGCTTCCATCTGGCCGATCATGCGGGACAGCGCGCGATTCTGCATGGATTTTCTGTCGGATACGGAACACGGTCTGGCCCCGGCTCCGGCGACATCGCCGGAAAACTACTTCGTCGTGGACGGCGAAACGATCGCCGTCGCCCACACCAGCGAAAACACCACGGCCATCGTGCGCAATCTGCTCGATGATCTGATCCACGCGGCGCAAACCATGCCCGACCTGGATGACGGCGACAAGGCCTTGGTGCGGGAGGCGGAATCCACCCGCGCGAAGCTGGCGGCTGTCCGCGTGGGATCCGATGGCAGGATTCTCGAATGGAACGATGAACTCGTCGAGGCGGATCCGCATCACCGTCACCTGTCCCACCTGTACGAACTGCATCCGGGCGCAGGCATCACCGCGAACACCCCGCGTCTGGAGGAGGCCGCCAGGAAGTCCCTCGAAGTGCGTGGCGACGACGGTTCCGGCTGGAGCATCGTGTGGCGCATGATCATGTGGGCGCGTCTGCGGGACGCTGAGCACGCCGAACGCATCATCGGCATGTTCCTCCGCCCGGTCGAAGCCGACGCCGAAACCGATCTGCTTGGCGGCGGCGTGTATGCCAGCGGCATGTGCGCGCATCCCCCATTCCAGATCGACGGCAATCTGGGCTTCCCCGCGGCTCTGGCGGAGATGCTCGTCCAGAGTCATGACGGCATGGTGCGCATCCTGCCCGCGTTGCCCGAGGATTGGCATGAAGGCAGCTTCCATGGCCTGCGCGCCAGGGGAGGCCTTTCGGTGGACGCCTCCTGGACGGACGACGCCATCGAATACACGCTGCGCTGCACGAAGCCCGCGACGATCACCCTGATCGTCGATGGCACCGACGCGACGCAGGTCCGACTGTCTCCCGACGAGCCGTTCAAGGGGCTTGTCCGCAGGTAG</Hsp_qseq>
+      <Hsp_hseq>ATGAAACTCACTTTCGATGGGATTTCTTCGCATTGGGAGGAAGGAATCCCGTTCGGCAACGGTCGCATGGGGGCGGTCCTGTGCTCCGAACCGGACGCGGATGTGCTGTACCTCAACGACGACACCCTCTGGTCGGGCTATCCGCATGCGGAGACCTCGCCGTTGACGCCCGAAATCGTGGCCAAAGCCCGTCAGGCGTCGTCTCGCGGCGATTACGTGTCGGCCACGCGGATCATCCAGGACGCCACGCAGCGGGAGAAGGACGAGCAGATATACGAGCCGTTCGGCACGGCTTGCATCCGGTACTCGTCGGAGGCCGGCGAACGGAAGCATGTGAAGCGCAGCCTGGACCTCGCCAGGGCCCTCGCCGGCGAATCGTTCCGGCTGGGCGCCGCCGACGTCCATGTCGACGCATGGTGCAGCGCTCCCGATGATCTGCTGGTGTATGAGATGTCGTCGAGCGCGCCGGTCGATGCGAGCGTGAGCGTCACCGGCACTTTTCTCAAGCAGACCCGGATATCGTCGGGGTCTGATTCCGATGCGCGCCAGGCCACCCTCGTCGTCATGGGGCAGATGCCCGGACTCAATGTCGGATCATTGGCCCATGTCACCGATAATCCATGGGAGGACGAACGGGACGGCATCGGGATGGCGTATGCCGGCGCCTTCTCCCTCACCGTCACGGGCGGCGAGATCACGGTGATCGATGATGTTCTGCAGTGCTCGGGCGTCACCGGCTTGTCGCTTCGGTTCCGCAGCCTGAGCGGGTTCAAGGGAAGCGCCGAACAGCCGGAGCGGGACATGACGGTGCTCGCCGATCGGCTGGGCGAGACCATCGCCGCATGGCCGTCCGATTCGCGGGCGATGCTTGACCGTCACGTCGCCGACTACCGCCGGTTCTTCGACCGGGTCGGCGTGCGTCTCGGCCCGGCCCATGACGACGATGAGGAGGTGCCGTTCGCCGAGATCCTGCGCTCCAAGGAGGATACGCCGCACCGTCTGGAGACGCTCTCCGAGGCGATGTTCGATTTCGGCCGATACCTGCTGATCTCCTCGTCCAGGCCGCATACCCAGCCGTCGAATCTGCAGGGAATCTGGAACCATAAGGACTTCCCGAACTGGTATAGCGCCTACACGACGAACATCAACATCGAGATGAACTATTGGATGACCGGCCCATGCGCCCTCAAGGAGCTCATCGAACCGCTCGTCGCCATGAACAGGGAGCTGCTGGAACCGGGGCATGATGCGGCCGGCGCCATCCTCGGATGCGGTGGTTCCGCGGTCTTCCACAATGTCGATATCTGGCGCAGGGCGCTGCCGGCGAACGGAGAGCCGACGTGGGCGTTCTGGCCGTTCGGCCAGGCGTGGATGTGCCGGAACCTGTTCGATGAGTACCTGTTCAACCAGGATGAGTCGTATCTGGCTTCCATCTGGCCGATCATGCGGGACAGCGCGCGATTCTGCATGGATTTTCTGTCGGATACGGAACACGGTCTGGCCCCGGCTCCGGCGACATCGCCGGAAAACTACTTCGTCGTGGACGGCGAAACGATCGCCGTCGCCCACACCAGCGAAAACACCACGGCCATCGTGCGCAATCTGCTCGATGATCTGATCCACGCGGCGCAAACCATGCCCGACCTGGATGACGGCGACAAGGCCTTGGTGCGGGAGGCGGAATCCACCCGCGCGAAGCTGGCGGCTGTCCGCGTGGGATCCGATGGCAGGATTCTCGAATGGAACGATGAACTCGTCGAGGCGGATCCGCATCACCGTCACCTGTCCCACCTGTACGAACTGCATCCGGGCGCAGGCATCACCGCGAACACCCCGCGTCTGGAGGAGGCCGCCAGGAAGTCCCTCGAAGTGCGTGGCGACGACGGTTCCGGCTGGAGCATCGTGTGGCGCATGATCATGTGGGCGCGTCTGCGGGACGCTGAGCACGCCGAACGCATCATCGGCATGTTCCTCCGCCCGGTCGAAGCCGACGCCGAAACCGATCTGCTTGGCGGCGGCGTGTATGCCAGCGGCATGTGCGCGCATCCCCCATTCCAGATCGACGGCAATCTGGGCTTCCCCGCGGCTCTGGCGGAGATGCTCGTCCAGAGTCATGACGGCATGGTGCGCATCCTGCCCGCGTTGCCCGAGGATTGGCATGAAGGCAGCTTCCATGGCCTGCGCGCCAGGGGAGGCCTTTCGGTGGACGCCTCCTGGACGGACGACGCCATCGAATACACGCTGCGCTGCACGAAGCCCGCGACGATCACCCTGATCGTCGATGGCACCGACGCGACGCAGGTCCGACTGTCTCCCGACGAGCCGTTCAAGGGGCTTGTCCGCAGGTAG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>23</Statistics_hsp-len>
+      <Statistics_eff-space>6481115228</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>6</Iteration_iter-num>
+  <Iteration_query-ID>Query_6</Iteration_query-ID>
+  <Iteration_query-def>blon_2336 NC_011593.1:c2605922-2604486 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1437</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000043.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000043.1</Hit_accession>
+  <Hit_len>10536</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2654.76</Hsp_bit-score>
+      <Hsp_score>1437</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1437</Hsp_query-to>
+      <Hsp_hit-from>7385</Hsp_hit-from>
+      <Hsp_hit-to>5949</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1437</Hsp_identity>
+      <Hsp_positive>1437</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1437</Hsp_align-len>
+      <Hsp_qseq>ATGAACAATCCTGCAGATGCGGGCATCAACCTGAACTATCTCGCGAATGTGCGCCCATCGTCGCGCCAGCTTGCCTGGCAGCGCATGGAGATGTACGCCTTCCTGCACTTCGGCATGAACACCATGACGGACAGGGAGTGGGGTCTTGGGCATGAGGATCCGGCACTGTTCAACCCGCGGAACGTGGACGTGGACCAGTGGATGGACGCGCTGGTGGCCGGCGGGATGGCCGGCGTCATCCTGACGTGCAAGCACCACGACGGATTCTGCCTGTGGCCGTCCCGATTGACGCGGCACACCGTCGCCTCGTCGCCGTGGCGTGAAGGCAAGGGCGACCTCGTTCGTGAGGTCAGCGAGTCCGCCAGGCGTCACGGACTGAAGTTCGGCGTGTACCTGTCCCCGTGGGACCGCACCGAGGAATCCTACGGCAAGGGCAAGGCGTACGACGACTTCTACGTCGGCCAGCTGACCGAGCTGCTCACCCAGTACGGGCCGATCTTCTCCGTCTGGCTTGATGGCGCCAATGGCGAGGGCAAGAACGGCAAGACCCAGTACTACGACTGGGATCGTTACTACAACGTCATCCGTTCGCTCCAGCCCGATGCGGTGATTTCCGTGTGCGGCCCCGACGTGCGCTGGGCCGGGAACGAAGCCGGGCATGTGCGCGACAACGAATGGAGCGTCGTGCCCCGCCGCCTGCGTTCGGCGGAACTGACCATGGAGAAGTCGCAGCAGGAGGATGACGCATCCTTCGCCACCACGGTCAGCTCCCAGGACGACGACCTCGGCAGCCGTGAGGCGGTCGCCGGATACGGGGACAACGTCTGCTGGTACCCGGCCGAGGTCGACACCTCCATCCGCCCCGGGTGGTTCTACCACCAGTCCGAGGACGACAAGGTCATGAGCGCCGATCAGCTGTTCGACCTCTGGCTTTCCGCGGTAGGCGGCAATTCATCGTTGCTGCTCAACATTCCTCCCTCGCCGGAAGGTCTGCTCGCCGAACCGGATGTGCAGTCGCTCAAGGGATTGGGCCGCCGCGTCAGCGAGTTCCGTGAAGCGCTGGCCTCGGTCCGCTGCGAAGCCAGGACCAGCAGCGCATCCGCCGCCGCGGCGCATCTCGTCGACGGGAATCGGGACACGTTCTGGCGCCCGGATGCCGACGATGCGGCCCCCGCCATCACGCTCACCCTCCCGCAGCCCACGACGATCAACGCCATCGTGATCGAGGAGGCCATAGAGCACGGTCAGCGCATCGAGCATCTGCGCGTCACGGGTGCGCTGCCTGACGGCACCGAGCGCGTGCTCGGCCAGGCCGGCACGGTGGGTTACCGGAGGATACTCCGCTTCGACGATGTCGAGGTGTCCTCGGTCACCCTTCACGTGGACGGTTCGAGGCTTGCGCCGATGATCAGCCGCGCGGCTGCCGTGCGCATCTGA</Hsp_qseq>
+      <Hsp_hseq>ATGAACAATCCTGCAGATGCGGGCATCAACCTGAACTATCTCGCGAATGTGCGCCCATCGTCGCGCCAGCTTGCCTGGCAGCGCATGGAGATGTACGCCTTCCTGCACTTCGGCATGAACACCATGACGGACAGGGAGTGGGGTCTTGGGCATGAGGATCCGGCACTGTTCAACCCGCGGAACGTGGACGTGGACCAGTGGATGGACGCGCTGGTGGCCGGCGGGATGGCCGGCGTCATCCTGACGTGCAAGCACCACGACGGATTCTGCCTGTGGCCGTCCCGATTGACGCGGCACACCGTCGCCTCGTCGCCGTGGCGTGAAGGCAAGGGCGACCTCGTTCGTGAGGTCAGCGAGTCCGCCAGGCGTCACGGACTGAAGTTCGGCGTGTACCTGTCCCCGTGGGACCGCACCGAGGAATCCTACGGCAAGGGCAAGGCGTACGACGACTTCTACGTCGGCCAGCTGACCGAGCTGCTCACCCAGTACGGGCCGATCTTCTCCGTCTGGCTTGATGGCGCCAATGGCGAGGGCAAGAACGGCAAGACCCAGTACTACGACTGGGATCGTTACTACAACGTCATCCGTTCGCTCCAGCCCGATGCGGTGATTTCCGTGTGCGGCCCCGACGTGCGCTGGGCCGGGAACGAAGCCGGGCATGTGCGCGACAACGAATGGAGCGTCGTGCCCCGCCGCCTGCGTTCGGCGGAACTGACCATGGAGAAGTCGCAGCAGGAGGATGACGCATCCTTCGCCACCACGGTCAGCTCCCAGGACGACGACCTCGGCAGCCGTGAGGCGGTCGCCGGATACGGGGACAACGTCTGCTGGTACCCGGCCGAGGTCGACACCTCCATCCGCCCCGGGTGGTTCTACCACCAGTCCGAGGACGACAAGGTCATGAGCGCCGATCAGCTGTTCGACCTCTGGCTTTCCGCGGTAGGCGGCAATTCATCGTTGCTGCTCAACATTCCTCCCTCGCCGGAAGGTCTGCTCGCCGAACCGGATGTGCAGTCGCTCAAGGGATTGGGCCGCCGCGTCAGCGAGTTCCGTGAAGCGCTGGCCTCGGTCCGCTGCGAAGCCAGGACCAGCAGCGCATCCGCCGCCGCGGCGCATCTCGTCGACGGGAATCGGGACACGTTCTGGCGCCCGGATGCCGACGATGCGGCCCCCGCCATCACGCTCACCCTCCCGCAGCCCACGACGATCAACGCCATCGTGATCGAGGAGGCCATAGAGCACGGTCAGCGCATCGAGCATCTGCGCGTCACGGGTGCGCTGCCTGACGGCACCGAGCGCGTGCTCGGCCAGGCCGGCACGGTGGGTTACCGGAGGATACTCCGCTTCGACGATGTCGAGGTGTCCTCGGTCACCCTTCACGTGGACGGTTCGAGGCTTGCGCCGATGATCAGCCGCGCGGCTGCCGTGCGCATCTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>3942795620</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>7</Iteration_iter-num>
+  <Iteration_query-ID>Query_7</Iteration_query-ID>
+  <Iteration_query-def>blon_2337 NC_011593.1:c2606381-2605944 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>438</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000043.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000043.1</Hit_accession>
+  <Hit_len>10536</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>809.953</Hsp_bit-score>
+      <Hsp_score>438</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>438</Hsp_query-to>
+      <Hsp_hit-from>7844</Hsp_hit-from>
+      <Hsp_hit-to>7407</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>438</Hsp_identity>
+      <Hsp_positive>438</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>438</Hsp_align-len>
+      <Hsp_qseq>ATGCTGAAGGGAATACCGCCGATCATACAGCCCGATCTGCTGAAGATACTCAGCGAGATGGGCCACGGCGATGCCATAGTCCTTGCGGACGCCCACTTTCCCGCCGAATCGGTGGGCGTCCGATCCCACGTGATCAGGTATGACGGCCAGCCCATCGAGCCGCTGCTCGACGCGGTGCTGCAGCTGATACCGCTGGACCAATACACGGAACACCCGGTGCTGCTGATGGACAAGGTTCCCGGAGACACCGTGGACACCCCGATATGGGACCGGTACCGTCAGGTCATCGACAGGCACGAGCCCGGCAAGCAAGCGGGCATCGGGATGCTGGAACGGTTCGCCTTCTACGAGGAGGCCGGCAGGTCCTATTGCATCGTCGCCACCGGCGAACAATCGCAGTATGCGAACATCATCATCAGAAAAGGCGTCATTCGCTAA</Hsp_qseq>
+      <Hsp_hseq>ATGCTGAAGGGAATACCGCCGATCATACAGCCCGATCTGCTGAAGATACTCAGCGAGATGGGCCACGGCGATGCCATAGTCCTTGCGGACGCCCACTTTCCCGCCGAATCGGTGGGCGTCCGATCCCACGTGATCAGGTATGACGGCCAGCCCATCGAGCCGCTGCTCGACGCGGTGCTGCAGCTGATACCGCTGGACCAATACACGGAACACCCGGTGCTGCTGATGGACAAGGTTCCCGGAGACACCGTGGACACCCCGATATGGGACCGGTACCGTCAGGTCATCGACAGGCACGAGCCCGGCAAGCAAGCGGGCATCGGGATGCTGGAACGGTTCGCCTTCTACGAGGAGGCCGGCAGGTCCTATTGCATCGTCGCCACCGGCGAACAATCGCAGTATGCGAACATCATCATCAGAAAAGGCGTCATTCGCTAA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>21</Statistics_hsp-len>
+      <Statistics_eff-space>1161961326</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>8</Iteration_iter-num>
+  <Iteration_query-ID>Query_8</Iteration_query-ID>
+  <Iteration_query-def>blon_2338 NC_011593.1:c2607314-2606418 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>897</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000043.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000043.1</Hit_accession>
+  <Hit_len>10536</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1657.57</Hsp_bit-score>
+      <Hsp_score>897</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>897</Hsp_query-to>
+      <Hsp_hit-from>8777</Hsp_hit-from>
+      <Hsp_hit-to>7881</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>897</Hsp_identity>
+      <Hsp_positive>897</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>897</Hsp_align-len>
+      <Hsp_qseq>ATGACCAGCAACGCCATGTTCGAAGGCGTGTTCTGCCCCTCCATCACCATCATGAACGCGGACGGAACCATAGATTACGACAACTGGGGCAAGCACCTCGACCACCTCGTCGACGCAGGCGTCGACGGCGTGCTGCTGTTCGGCAGCATCGGCGAATTCTACGCCATCGACGTCAAGACGAAGGCGGAAGCGGCTCGCTTCGCCGTCTCGAAGGTCGCCGGACGCATGAAGGTGCTCGTCGGCGTGGGAGACACCAACCTGGACAACGTGAAGGCGTTGGCGGCGGAAAGCGAAGCGGCCGGAGTCGACGCGCTGCTCGCCGTGTCCCCGTACTATTTCGGCCCGTCCCCGGATTGCGCGAAACGGTACTTCTCGGCGGTGGCCAAGGCGACGACCCTGCCCGTCATCCTGTACAACTTCCCGGCCCGAACGGGCAACGACCTCACGCCCGAGCTGGTGGCCGAACTCGCCGGCGAGAACCCGAACATCGTCGGCATCAAAGACACCGTCGACACCATCAGTCACACCAGGAAGGTCATCGCGGCCGTCCGCAAGGTGAACCCGTCGTTCAGCGTGCTGTCCGGATTCGACGAATACTACATCGTCAACCGGATCAGCGGCGGCAACGGCGTGCTGAGTGGTCTGACCAACGTGGAACCCGAGACGTTCGTCAAACTGCACCGCGCATGGGAGGCCGGCGACCACGCCGCGGTCGTCGAAGCGGCCGAGCGCGTCTCCTACCTGATGCGCCTGTACGACACCGCCGACCTGTTCATCAGCGCCATCAAGGGCGCGGTCAAGGCCAAGGGACTACCCATCGACACGTCCGTCCACGAGCCCGCCGTGCAGCTGACCGACGAGCAGTATCGCACCATCCGCGCCATCCTGGACAAGTGA</Hsp_qseq>
+      <Hsp_hseq>ATGACCAGCAACGCCATGTTCGAAGGCGTGTTCTGCCCCTCCATCACCATCATGAACGCGGACGGAACCATAGATTACGACAACTGGGGCAAGCACCTCGACCACCTCGTCGACGCAGGCGTCGACGGCGTGCTGCTGTTCGGCAGCATCGGCGAATTCTACGCCATCGACGTCAAGACGAAGGCGGAAGCGGCTCGCTTCGCCGTCTCGAAGGTCGCCGGACGCATGAAGGTGCTCGTCGGCGTGGGAGACACCAACCTGGACAACGTGAAGGCGTTGGCGGCGGAAAGCGAAGCGGCCGGAGTCGACGCGCTGCTCGCCGTGTCCCCGTACTATTTCGGCCCGTCCCCGGATTGCGCGAAACGGTACTTCTCGGCGGTGGCCAAGGCGACGACCCTGCCCGTCATCCTGTACAACTTCCCGGCCCGAACGGGCAACGACCTCACGCCCGAGCTGGTGGCCGAACTCGCCGGCGAGAACCCGAACATCGTCGGCATCAAAGACACCGTCGACACCATCAGTCACACCAGGAAGGTCATCGCGGCCGTCCGCAAGGTGAACCCGTCGTTCAGCGTGCTGTCCGGATTCGACGAATACTACATCGTCAACCGGATCAGCGGCGGCAACGGCGTGCTGAGTGGTCTGACCAACGTGGAACCCGAGACGTTCGTCAAACTGCACCGCGCATGGGAGGCCGGCGACCACGCCGCGGTCGTCGAAGCGGCCGAGCGCGTCTCCTACCTGATGCGCCTGTACGACACCGCCGACCTGTTCATCAGCGCCATCAAGGGCGCGGTCAAGGCCAAGGGACTACCCATCGACACGTCCGTCCACGAGCCCGCCGTGCAGCTGACCGACGAGCAGTATCGCACCATCCGCGCCATCCTGGACAAGTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>2438124500</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>9</Iteration_iter-num>
+  <Iteration_query-ID>Query_9</Iteration_query-ID>
+  <Iteration_query-def>blon_2339 NC_011593.1:c2608249-2607458 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>792</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000043.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000043.1</Hit_accession>
+  <Hit_len>10536</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1463.67</Hsp_bit-score>
+      <Hsp_score>792</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>792</Hsp_query-to>
+      <Hsp_hit-from>9712</Hsp_hit-from>
+      <Hsp_hit-to>8921</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>792</Hsp_identity>
+      <Hsp_positive>792</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>792</Hsp_align-len>
+      <Hsp_qseq>ATGGACCTGCATCTTAAAGACAAGGTGATCATTGTCACCGGAGGCTTCAAAGGCATCGGCAAGGGCATAACGCTGCGCTTGGCCGAGGAGGGCGCCATTCCTGTGGTGCTGAACCGTGATGACGGTGCCGGCGACGAATTCCGACAGGACATTGAACGAATCACCGACTCGTATGACACGTATCTGATCGACCTGAACAACACCGACGACATCGCCCCCATCGTCAAGTCGGTCATGGAGAAGCACGGCCATATCGATGGCGTGGTCAACAACGCCGGAAGGAACGACAATCTCGCGCTCGAGACCACATCGTGGCGTCAGTTCGAGGAGTCGATTCACGGCAACCTGACCCACTACTACGAGCTGGTCCATCAGTGCGTGCCGGCGCTCAAGGCCAGCAAGGGCTCGGTGGTCAATATCGGTTCCAAGACCGCATTGACCGGTCAGGGCAAGACCAGCGCCTACGCCGCCGCGAAGGGCGCGATTCTGGGACTGACCCGCGAATGGGCCGCCGCCCTCGCCCCGGACGAGGTCCGGGTCAACGCCGTCGTCGTGGCCGAGGCCTGGACACCGCTGTACGCACAGTGGATCAAGACGTTCGGCGACGAGCAGGCGCAGCGCGCGCAGCTTGAGAAGATCACCAGCAAGATCCCGCTCGGCCACCGCATGACCGAGACGTCGGAGATCGCCGACACCGTGGCGTTCCTGCTGTCCGACAGGTCGTCGCACACCACCGGACAATGGGTCTTCCCCGACGGCGGATACGTCCACCTCGATCGGGCACTCGGCTAG</Hsp_qseq>
+      <Hsp_hseq>ATGGACCTGCATCTTAAAGACAAGGTGATCATTGTCACCGGAGGCTTCAAAGGCATCGGCAAGGGCATAACGCTGCGCTTGGCCGAGGAGGGCGCCATTCCTGTGGTGCTGAACCGTGATGACGGTGCCGGCGACGAATTCCGACAGGACATTGAACGAATCACCGACTCGTATGACACGTATCTGATCGACCTGAACAACACCGACGACATCGCCCCCATCGTCAAGTCGGTCATGGAGAAGCACGGCCATATCGATGGCGTGGTCAACAACGCCGGAAGGAACGACAATCTCGCGCTCGAGACCACATCGTGGCGTCAGTTCGAGGAGTCGATTCACGGCAACCTGACCCACTACTACGAGCTGGTCCATCAGTGCGTGCCGGCGCTCAAGGCCAGCAAGGGCTCGGTGGTCAATATCGGTTCCAAGACCGCATTGACCGGTCAGGGCAAGACCAGCGCCTACGCCGCCGCGAAGGGCGCGATTCTGGGACTGACCCGCGAATGGGCCGCCGCCCTCGCCCCGGACGAGGTCCGGGTCAACGCCGTCGTCGTGGCCGAGGCCTGGACACCGCTGTACGCACAGTGGATCAAGACGTTCGGCGACGAGCAGGCGCAGCGCGCGCAGCTTGAGAAGATCACCAGCAAGATCCCGCTCGGCCACCGCATGACCGAGACGTCGGAGATCGCCGACACCGTGGCGTTCCTGCTGTCCGACAGGTCGTCGCACACCACCGGACAATGGGTCTTCCCCGACGGCGGATACGTCCACCTCGATCGGGCACTCGGCTAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>2145549560</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>10</Iteration_iter-num>
+  <Iteration_query-ID>Query_10</Iteration_query-ID>
+  <Iteration_query-def>blon_2340 NC_011593.1:c2609546-2608269 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1278</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000043.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000043.1</Hit_accession>
+  <Hit_len>10536</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1487.67</Hsp_bit-score>
+      <Hsp_score>805</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>474</Hsp_query-from>
+      <Hsp_query-to>1278</Hsp_query-to>
+      <Hsp_hit-from>10536</Hsp_hit-from>
+      <Hsp_hit-to>9732</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>805</Hsp_identity>
+      <Hsp_positive>805</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>805</Hsp_align-len>
+      <Hsp_qseq>GGAGGCCATCGATATCCTGCGCGCCGCCCAGGAAGGCAAGGCGGAGCGTATCGCCCACCTCAAGGAAGTCGGTTATCCGGGATATTCGACCGCCGCCGGATGGCTTGGCTATTCCGACGAGAAGATGGTCCGCCTGGCCAAGCAGGAGACCGAGGTCATGGGCTTCAAGCAGATCAAGCTCAAGGTCGGCCAGAACCTCGAGGACGACCTGCGCAGGCTGAAGCTCGCCCGTGAAGCGGTCGGCCCGGACATCGCCATCGCCGTCGACGCCAACCAGGTCTGGGACGTGCCGCAGGCCATCGAATGGATTGGCAAATTCAAGGACTACGACCTCGCATGGGTCGAAGAGCCCACCTGCCCGGACGATGTGCTCGGCCATGCCGCGATTCAGAAGGCCATCGACCCCATTCCGGTGGCCACCGGCGAACAGATGCAGAACCGAGTCATGTACAAGCAGTACCTGCAGGCCGGCAGCTTCAAGGTCATGCAGATCGACGCCACCCGAGTCGCCGGTCCCCAGGAGATCGTCCTCGAATACCTGCTCGCCAAGAAGTTCGGCGTCAAGGTCTGCCCTCACGCGGGCGGCGTCGGCCTGTGCGAAGCCGTCAGCCAGCTCGCGATGTTCGACTATGTGTCCGTCTCCGGCGAGATGGAGGACCGCGTCGTCGAATACGTGGACAACCAGCATGAATACTTCGTGCATCCGACCGTCATCAAGAACGGACGATACGTCGCTCCGCTCACTCCGGGCAACGGCACGGAGATGAAGATCGACGAATGCATGAAGTACCTGCACAAGGACTGA</Hsp_qseq>
+      <Hsp_hseq>GGAGGCCATCGATATCCTGCGCGCCGCCCAGGAAGGCAAGGCGGAGCGTATCGCCCACCTCAAGGAAGTCGGTTATCCGGGATATTCGACCGCCGCCGGATGGCTTGGCTATTCCGACGAGAAGATGGTCCGCCTGGCCAAGCAGGAGACCGAGGTCATGGGCTTCAAGCAGATCAAGCTCAAGGTCGGCCAGAACCTCGAGGACGACCTGCGCAGGCTGAAGCTCGCCCGTGAAGCGGTCGGCCCGGACATCGCCATCGCCGTCGACGCCAACCAGGTCTGGGACGTGCCGCAGGCCATCGAATGGATTGGCAAATTCAAGGACTACGACCTCGCATGGGTCGAAGAGCCCACCTGCCCGGACGATGTGCTCGGCCATGCCGCGATTCAGAAGGCCATCGACCCCATTCCGGTGGCCACCGGCGAACAGATGCAGAACCGAGTCATGTACAAGCAGTACCTGCAGGCCGGCAGCTTCAAGGTCATGCAGATCGACGCCACCCGAGTCGCCGGTCCCCAGGAGATCGTCCTCGAATACCTGCTCGCCAAGAAGTTCGGCGTCAAGGTCTGCCCTCACGCGGGCGGCGTCGGCCTGTGCGAAGCCGTCAGCCAGCTCGCGATGTTCGACTATGTGTCCGTCTCCGGCGAGATGGAGGACCGCGTCGTCGAATACGTGGACAACCAGCATGAATACTTCGTGCATCCGACCGTCATCAAGAACGGACGATACGTCGCTCCGCTCACTCCGGGCAACGGCACGGAGATGAAGATCGACGAATGCATGAAGTACCTGCACAAGGACTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>NZ_CCWU01000007.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000007.1</Hit_accession>
+  <Hit_len>3080</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>187.632</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>1.15134e-47</Hsp_evalue>
+      <Hsp_query-from>474</Hsp_query-from>
+      <Hsp_query-to>577</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>104</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>103</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>GGAGGCCATCGATATCCTGCGCGCCGCCCAGGAAGGCAAGGCGGAGCGTATCGCCCACCTCAAGGAAGTCGGTTATCCGGGATATTCGACCGCCGCCGGATGGC</Hsp_qseq>
+      <Hsp_hseq>GGAGGCCATCGATATCCTGCGCGCCGCCCAGGAAGGCAAGGCGGAGCGTATCGCCCACCTCAAGGAAGTCGGTTACCCGGGATATTCGACCGCCGCCGGATGGC</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>NZ_CCWU01000044.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000044.1</Hit_accession>
+  <Hit_len>1048</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.613</Hsp_bit-score>
+      <Hsp_score>62</Hsp_score>
+      <Hsp_evalue>5.51043e-26</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>62</Hsp_query-to>
+      <Hsp_hit-from>62</Hsp_hit-from>
+      <Hsp_hit-to>1</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>62</Hsp_align-len>
+      <Hsp_qseq>GTGAGCGTTATCACCAAAGTCACCACGTATGATTTCCGGTTCCCGACATCGGCCACGTTCTC</Hsp_qseq>
+      <Hsp_hseq>GTGAGCGTTATCACCAAAGTCACCACGTATGATTTCCGGTTCCCGACATCGGCCACGTTCTC</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>NZ_CCWU01000006.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000006.1</Hit_accession>
+  <Hit_len>1726</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.613</Hsp_bit-score>
+      <Hsp_score>62</Hsp_score>
+      <Hsp_evalue>5.51043e-26</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>62</Hsp_query-to>
+      <Hsp_hit-from>1665</Hsp_hit-from>
+      <Hsp_hit-to>1726</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>62</Hsp_align-len>
+      <Hsp_qseq>GTGAGCGTTATCACCAAAGTCACCACGTATGATTTCCGGTTCCCGACATCGGCCACGTTCTC</Hsp_qseq>
+      <Hsp_hseq>GTGAGCGTTATCACCAAAGTCACCACGTATGATTTCCGGTTCCCGACATCGGCCACGTTCTC</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>3499753568</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>11</Iteration_iter-num>
+  <Iteration_query-ID>Query_11</Iteration_query-ID>
+  <Iteration_query-def>blon_2341 NC_011593.1:c2610356-2609697 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>660</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000044.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000044.1</Hit_accession>
+  <Hit_len>1048</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1219.91</Hsp_bit-score>
+      <Hsp_score>660</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>660</Hsp_query-to>
+      <Hsp_hit-from>872</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>660</Hsp_identity>
+      <Hsp_positive>660</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>660</Hsp_align-len>
+      <Hsp_qseq>ATGAAGCGTCTGGCTGTGGGGTATGAGTTCATCTGCCGGATCATCATGATGGTGGCTGTGGTGAATGTCGCCTTCGTGCTGCACACGCTGCTTGGCTTTGTCTTGGGCGGGCTGTTTCCCTCCGTGGCCGCGTCGTATTCGGTGTTCCGCCAGTGGCTGCTCGACGTCGAAGATCGCTCCTGGACCATCAAACGTACATGGACGACGTTCCATCAGGCATGGCTGGAGGAGATCGGCGCGGCGAATCAGCTGGGGTGGCCGCAGACGATCATCTGGCTGCTGCTCATCTGGGAATACTGGTTCGTGCAGAACAACGACCTGGGCTATGTGGGGACCGCCGTATCCGGCGTGCTGTTGGTGCTCAACGTGCTGTACGGCCTGTTCGTGTTCCTCAGCTGGTCCGTGCACATCAATTTCAATGAGAATCTGCTATGGACGGTGCGCACGTCGCTGGTCATGGTGGTCGCACGCCCGTTGTGCAGCTTCATTGTGCTGGCTCTTTTCCTCGCCACGGTGTGGTCCTACTACACGTGGCCCGGTCTGATGATGGCGTTCGGGCCGGCGGTGCCGATCTTCTTCACCATGGTGGCCGTGTATTCGTGGGGCAAAATGCCGGGCATGGACGTGCGGGTGATTGAGCCGTTGGAGAAGAAACGATGA</Hsp_qseq>
+      <Hsp_hseq>ATGAAGCGTCTGGCTGTGGGGTATGAGTTCATCTGCCGGATCATCATGATGGTGGCTGTGGTGAATGTCGCCTTCGTGCTGCACACGCTGCTTGGCTTTGTCTTGGGCGGGCTGTTTCCCTCCGTGGCCGCGTCGTATTCGGTGTTCCGCCAGTGGCTGCTCGACGTCGAAGATCGCTCCTGGACCATCAAACGTACATGGACGACGTTCCATCAGGCATGGCTGGAGGAGATCGGCGCGGCGAATCAGCTGGGGTGGCCGCAGACGATCATCTGGCTGCTGCTCATCTGGGAATACTGGTTCGTGCAGAACAACGACCTGGGCTATGTGGGGACCGCCGTATCCGGCGTGCTGTTGGTGCTCAACGTGCTGTACGGCCTGTTCGTGTTCCTCAGCTGGTCCGTGCACATCAATTTCAATGAGAATCTGCTATGGACGGTGCGCACGTCGCTGGTCATGGTGGTCGCACGCCCGTTGTGCAGCTTCATTGTGCTGGCTCTTTTCCTCGCCACGGTGTGGTCCTACTACACGTGGCCCGGTCTGATGATGGCGTTCGGGCCGGCGGTGCCGATCTTCTTCACCATGGTGGCCGTGTATTCGTGGGGCAAAATGCCGGGCATGGACGTGCGGGTGATTGAGCCGTTGGAGAAGAAACGATGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>1777741064</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>12</Iteration_iter-num>
+  <Iteration_query-ID>Query_12</Iteration_query-ID>
+  <Iteration_query-def>blon_2342 NC_011593.1:c2611458-2610496 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>963</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000046.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000046.1</Hit_accession>
+  <Hit_len>2200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1779.44</Hsp_bit-score>
+      <Hsp_score>963</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>963</Hsp_query-to>
+      <Hsp_hit-from>1001</Hsp_hit-from>
+      <Hsp_hit-to>39</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>963</Hsp_identity>
+      <Hsp_positive>963</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>963</Hsp_align-len>
+      <Hsp_qseq>ATGACAAGCACATCCATCAATCCGGCGCCGGTCCGCGGCGCGGGGTCGGACGACATCCCGTTCAACCCGAAGCTGAGGCAGAGGAGGAGCGTGTCCGACTGGGTCGTCGACATCGTGATCTGGCTGTTGATCGCGTTGGTCGTGGTGGCGATCGTCTATCCGATCTGGTTCATCGTGATCGCCTCGGTCTCGGACCAGACGATGGTCAGCCAGGGCAAGGTGTTCCTGTTGCCCGCGAAGATGAACTTCGGCGGTTACGCCAAGGTGTTCACCGATTCGAGGATCTGGGTCGGCTACCGCAACACCATCTTCTATTCGGTGGCGGGCACGGCCCTGAACATGCTGGTCACGATCCCGGCGGCGTTCGCGTTGTCTCGCCGCGAGTTCAAGCCGCGCCGCGTGATCCTGTTCCTGATGACGTTCACGATGTTCTTCTCGGGCGGCATGATCCCGAGCTTCCTGCTGTACAAGCAGCTGGGTCTGCTGAACTCGGTGTGGGTGTTCATCCTTCCGGGCGCGGTGAGCGTGTGGAACCTGATCGTGGCGCGTTCGTTCTTCGAGAGCTCGATCCCGGAGAGCCTGCATGACGCCGCGCAGATCGACGGCCTGGGGTATTTCGGGTATTTCCTGCGGATCGTGCTGCCGTTGAGCTCCGCGATCCTGGCGGTGATGACGTTGTATTACTTCGTGGGTCATTGGAACGACTTCTTCACTGGCTTGGTGTACATCCGCGACGCGGACAAGCTGCCGTTGCAGAACGTGTTGCGTTCCATCCTGTTGTCGAACCAGACGAACATCACCGGTCAGAGTTCGGGTGGCATGGACGTGGTGCAGCAGCGTGATTTCGCGAACCAGATCAAGTACGGCGTGATCATCGTGTCGACGTTGCCGTTGCTGGTGTTGTATCCGTTCCTGCAGAAGTATTTCAACAAGGGCGTGATGATCGGTGCCGTGAAGGGCTGA</Hsp_qseq>
+      <Hsp_hseq>ATGACAAGCACATCCATCAATCCGGCGCCGGTCCGCGGCGCGGGGTCGGACGACATCCCGTTCAACCCGAAGCTGAGGCAGAGGAGGAGCGTGTCCGACTGGGTCGTCGACATCGTGATCTGGCTGTTGATCGCGTTGGTCGTGGTGGCGATCGTCTATCCGATCTGGTTCATCGTGATCGCCTCGGTCTCGGACCAGACGATGGTCAGCCAGGGCAAGGTGTTCCTGTTGCCCGCGAAGATGAACTTCGGCGGTTACGCCAAGGTGTTCACCGATTCGAGGATCTGGGTCGGCTACCGCAACACCATCTTCTATTCGGTGGCGGGCACGGCCCTGAACATGCTGGTCACGATCCCGGCGGCGTTCGCGTTGTCTCGCCGCGAGTTCAAGCCGCGCCGCGTGATCCTGTTCCTGATGACGTTCACGATGTTCTTCTCGGGCGGCATGATCCCGAGCTTCCTGCTGTACAAGCAGCTGGGTCTGCTGAACTCGGTGTGGGTGTTCATCCTTCCGGGCGCGGTGAGCGTGTGGAACCTGATCGTGGCGCGTTCGTTCTTCGAGAGCTCGATCCCGGAGAGCCTGCATGACGCCGCGCAGATCGACGGCCTGGGGTATTTCGGGTATTTCCTGCGGATCGTGCTGCCGTTGAGCTCCGCGATCCTGGCGGTGATGACGTTGTATTACTTCGTGGGTCATTGGAACGACTTCTTCACTGGCTTGGTGTACATCCGCGACGCGGACAAGCTGCCGTTGCAGAACGTGTTGCGTTCCATCCTGTTGTCGAACCAGACGAACATCACCGGTCAGAGTTCGGGTGGCATGGACGTGGTGCAGCAGCGTGATTTCGCGAACCAGATCAAGTACGGCGTGATCATCGTGTCGACGTTGCCGTTGCTGGTGTTGTATCCGTTCCTGCAGAAGTATTTCAACAAGGGCGTGATGATCGGTGCCGTGAAGGGCTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>NZ_CCWU01000045.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000045.1</Hit_accession>
+  <Hit_len>1766</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.4463</Hsp_bit-score>
+      <Hsp_score>37</Hsp_score>
+      <Hsp_evalue>3.25993e-12</Hsp_evalue>
+      <Hsp_query-from>927</Hsp_query-from>
+      <Hsp_query-to>963</Hsp_query-to>
+      <Hsp_hit-from>1766</Hsp_hit-from>
+      <Hsp_hit-to>1730</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>37</Hsp_align-len>
+      <Hsp_qseq>CAACAAGGGCGTGATGATCGGTGCCGTGAAGGGCTGA</Hsp_qseq>
+      <Hsp_hseq>CAACAAGGGCGTGATGATCGGTGCCGTGAAGGGCTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>NZ_CCWU01000044.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000044.1</Hit_accession>
+  <Hit_len>1048</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.4463</Hsp_bit-score>
+      <Hsp_score>37</Hsp_score>
+      <Hsp_evalue>3.25993e-12</Hsp_evalue>
+      <Hsp_query-from>927</Hsp_query-from>
+      <Hsp_query-to>963</Hsp_query-to>
+      <Hsp_hit-from>1048</Hsp_hit-from>
+      <Hsp_hit-to>1012</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>37</Hsp_align-len>
+      <Hsp_qseq>CAACAAGGGCGTGATGATCGGTGCCGTGAAGGGCTGA</Hsp_qseq>
+      <Hsp_hseq>CAACAAGGGCGTGATGATCGGTGCCGTGAAGGGCTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>2622028748</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>13</Iteration_iter-num>
+  <Iteration_query-ID>Query_13</Iteration_query-ID>
+  <Iteration_query-def>blon_2343 NC_011593.1:c2612430-2611477 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>954</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000046.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000046.1</Hit_accession>
+  <Hit_len>2200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1762.82</Hsp_bit-score>
+      <Hsp_score>954</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>954</Hsp_query-to>
+      <Hsp_hit-from>1973</Hsp_hit-from>
+      <Hsp_hit-to>1020</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>954</Hsp_identity>
+      <Hsp_positive>954</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>954</Hsp_align-len>
+      <Hsp_qseq>ATGTCTGTGGTGAAGCAGGGTGAAGTGGTGGATAACGCGTTGGCGGCTCGTTCCGCGCCGTTGCCGGTGCGGTTGGGGCGTCATTTCCGTCGGTACGGCGCGTTGTGGCTGATGACGTTGCCGGCGTTGGTGTTCGTCGGTCTGTTCGCGTACGTGCCGATGTACGGTCTTCGTCTCGCGTTCTATGATTTCGATCCGGTCGAGGGTCTGATGGGCGGCAGGTTCGCGGGGCTGCGGTATTTCGAGCAGTTCTTCCGGTCGGGCATGTTCGTGAACATCATGGTCAACACGTTGCGGATCAGCCTGTGGACGCTGGTCATGGGGTTCATCGCCCCGATCGTGCTGGCGTTGCTGATCAACCAGATCTCGTCGTCGAAGATCAAGGGGTTCGTGCAGACGGTGACGTACATGCCGCACTTCATCTCGACGGTCGTGATCGTGTCGATGATCAACATCTTCCTGTCGCCGAGCACGGGCATGATCGGGCGCCTGTTCCCGGGCACCGACCTGTTGGGCGAGCCGGGGCTGTTCACGCCGATCTACTGGATCAGCGAGGTGTGGCAGCACATGGGTTGGAACTGCATCATCTATCTGGCGGCGTTGAGTTCGGTGGACCTGTCCCTGTACGAGGCCGCGAAGATCGACGGGGCCGGTCGTCTGCAGCTCATCCGCTACGTCGACATCCCGGCGATCATGCCGACGGTGGGCATCATGCTGATCATGAACATGGGTTCCGTGCTCAACGTGGGCTTCGAGAAGGTGCTGTTGATGCAGAACCCGATGAACCTGTCCGTGTCGGAGGTCATCGCGACGTACACGTACCGCATGGGTATTCTGGGCAACCAGTTCAGCTACACGACGGCCATAGGCCTGTTCAACACCGTGGTCAACTTCTTCTTCCTGGTGCTCGCCAACTTCATTTCGAAGAGGGCGTCGGACACCAGCATCTTCTAG</Hsp_qseq>
+      <Hsp_hseq>ATGTCTGTGGTGAAGCAGGGTGAAGTGGTGGATAACGCGTTGGCGGCTCGTTCCGCGCCGTTGCCGGTGCGGTTGGGGCGTCATTTCCGTCGGTACGGCGCGTTGTGGCTGATGACGTTGCCGGCGTTGGTGTTCGTCGGTCTGTTCGCGTACGTGCCGATGTACGGTCTTCGTCTCGCGTTCTATGATTTCGATCCGGTCGAGGGTCTGATGGGCGGCAGGTTCGCGGGGCTGCGGTATTTCGAGCAGTTCTTCCGGTCGGGCATGTTCGTGAACATCATGGTCAACACGTTGCGGATCAGCCTGTGGACGCTGGTCATGGGGTTCATCGCCCCGATCGTGCTGGCGTTGCTGATCAACCAGATCTCGTCGTCGAAGATCAAGGGGTTCGTGCAGACGGTGACGTACATGCCGCACTTCATCTCGACGGTCGTGATCGTGTCGATGATCAACATCTTCCTGTCGCCGAGCACGGGCATGATCGGGCGCCTGTTCCCGGGCACCGACCTGTTGGGCGAGCCGGGGCTGTTCACGCCGATCTACTGGATCAGCGAGGTGTGGCAGCACATGGGTTGGAACTGCATCATCTATCTGGCGGCGTTGAGTTCGGTGGACCTGTCCCTGTACGAGGCCGCGAAGATCGACGGGGCCGGTCGTCTGCAGCTCATCCGCTACGTCGACATCCCGGCGATCATGCCGACGGTGGGCATCATGCTGATCATGAACATGGGTTCCGTGCTCAACGTGGGCTTCGAGAAGGTGCTGTTGATGCAGAACCCGATGAACCTGTCCGTGTCGGAGGTCATCGCGACGTACACGTACCGCATGGGTATTCTGGGCAACCAGTTCAGCTACACGACGGCCATAGGCCTGTTCAACACCGTGGTCAACTTCTTCTTCCTGGTGCTCGCCAACTTCATTTCGAAGAGGGCGTCGGACACCAGCATCTTCTAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>2596950896</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>14</Iteration_iter-num>
+  <Iteration_query-ID>Query_14</Iteration_query-ID>
+  <Iteration_query-def>blon_2344 NC_011593.1:c2614109-2612517 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1593</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000045.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000045.1</Hit_accession>
+  <Hit_len>1766</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2820.95</Hsp_bit-score>
+      <Hsp_score>1527</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1527</Hsp_query-to>
+      <Hsp_hit-from>1527</Hsp_hit-from>
+      <Hsp_hit-to>1</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1527</Hsp_identity>
+      <Hsp_positive>1527</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1527</Hsp_align-len>
+      <Hsp_qseq>ATGAGAAGAACCGCGATGAGGGTGGGCTCTGCTGTGTGCGCCGTTGCCTTGCTGGGTTCGCTGGCCGCATGCGGCGGCGACAAGAAGCCGACCACGACCGCCGACGGCAAGCCGATCGTGAGCGTCCTGGTTGCGAAGGAACCCAATCAGGACAAGATCGCCAACATGCAGTGGGCCAAGGACCTCGAGGCCGACTGCGACTGCAAGATCGAATGGCAGGAAGTCGATAACGGAGATTTCGCGAATCAGCGCAATACCACGCTGAGCGCCGGCGACATTCCGGACATCAGCCTCCATGCCTTCAGCTTCGTGTACGCGGAGCAGTTCTCCAACCTGTTCGAGGATCTGAACCAGGATCTCGACAAGCTGCCGAACGTCAAGGCGTTCTTCAAGGAGAAGCCGGACGCGCAGAAGCTCAATACCGATTCCAAGGGCCACCTGTACACGCTCCCCAATGCCCACGGCAAGAACAATGCCGGCACTGGCCAGCTCATGATGATCAACAAGGCCTGGCTTGACAAGCTGGGTCTGCAGGTGCCGACCACGTGGGACGAGCTGGAGAACGTGCTCAAGGCGTTCAAGACCCAGGATCCGAACGGCAACGGCCAGGCCGACGAGATCCCGATGAACATCAAGAAGCTCGACCCGTTGTACTACACCTGGCACAGCCCGATGCTGCTGCTCAACTCCACCGGCATCCCGACCGGCTTCAACAAGGGCGTGTCCACATACGGCTTCTACGCCAAGAACGGCGTGGTCAAGAGCTTCATGACCTCCGACGAATACAAGCAGGTCATCAAGTACTACCACAAGCTCATCTCCGAGGGCCTGATCCCCGCCGACTGGGCCACCAAGGACGATGACGCCTACAATGCGGACCAAACCAGCGACGGCAAGACCGCGAAGACCGGCGTGGTGTTCAGCAGCTCCATCTCCGATACCTTCGGCGATCTGAAGGACCAGTACATCACCATCCCGGTGCCGTCCGCCCCGGGCGTCTCGCCGGACCAGACCGTGTGGGACGGCTCCTCGAGCGAATTCGACGCCGCCGGCCCCGCCGTCTCCGCGCGCGCCGCCAACAAGGACGCCACGTTGAAGCTGCTCAACCTGATGTACTCCGAGAAGTACTCCGTGCAGCAGTTCTACGGCTCCTTCGGCAAGACCGTGACCAAGACCGGTGAGCACGAATACACCGTGGACAACGACAAGCTTATCGAGATGCGCAAGAAGAACACCTCCCCGAGCCTGTCCTACCCCGCCGGCTGGATTCCCGACGAGGTCACCATCAAGGGCGATGCCGGTAGCGACGCCCTGTACCAGGCGAGCAAGGTGTATGAGAAGCAGCGCAGCAACTTCGATCCCGTCAAGGACTACATTCCGGACTACGTGAACCCGGACGCGGACGACAACACCACGTTGGCCAGCAACTACAACCAGATTTCCAACGTCGCCATGCAGAAGACTGCTACTTGGATGTCCAAGGGTGGTATTGACGAGGAGTGGGATGCGTATTGCAAGCAGCTCGAC</Hsp_qseq>
+      <Hsp_hseq>ATGAGAAGAACCGCGATGAGGGTGGGCTCTGCTGTGTGCGCCGTTGCCTTGCTGGGTTCGCTGGCCGCATGCGGCGGCGACAAGAAGCCGACCACGACCGCCGACGGCAAGCCGATCGTGAGCGTCCTGGTTGCGAAGGAACCCAATCAGGACAAGATCGCCAACATGCAGTGGGCCAAGGACCTCGAGGCCGACTGCGACTGCAAGATCGAATGGCAGGAAGTCGATAACGGAGATTTCGCGAATCAGCGCAATACCACGCTGAGCGCCGGCGACATTCCGGACATCAGCCTCCATGCCTTCAGCTTCGTGTACGCGGAGCAGTTCTCCAACCTGTTCGAGGATCTGAACCAGGATCTCGACAAGCTGCCGAACGTCAAGGCGTTCTTCAAGGAGAAGCCGGACGCGCAGAAGCTCAATACCGATTCCAAGGGCCACCTGTACACGCTCCCCAATGCCCACGGCAAGAACAATGCCGGCACTGGCCAGCTCATGATGATCAACAAGGCCTGGCTTGACAAGCTGGGTCTGCAGGTGCCGACCACGTGGGACGAGCTGGAGAACGTGCTCAAGGCGTTCAAGACCCAGGATCCGAACGGCAACGGCCAGGCCGACGAGATCCCGATGAACATCAAGAAGCTCGACCCGTTGTACTACACCTGGCACAGCCCGATGCTGCTGCTCAACTCCACCGGCATCCCGACCGGCTTCAACAAGGGCGTGTCCACATACGGCTTCTACGCCAAGAACGGCGTGGTCAAGAGCTTCATGACCTCCGACGAATACAAGCAGGTCATCAAGTACTACCACAAGCTCATCTCCGAGGGCCTGATCCCCGCCGACTGGGCCACCAAGGACGATGACGCCTACAATGCGGACCAAACCAGCGACGGCAAGACCGCGAAGACCGGCGTGGTGTTCAGCAGCTCCATCTCCGATACCTTCGGCGATCTGAAGGACCAGTACATCACCATCCCGGTGCCGTCCGCCCCGGGCGTCTCGCCGGACCAGACCGTGTGGGACGGCTCCTCGAGCGAATTCGACGCCGCCGGCCCCGCCGTCTCCGCGCGCGCCGCCAACAAGGACGCCACGTTGAAGCTGCTCAACCTGATGTACTCCGAGAAGTACTCCGTGCAGCAGTTCTACGGCTCCTTCGGCAAGACCGTGACCAAGACCGGTGAGCACGAATACACCGTGGACAACGACAAGCTTATCGAGATGCGCAAGAAGAACACCTCCCCGAGCCTGTCCTACCCCGCCGGCTGGATTCCCGACGAGGTCACCATCAAGGGCGATGCCGGTAGCGACGCCCTGTACCAGGCGAGCAAGGTGTATGAGAAGCAGCGCAGCAACTTCGATCCCGTCAAGGACTACATTCCGGACTACGTGAACCCGGACGCGGACGACAACACCACGTTGGCCAGCAACTACAACCAGATTTCCAACGTCGCCATGCAGAAGACTGCTACTTGGATGTCCAAGGGTGGTATTGACGAGGAGTGGGATGCGTATTGCAAGCAGCTCGAC</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>NZ_CCWU01000046.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000046.1</Hit_accession>
+  <Hit_len>2200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>261.498</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>8.36045e-70</Hsp_evalue>
+      <Hsp_query-from>1453</Hsp_query-from>
+      <Hsp_query-to>1593</Hsp_query-to>
+      <Hsp_hit-from>2200</Hsp_hit-from>
+      <Hsp_hit-to>2060</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>141</Hsp_identity>
+      <Hsp_positive>141</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>ATGCAGAAGACTGCTACTTGGATGTCCAAGGGTGGTATTGACGAGGAGTGGGATGCGTATTGCAAGCAGCTCGACAGCCTTGGTCTGCAGGAGAACGTGAAGATCTGGCAGAAGTGGTACGACATCTACACGAAGAAGTGA</Hsp_qseq>
+      <Hsp_hseq>ATGCAGAAGACTGCTACTTGGATGTCCAAGGGTGGTATTGACGAGGAGTGGGATGCGTATTGCAAGCAGCTCGACAGCCTTGGTCTGCAGGAGAACGTGAAGATCTGGCAGAAGTGGTACGACATCTACACGAAGAAGTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>23</Statistics_hsp-len>
+      <Statistics_eff-space>4374613460</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>15</Iteration_iter-num>
+  <Iteration_query-ID>Query_15</Iteration_query-ID>
+  <Iteration_query-def>blon_2345 NC_011593.1:c2615274-2614312 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>963</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000046.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000046.1</Hit_accession>
+  <Hit_len>2200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1779.44</Hsp_bit-score>
+      <Hsp_score>963</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>963</Hsp_query-to>
+      <Hsp_hit-from>1001</Hsp_hit-from>
+      <Hsp_hit-to>39</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>963</Hsp_identity>
+      <Hsp_positive>963</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>963</Hsp_align-len>
+      <Hsp_qseq>ATGACAAGCACATCCATCAATCCGGCGCCGGTCCGCGGCGCGGGGTCGGACGACATCCCGTTCAACCCGAAGCTGAGGCAGAGGAGGAGCGTGTCCGACTGGGTCGTCGACATCGTGATCTGGCTGTTGATCGCGTTGGTCGTGGTGGCGATCGTCTATCCGATCTGGTTCATCGTGATCGCCTCGGTCTCGGACCAGACGATGGTCAGCCAGGGCAAGGTGTTCCTGTTGCCCGCGAAGATGAACTTCGGCGGTTACGCCAAGGTGTTCACCGATTCGAGGATCTGGGTCGGCTACCGCAACACCATCTTCTATTCGGTGGCGGGCACGGCCCTGAACATGCTGGTCACGATCCCGGCGGCGTTCGCGTTGTCTCGCCGCGAGTTCAAGCCGCGCCGCGTGATCCTGTTCCTGATGACGTTCACGATGTTCTTCTCGGGCGGCATGATCCCGAGCTTCCTGCTGTACAAGCAGCTGGGTCTGCTGAACTCGGTGTGGGTGTTCATCCTTCCGGGCGCGGTGAGCGTGTGGAACCTGATCGTGGCGCGTTCGTTCTTCGAGAGCTCGATCCCGGAGAGCCTGCATGACGCCGCGCAGATCGACGGCCTGGGGTATTTCGGGTATTTCCTGCGGATCGTGCTGCCGTTGAGCTCCGCGATCCTGGCGGTGATGACGTTGTATTACTTCGTGGGTCATTGGAACGACTTCTTCACTGGCTTGGTGTACATCCGCGACGCGGACAAGCTGCCGTTGCAGAACGTGTTGCGTTCCATCCTGTTGTCGAACCAGACGAACATCACCGGTCAGAGTTCGGGTGGCATGGACGTGGTGCAGCAGCGTGATTTCGCGAACCAGATCAAGTACGGCGTGATCATCGTGTCGACGTTGCCGTTGCTGGTGTTGTATCCGTTCCTGCAGAAGTATTTCAACAAGGGCGTGATGATCGGTGCCGTGAAGGGCTGA</Hsp_qseq>
+      <Hsp_hseq>ATGACAAGCACATCCATCAATCCGGCGCCGGTCCGCGGCGCGGGGTCGGACGACATCCCGTTCAACCCGAAGCTGAGGCAGAGGAGGAGCGTGTCCGACTGGGTCGTCGACATCGTGATCTGGCTGTTGATCGCGTTGGTCGTGGTGGCGATCGTCTATCCGATCTGGTTCATCGTGATCGCCTCGGTCTCGGACCAGACGATGGTCAGCCAGGGCAAGGTGTTCCTGTTGCCCGCGAAGATGAACTTCGGCGGTTACGCCAAGGTGTTCACCGATTCGAGGATCTGGGTCGGCTACCGCAACACCATCTTCTATTCGGTGGCGGGCACGGCCCTGAACATGCTGGTCACGATCCCGGCGGCGTTCGCGTTGTCTCGCCGCGAGTTCAAGCCGCGCCGCGTGATCCTGTTCCTGATGACGTTCACGATGTTCTTCTCGGGCGGCATGATCCCGAGCTTCCTGCTGTACAAGCAGCTGGGTCTGCTGAACTCGGTGTGGGTGTTCATCCTTCCGGGCGCGGTGAGCGTGTGGAACCTGATCGTGGCGCGTTCGTTCTTCGAGAGCTCGATCCCGGAGAGCCTGCATGACGCCGCGCAGATCGACGGCCTGGGGTATTTCGGGTATTTCCTGCGGATCGTGCTGCCGTTGAGCTCCGCGATCCTGGCGGTGATGACGTTGTATTACTTCGTGGGTCATTGGAACGACTTCTTCACTGGCTTGGTGTACATCCGCGACGCGGACAAGCTGCCGTTGCAGAACGTGTTGCGTTCCATCCTGTTGTCGAACCAGACGAACATCACCGGTCAGAGTTCGGGTGGCATGGACGTGGTGCAGCAGCGTGATTTCGCGAACCAGATCAAGTACGGCGTGATCATCGTGTCGACGTTGCCGTTGCTGGTGTTGTATCCGTTCCTGCAGAAGTATTTCAACAAGGGCGTGATGATCGGTGCCGTGAAGGGCTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>NZ_CCWU01000045.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000045.1</Hit_accession>
+  <Hit_len>1766</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.4463</Hsp_bit-score>
+      <Hsp_score>37</Hsp_score>
+      <Hsp_evalue>3.25993e-12</Hsp_evalue>
+      <Hsp_query-from>927</Hsp_query-from>
+      <Hsp_query-to>963</Hsp_query-to>
+      <Hsp_hit-from>1766</Hsp_hit-from>
+      <Hsp_hit-to>1730</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>37</Hsp_align-len>
+      <Hsp_qseq>CAACAAGGGCGTGATGATCGGTGCCGTGAAGGGCTGA</Hsp_qseq>
+      <Hsp_hseq>CAACAAGGGCGTGATGATCGGTGCCGTGAAGGGCTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>NZ_CCWU01000044.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000044.1</Hit_accession>
+  <Hit_len>1048</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.4463</Hsp_bit-score>
+      <Hsp_score>37</Hsp_score>
+      <Hsp_evalue>3.25993e-12</Hsp_evalue>
+      <Hsp_query-from>927</Hsp_query-from>
+      <Hsp_query-to>963</Hsp_query-to>
+      <Hsp_hit-from>1048</Hsp_hit-from>
+      <Hsp_hit-to>1012</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>37</Hsp_align-len>
+      <Hsp_qseq>CAACAAGGGCGTGATGATCGGTGCCGTGAAGGGCTGA</Hsp_qseq>
+      <Hsp_hseq>CAACAAGGGCGTGATGATCGGTGCCGTGAAGGGCTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>2622028748</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>16</Iteration_iter-num>
+  <Iteration_query-ID>Query_16</Iteration_query-ID>
+  <Iteration_query-def>blon_2346 NC_011593.1:c2616246-2615293 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>954</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000046.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000046.1</Hit_accession>
+  <Hit_len>2200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1762.82</Hsp_bit-score>
+      <Hsp_score>954</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>954</Hsp_query-to>
+      <Hsp_hit-from>1973</Hsp_hit-from>
+      <Hsp_hit-to>1020</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>954</Hsp_identity>
+      <Hsp_positive>954</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>954</Hsp_align-len>
+      <Hsp_qseq>ATGTCTGTGGTGAAGCAGGGTGAAGTGGTGGATAACGCGTTGGCGGCTCGTTCCGCGCCGTTGCCGGTGCGGTTGGGGCGTCATTTCCGTCGGTACGGCGCGTTGTGGCTGATGACGTTGCCGGCGTTGGTGTTCGTCGGTCTGTTCGCGTACGTGCCGATGTACGGTCTTCGTCTCGCGTTCTATGATTTCGATCCGGTCGAGGGTCTGATGGGCGGCAGGTTCGCGGGGCTGCGGTATTTCGAGCAGTTCTTCCGGTCGGGCATGTTCGTGAACATCATGGTCAACACGTTGCGGATCAGCCTGTGGACGCTGGTCATGGGGTTCATCGCCCCGATCGTGCTGGCGTTGCTGATCAACCAGATCTCGTCGTCGAAGATCAAGGGGTTCGTGCAGACGGTGACGTACATGCCGCACTTCATCTCGACGGTCGTGATCGTGTCGATGATCAACATCTTCCTGTCGCCGAGCACGGGCATGATCGGGCGCCTGTTCCCGGGCACCGACCTGTTGGGCGAGCCGGGGCTGTTCACGCCGATCTACTGGATCAGCGAGGTGTGGCAGCACATGGGTTGGAACTGCATCATCTATCTGGCGGCGTTGAGTTCGGTGGACCTGTCCCTGTACGAGGCCGCGAAGATCGACGGGGCCGGTCGTCTGCAGCTCATCCGCTACGTCGACATCCCGGCGATCATGCCGACGGTGGGCATCATGCTGATCATGAACATGGGTTCCGTGCTCAACGTGGGCTTCGAGAAGGTGCTGTTGATGCAGAACCCGATGAACCTGTCCGTGTCGGAGGTCATCGCGACGTACACGTACCGCATGGGTATTCTGGGCAACCAGTTCAGCTACACGACGGCCATAGGCCTGTTCAACACCGTGGTCAACTTCTTCTTCCTGGTGCTCGCCAACTTCATTTCGAAGAGGGCGTCGGACACCAGCATCTTCTAG</Hsp_qseq>
+      <Hsp_hseq>ATGTCTGTGGTGAAGCAGGGTGAAGTGGTGGATAACGCGTTGGCGGCTCGTTCCGCGCCGTTGCCGGTGCGGTTGGGGCGTCATTTCCGTCGGTACGGCGCGTTGTGGCTGATGACGTTGCCGGCGTTGGTGTTCGTCGGTCTGTTCGCGTACGTGCCGATGTACGGTCTTCGTCTCGCGTTCTATGATTTCGATCCGGTCGAGGGTCTGATGGGCGGCAGGTTCGCGGGGCTGCGGTATTTCGAGCAGTTCTTCCGGTCGGGCATGTTCGTGAACATCATGGTCAACACGTTGCGGATCAGCCTGTGGACGCTGGTCATGGGGTTCATCGCCCCGATCGTGCTGGCGTTGCTGATCAACCAGATCTCGTCGTCGAAGATCAAGGGGTTCGTGCAGACGGTGACGTACATGCCGCACTTCATCTCGACGGTCGTGATCGTGTCGATGATCAACATCTTCCTGTCGCCGAGCACGGGCATGATCGGGCGCCTGTTCCCGGGCACCGACCTGTTGGGCGAGCCGGGGCTGTTCACGCCGATCTACTGGATCAGCGAGGTGTGGCAGCACATGGGTTGGAACTGCATCATCTATCTGGCGGCGTTGAGTTCGGTGGACCTGTCCCTGTACGAGGCCGCGAAGATCGACGGGGCCGGTCGTCTGCAGCTCATCCGCTACGTCGACATCCCGGCGATCATGCCGACGGTGGGCATCATGCTGATCATGAACATGGGTTCCGTGCTCAACGTGGGCTTCGAGAAGGTGCTGTTGATGCAGAACCCGATGAACCTGTCCGTGTCGGAGGTCATCGCGACGTACACGTACCGCATGGGTATTCTGGGCAACCAGTTCAGCTACACGACGGCCATAGGCCTGTTCAACACCGTGGTCAACTTCTTCTTCCTGGTGCTCGCCAACTTCATTTCGAAGAGGGCGTCGGACACCAGCATCTTCTAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>2596950896</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>17</Iteration_iter-num>
+  <Iteration_query-ID>Query_17</Iteration_query-ID>
+  <Iteration_query-def>blon_2347 NC_011593.1:c2617928-2616333 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1596</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2826.49</Hsp_bit-score>
+      <Hsp_score>1530</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1530</Hsp_query-to>
+      <Hsp_hit-from>1530</Hsp_hit-from>
+      <Hsp_hit-to>1</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1530</Hsp_identity>
+      <Hsp_positive>1530</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1530</Hsp_align-len>
+      <Hsp_qseq>ATGAGAAGAAGAACCGCACTGAAGGCGGGCGCCATCACGTGCGCCGTCGCCTTGCTGGGTTCGCTGGCTGCATGCGGCGGCAGCAAGGAGCCGACCACGACCGCCGACGGCAAGCCGATCGTGAGCGTTCTGGTCGTGAAGAGGCCGGCCACGGACAAGATTGCCAACATGCAGTGGGCCAAGGACCTCGAGGCCGACTGCGACTGCAAGATCGAGTGGCAGGAGGTCAGCGAGGACGCCTGGGCCCAGCAGAAGAACGCCACCCTGGCCGCGGGCAAGATTGCGGACGTCAGCCTCCATGCGTTCTTCCCCGCCAACGCCGCGCAGTTCCCGGGCCTGTTCGAAGATCTGAGCAAGGATCTCGACAAGATGCCGAACGTCAAGCAGTTCTTCAAGGAGAAGCCGGACGCGCAGAAACTCACCACCGATCCCGAAGGCCACATGTACGCCCTGCCTTCGTCCCGAGGCAAGTCCTACTCCGGCACGGGCCAGCACATGTTCATCAACAAGACCTGGCTTGACAAGCTGGGTCTGCAGGTGCCGACCACGTGGGACGAGCTGGAGAACGTGCTCAAGGCGTTCAAGACCGAGGACCCGAACGGCAACGGCCAGGCCGACGAGATCCCGATGAACATCAGGAAGCTCGACAGCTACTTCACCTACTACAGCCCGATGCTGCTGCTCAACTCCACCGGCATCGTCACCGGCTTCAACAAGGGCGCGTCCCCGACCGGCTTCTACGCCAAGAACGGCGTGGTCAAGAGCTTCCTGACCTCCGACGAATACAAGCAGGTCATCAAGTACTACCACAAGCTCATCTCCGAGGGCCTGATCCCCGCCGACTGGGCCACCAAGACGTTCGATGCGTGCGATACCGACCAGCTCAGCGACGGCAAGACCGCGAAGACCGGCGTGTCGTTCGGATGGTCCCAGGATGCGAGCTTCGGAACACTCAAGGATCAGTACATCCCCATCCCGGTGCCGTCCGCCCCGGGCGTCTCCCCGGACAAGACCGTGTGGGACGGCTCTTCCGCCGAGTTCGAAGCCGATAGGTTCTCCCTGTCCTCCCACGCCGCGAACAAGGACGCCGCGCTGAAGCTGGCCAACCTGCTCTACTCCGAGAAGTACTCCGTGCAGCAGTTCCTCGGCTCCTTCGGCAACCTGGTCACCGATGACGGCAACCGCCACTACACCGTGGACGAAGACAAGTACACCAAGGCGATGGGCGACAACCTCTTCCCGGGCTTGGCCGATCGTTTCTCCGGCTGGATTCCCGATGGCGTCACCATCAAGGGTGATGTCGACGGCGACAACCTGCTTGAGGCGAACAAGCCGTACGAGGAGCAGCGCAGCCACTTCGATCCCGTCAAGGACTACATTCCGGACTACGTGAACCCCGATCCGACGGACAGTAATACACTGACCAATAACAATGCACAGATTTCCAATGTTGTTATGCAGAAGACTGCTACTTGGATGTCCAAGGGTGGTATTGACGAGGAGTGGGATGCGTATTGCAAGCAGCTCGAC</Hsp_qseq>
+      <Hsp_hseq>ATGAGAAGAAGAACCGCACTGAAGGCGGGCGCCATCACGTGCGCCGTCGCCTTGCTGGGTTCGCTGGCTGCATGCGGCGGCAGCAAGGAGCCGACCACGACCGCCGACGGCAAGCCGATCGTGAGCGTTCTGGTCGTGAAGAGGCCGGCCACGGACAAGATTGCCAACATGCAGTGGGCCAAGGACCTCGAGGCCGACTGCGACTGCAAGATCGAGTGGCAGGAGGTCAGCGAGGACGCCTGGGCCCAGCAGAAGAACGCCACCCTGGCCGCGGGCAAGATTGCGGACGTCAGCCTCCATGCGTTCTTCCCCGCCAACGCCGCGCAGTTCCCGGGCCTGTTCGAAGATCTGAGCAAGGATCTCGACAAGATGCCGAACGTCAAGCAGTTCTTCAAGGAGAAGCCGGACGCGCAGAAACTCACCACCGATCCCGAAGGCCACATGTACGCCCTGCCTTCGTCCCGAGGCAAGTCCTACTCCGGCACGGGCCAGCACATGTTCATCAACAAGACCTGGCTTGACAAGCTGGGTCTGCAGGTGCCGACCACGTGGGACGAGCTGGAGAACGTGCTCAAGGCGTTCAAGACCGAGGACCCGAACGGCAACGGCCAGGCCGACGAGATCCCGATGAACATCAGGAAGCTCGACAGCTACTTCACCTACTACAGCCCGATGCTGCTGCTCAACTCCACCGGCATCGTCACCGGCTTCAACAAGGGCGCGTCCCCGACCGGCTTCTACGCCAAGAACGGCGTGGTCAAGAGCTTCCTGACCTCCGACGAATACAAGCAGGTCATCAAGTACTACCACAAGCTCATCTCCGAGGGCCTGATCCCCGCCGACTGGGCCACCAAGACGTTCGATGCGTGCGATACCGACCAGCTCAGCGACGGCAAGACCGCGAAGACCGGCGTGTCGTTCGGATGGTCCCAGGATGCGAGCTTCGGAACACTCAAGGATCAGTACATCCCCATCCCGGTGCCGTCCGCCCCGGGCGTCTCCCCGGACAAGACCGTGTGGGACGGCTCTTCCGCCGAGTTCGAAGCCGATAGGTTCTCCCTGTCCTCCCACGCCGCGAACAAGGACGCCGCGCTGAAGCTGGCCAACCTGCTCTACTCCGAGAAGTACTCCGTGCAGCAGTTCCTCGGCTCCTTCGGCAACCTGGTCACCGATGACGGCAACCGCCACTACACCGTGGACGAAGACAAGTACACCAAGGCGATGGGCGACAACCTCTTCCCGGGCTTGGCCGATCGTTTCTCCGGCTGGATTCCCGATGGCGTCACCATCAAGGGTGATGTCGACGGCGACAACCTGCTTGAGGCGAACAAGCCGTACGAGGAGCAGCGCAGCCACTTCGATCCCGTCAAGGACTACATTCCGGACTACGTGAACCCCGATCCGACGGACAGTAATACACTGACCAATAACAATGCACAGATTTCCAATGTTGTTATGCAGAAGACTGCTACTTGGATGTCCAAGGGTGGTATTGACGAGGAGTGGGATGCGTATTGCAAGCAGCTCGAC</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>NZ_CCWU01000046.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000046.1</Hit_accession>
+  <Hit_len>2200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>261.498</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>8.37642e-70</Hsp_evalue>
+      <Hsp_query-from>1456</Hsp_query-from>
+      <Hsp_query-to>1596</Hsp_query-to>
+      <Hsp_hit-from>2200</Hsp_hit-from>
+      <Hsp_hit-to>2060</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>141</Hsp_identity>
+      <Hsp_positive>141</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>ATGCAGAAGACTGCTACTTGGATGTCCAAGGGTGGTATTGACGAGGAGTGGGATGCGTATTGCAAGCAGCTCGACAGCCTTGGTCTGCAGGAGAACGTGAAGATCTGGCAGAAGTGGTACGACATCTACACGAAGAAGTGA</Hsp_qseq>
+      <Hsp_hseq>ATGCAGAAGACTGCTACTTGGATGTCCAAGGGTGGTATTGACGAGGAGTGGGATGCGTATTGCAAGCAGCTCGACAGCCTTGGTCTGCAGGAGAACGTGAAGATCTGGCAGAAGTGGTACGACATCTACACGAAGAAGTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>23</Statistics_hsp-len>
+      <Statistics_eff-space>4382972594</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>18</Iteration_iter-num>
+  <Iteration_query-ID>Query_18</Iteration_query-ID>
+  <Iteration_query-def>blon_2348 NC_011593.1:c2619247-2618063 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1185</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2189.4</Hsp_bit-score>
+      <Hsp_score>1185</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1185</Hsp_query-to>
+      <Hsp_hit-from>2849</Hsp_hit-from>
+      <Hsp_hit-to>1665</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1185</Hsp_identity>
+      <Hsp_positive>1185</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1185</Hsp_align-len>
+      <Hsp_qseq>ATGACGGAGAACGGGATGATGAATACGAACAATACTGTGTGCGGCGCGAACCATGACGGAGCGATGAGTCTGGCGGCCCCAGGCGATTACGGTGTGGCCTGCTACCGGATTCCGGCCCTTGCCGAGGCGCCCAACGGCTGGATCCTCGCGGCGTTCGACGCGCGGCCCCATAACTGCCAGGATGCCCCGCAAGCCAATTCGATCGTGCAGCGTATCTCCAAAGACGGCGGCCGGTCATTCGAGCCGCAGCATGTTGTGGCCGCCGGGCATGATGGCGTCGACAAATACGGGTATTCCGATCCGTCCTATGTGGTGGACCGGCAGACGGGAGAGGTGTTCCTGTTCTTCGTCAAATCCTATGACGCCGGTTTCGGAACCTCCCAGGCGGGCGTCGATCCCTCTGCGCGTGAGGTGCTTCAAGCCGCCGTCACCAGTTCCATCGACAATGGCGTGACGTGGAGCGAGCCGCGCATCATCACCGCCGACATCACGAACAGCGAATCATGGATTTCACGGTTCGCTTCTTCCGGTGCCGGCATCCAGCTCACGTATGGCGAGCATGCGGGGCGCCTGATCCAGCAGTACACCATCAAGGAGCTCGACGGCCGCTACCGTGCGGTATCGGTCTTCTCCGACGATCACGGTGCAACCTGGCATGCAGGCACCCCCGTCGGCGATCACATGGACGAGAACAAAGTCGTGGAACTTTCCGATGGCCGTGTGATGCTGAACTCGCGTTCCTCCGATGGAAACGGTTGCCGCTATGTCGCCATCTCCCGGGACGGTGGCGCCACGTATGGTCCGGTGATCCGTGAAACGCAGCTGCCCGATCCCGAGAACAACGCGCAGATTGCCCGTGCGTTCCCCGATGCCCCCGAGGGGTCGGCGCAGGCCAAGGTTCTGCTGTATTCCTCCTCGTCGCCTTCGGACAGGATCGATGGTCTGGTGCGCGTCTCGATCGATGACGGCAAGACCTGGAGTGCCGGCCGACGGTTCACGACAGGGCCGATGGCGTATTCGGTGATCGCCGCATTGAGCCACAAGGCCGGCGGCGGCTATGGCCTGCTGTATGAAGGTGATAATAATAACATTATGTACACCCGTATCTCGCTCGACTGGCTCAACGGCCAGCTGAACGTCGACGGAATCGGCGGTTTTCCGCTGTCTGGTGAGGGAGGGTGCTGA</Hsp_qseq>
+      <Hsp_hseq>ATGACGGAGAACGGGATGATGAATACGAACAATACTGTGTGCGGCGCGAACCATGACGGAGCGATGAGTCTGGCGGCCCCAGGCGATTACGGTGTGGCCTGCTACCGGATTCCGGCCCTTGCCGAGGCGCCCAACGGCTGGATCCTCGCGGCGTTCGACGCGCGGCCCCATAACTGCCAGGATGCCCCGCAAGCCAATTCGATCGTGCAGCGTATCTCCAAAGACGGCGGCCGGTCATTCGAGCCGCAGCATGTTGTGGCCGCCGGGCATGATGGCGTCGACAAATACGGGTATTCCGATCCGTCCTATGTGGTGGACCGGCAGACGGGAGAGGTGTTCCTGTTCTTCGTCAAATCCTATGACGCCGGTTTCGGAACCTCCCAGGCGGGCGTCGATCCCTCTGCGCGTGAGGTGCTTCAAGCCGCCGTCACCAGTTCCATCGACAATGGCGTGACGTGGAGCGAGCCGCGCATCATCACCGCCGACATCACGAACAGCGAATCATGGATTTCACGGTTCGCTTCTTCCGGTGCCGGCATCCAGCTCACGTATGGCGAGCATGCGGGGCGCCTGATCCAGCAGTACACCATCAAGGAGCTCGACGGCCGCTACCGTGCGGTATCGGTCTTCTCCGACGATCACGGTGCAACCTGGCATGCAGGCACCCCCGTCGGCGATCACATGGACGAGAACAAAGTCGTGGAACTTTCCGATGGCCGTGTGATGCTGAACTCGCGTTCCTCCGATGGAAACGGTTGCCGCTATGTCGCCATCTCCCGGGACGGTGGCGCCACGTATGGTCCGGTGATCCGTGAAACGCAGCTGCCCGATCCCGAGAACAACGCGCAGATTGCCCGTGCGTTCCCCGATGCCCCCGAGGGGTCGGCGCAGGCCAAGGTTCTGCTGTATTCCTCCTCGTCGCCTTCGGACAGGATCGATGGTCTGGTGCGCGTCTCGATCGATGACGGCAAGACCTGGAGTGCCGGCCGACGGTTCACGACAGGGCCGATGGCGTATTCGGTGATCGCCGCATTGAGCCACAAGGCCGGCGGCGGCTATGGCCTGCTGTATGAAGGTGATAATAATAACATTATGTACACCCGTATCTCGCTCGACTGGCTCAACGGCCAGCTGAACGTCGACGGAATCGGCGGTTTTCCGCTGTCTGGTGAGGGAGGGTGCTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>3240615764</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>19</Iteration_iter-num>
+  <Iteration_query-ID>Query_19</Iteration_query-ID>
+  <Iteration_query-def>blon_2349 NC_011593.1:c2620369-2619413 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>957</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1768.36</Hsp_bit-score>
+      <Hsp_score>957</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>957</Hsp_query-to>
+      <Hsp_hit-from>3971</Hsp_hit-from>
+      <Hsp_hit-to>3015</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>957</Hsp_identity>
+      <Hsp_positive>957</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>957</Hsp_align-len>
+      <Hsp_qseq>ATGAATCAGTTTCGTGGGGTCATTCCCCCGGTCGTCACTCCATTGACCGCGGATCATCGTCTCGATGTGGAGAGTTACCGGCGTTCGATCGACCGTATGATTGCGGCCGGGGTCAATGGACTTTTCGTTCTCGGATCCTCAAGCGAAGTCGTGTTCTCCACGGATGAGCGACGTCGTGAGATACTGGCCGCGGCCATTGAGATTGCCGGCGGCCGAGTGCCGGTGCTGGCGGGGTGCATCGACACGGAGACCAATCGTGTGATCGAGCATGCTCGCGCGGCTCGTGAGATGGGAGCCGCCGCCATCGTGGCCACGGCGCCGTTCTACGCATTGGGCGGCGTGGCGGAGATCGAGAGGCATTTCCGTCTGATTCACGCCGCGGTGCCTGAATTGCCGCTGTTCGCATACGATATCCCCGTATGCGTGCATACCAAGCTGCCCAATGATCTGCTGATCCGCTTGGGGCGTGATGGCGTGCTGGCCGGGGTGAAGGACTCGTCGAACGATGATGTGGCGTTCCGTTTCCTGATTGGGGACAACGAGGAGAACGGTCATCCGCTGACGTTGCTGACCGGTCAGGAAGTCGTCGTCGATGGCGCGTACATGGCCGGCGCGGACGGCAGCGTGCCAGGCTTGGCCAATGTGGATCCATATGGCTATGTTGCGATGTGGAACGCCTACCGGAACGGTGATTGGGATTCGGTGCGCAAGGAGCAGAACAAACTCGCCGCATTGATGCGAATCGTCCTGGCGCCGTCCGGCGTCCAGGGATTCGGTTCCGGCGTGGGCGCGTTCAAGACCGCGATGGCGTTGCTGGGCGTGTTCGACACCAACCAGATGCCCGAACCGGTGTTGGCGTTGCATGGCGACAATGTGAAAGCCATTGCGGACGTGTTGCGTGCATGCGGTTTCGAGCTTGCGCGCACGGTGGAACAGGTCGATGTGTCCACCGAGTGA</Hsp_qseq>
+      <Hsp_hseq>ATGAATCAGTTTCGTGGGGTCATTCCCCCGGTCGTCACTCCATTGACCGCGGATCATCGTCTCGATGTGGAGAGTTACCGGCGTTCGATCGACCGTATGATTGCGGCCGGGGTCAATGGACTTTTCGTTCTCGGATCCTCAAGCGAAGTCGTGTTCTCCACGGATGAGCGACGTCGTGAGATACTGGCCGCGGCCATTGAGATTGCCGGCGGCCGAGTGCCGGTGCTGGCGGGGTGCATCGACACGGAGACCAATCGTGTGATCGAGCATGCTCGCGCGGCTCGTGAGATGGGAGCCGCCGCCATCGTGGCCACGGCGCCGTTCTACGCATTGGGCGGCGTGGCGGAGATCGAGAGGCATTTCCGTCTGATTCACGCCGCGGTGCCTGAATTGCCGCTGTTCGCATACGATATCCCCGTATGCGTGCATACCAAGCTGCCCAATGATCTGCTGATCCGCTTGGGGCGTGATGGCGTGCTGGCCGGGGTGAAGGACTCGTCGAACGATGATGTGGCGTTCCGTTTCCTGATTGGGGACAACGAGGAGAACGGTCATCCGCTGACGTTGCTGACCGGTCAGGAAGTCGTCGTCGATGGCGCGTACATGGCCGGCGCGGACGGCAGCGTGCCAGGCTTGGCCAATGTGGATCCATATGGCTATGTTGCGATGTGGAACGCCTACCGGAACGGTGATTGGGATTCGGTGCGCAAGGAGCAGAACAAACTCGCCGCATTGATGCGAATCGTCCTGGCGCCGTCCGGCGTCCAGGGATTCGGTTCCGGCGTGGGCGCGTTCAAGACCGCGATGGCGTTGCTGGGCGTGTTCGACACCAACCAGATGCCCGAACCGGTGTTGGCGTTGCATGGCGACAATGTGAAAGCCATTGCGGACGTGTTGCGTGCATGCGGTTTCGAGCTTGCGCGCACGGTGGAACAGGTCGATGTGTCCACCGAGTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>2605310180</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>20</Iteration_iter-num>
+  <Iteration_query-ID>Query_20</Iteration_query-ID>
+  <Iteration_query-def>blon_2350 NC_011593.1:c2622143-2620551 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1593</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2942.83</Hsp_bit-score>
+      <Hsp_score>1593</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1593</Hsp_query-to>
+      <Hsp_hit-from>5745</Hsp_hit-from>
+      <Hsp_hit-to>4153</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1593</Hsp_identity>
+      <Hsp_positive>1593</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1593</Hsp_align-len>
+      <Hsp_qseq>ATGAGAAAACAAACCGTGCTGAAGGCGGGTGCCGTTGCGTGTGCCGTGGCCTTGCTGGGTTCGCTGTCTGCGTGCGGCGGCGACAAGGAGCCGACCACGACCGCTGATGGCAAGCCGATTGTAAGTGTCTTAATAGTCAAGAGACCCAGTACGGATAAAATCGCCAACATGCAGTGGGCCAAGGACTTGGAGGCCGACTGCGACTGCAAGATCGAGTGGCAGGAGGTCAGCGAGGACGCCTGGGCCCAGCAGAAGAACGCCACCCTGGCCGCAGGTAAGCTTGCGGATGTAAGCCTCCACGCCTTTGGAGTGCCTGATGCTGCTCAATATCCAAGCATGTTCGAGGACCTGAGCAAGGATCTTGACAAGCTGCCGAACGTCAAGGCCTTCTTTAAACAGAAGCCGGATGCCAAGAAGCTTATCACCGATCCTGACGGTCACATATATGCCCTGCCTTCGTCCCGAGGCAAGTCCTATTCCGGATCTGGTCAGAATATGCTGATCAACAAGGCCTGGCTCGACAAGCTGGGTCTGCAGGTGCCGACCACGTGGGACGAGCTGGAGAACGTGCTCAAGGCGTTCAAGACCCAGGACCCGAACGGCAACGGCCAGGCCGACGAGATCCCGATGAACATCAAGAAGCTCGACAGCTACTTCTCTTGGTATAGCCCGATGTTGCTGCTCAACTCCACCGGCATCGTCACTGGTTTCAACAAGGGGCCGACGGTTACCGGCTATTATGCGGATAACGGCGTGGTCAAAAGCTTCCTGACCTCCGACGAATACAAGCAGGTCATCAAGTACTACCACAAGCTCATCTCCGAGGGCCTGATCCCCGCCGACTGGGCCACCAAGGCTCTCGACGCGTATGATTCGGATCAGACCAGTGATGGCAAGACCGCGAAGACCGGCGTGTCGTTCGGGTGGTCGCTGGACGCGAGTTTCGGAACGCTCAAGGATCAATACATCGCTATGCCGGTGCCGTCCGCCCCGGGCGTCTCCCCGGACCAGACCGTGTGGGATGGCTCGTCCAGCGAATTTGACGGCAACAAACTTTCCATCTCATCGCATGTTGCGAACAAGGACGCTGCGCTGAAGCTGGCCAACCTGCTCTACTCCGAGAAGTACTCCGTGCAGCAGTTCCTTGGCTCGTTTGGACAGCTGGTTACTGATAACGGCAATCATCAATACACCGTGGATGCAGAGAAGACCAGTCAGCTGATGAAAGACAACCTCTTCCCTGGTCTGTCTGATCGGTTTACGGGTTGGATTCCCGACGAAGTCTCCATTAAGGGCGATACCAATGCTGATGATTTGCTTGAGGTGAATAAAGCATATGATGAGCAGCGCAGCCACTTCGATCCCGTCAAGGACTACATTCCGGACTATGTGAACCCCAGCCCCGAAGACAATAACAAGCTGAGTAGCAATAATACCCAGATTCTCAACGTTGTTATGCAGAAGACTGCCACTTGGATGTCCAAGGGTGGTATTGACGGGGAGTGGGATGCGTACTGCAAGCAGCTCGACAGCCTTGGTCTGCAGGAGAACGTGAAGATCTGGCAGAAGTGGTACGACACCTACACGAAGTGA</Hsp_qseq>
+      <Hsp_hseq>ATGAGAAAACAAACCGTGCTGAAGGCGGGTGCCGTTGCGTGTGCCGTGGCCTTGCTGGGTTCGCTGTCTGCGTGCGGCGGCGACAAGGAGCCGACCACGACCGCTGATGGCAAGCCGATTGTAAGTGTCTTAATAGTCAAGAGACCCAGTACGGATAAAATCGCCAACATGCAGTGGGCCAAGGACTTGGAGGCCGACTGCGACTGCAAGATCGAGTGGCAGGAGGTCAGCGAGGACGCCTGGGCCCAGCAGAAGAACGCCACCCTGGCCGCAGGTAAGCTTGCGGATGTAAGCCTCCACGCCTTTGGAGTGCCTGATGCTGCTCAATATCCAAGCATGTTCGAGGACCTGAGCAAGGATCTTGACAAGCTGCCGAACGTCAAGGCCTTCTTTAAACAGAAGCCGGATGCCAAGAAGCTTATCACCGATCCTGACGGTCACATATATGCCCTGCCTTCGTCCCGAGGCAAGTCCTATTCCGGATCTGGTCAGAATATGCTGATCAACAAGGCCTGGCTCGACAAGCTGGGTCTGCAGGTGCCGACCACGTGGGACGAGCTGGAGAACGTGCTCAAGGCGTTCAAGACCCAGGACCCGAACGGCAACGGCCAGGCCGACGAGATCCCGATGAACATCAAGAAGCTCGACAGCTACTTCTCTTGGTATAGCCCGATGTTGCTGCTCAACTCCACCGGCATCGTCACTGGTTTCAACAAGGGGCCGACGGTTACCGGCTATTATGCGGATAACGGCGTGGTCAAAAGCTTCCTGACCTCCGACGAATACAAGCAGGTCATCAAGTACTACCACAAGCTCATCTCCGAGGGCCTGATCCCCGCCGACTGGGCCACCAAGGCTCTCGACGCGTATGATTCGGATCAGACCAGTGATGGCAAGACCGCGAAGACCGGCGTGTCGTTCGGGTGGTCGCTGGACGCGAGTTTCGGAACGCTCAAGGATCAATACATCGCTATGCCGGTGCCGTCCGCCCCGGGCGTCTCCCCGGACCAGACCGTGTGGGATGGCTCGTCCAGCGAATTTGACGGCAACAAACTTTCCATCTCATCGCATGTTGCGAACAAGGACGCTGCGCTGAAGCTGGCCAACCTGCTCTACTCCGAGAAGTACTCCGTGCAGCAGTTCCTTGGCTCGTTTGGACAGCTGGTTACTGATAACGGCAATCATCAATACACCGTGGATGCAGAGAAGACCAGTCAGCTGATGAAAGACAACCTCTTCCCTGGTCTGTCTGATCGGTTTACGGGTTGGATTCCCGACGAAGTCTCCATTAAGGGCGATACCAATGCTGATGATTTGCTTGAGGTGAATAAAGCATATGATGAGCAGCGCAGCCACTTCGATCCCGTCAAGGACTACATTCCGGACTATGTGAACCCCAGCCCCGAAGACAATAACAAGCTGAGTAGCAATAATACCCAGATTCTCAACGTTGTTATGCAGAAGACTGCCACTTGGATGTCCAAGGGTGGTATTGACGGGGAGTGGGATGCGTACTGCAAGCAGCTCGACAGCCTTGGTCTGCAGGAGAACGTGAAGATCTGGCAGAAGTGGTACGACACCTACACGAAGTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>NZ_CCWU01000046.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000046.1</Hit_accession>
+  <Hit_len>2200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>228.258</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>8.47958e-60</Hsp_evalue>
+      <Hsp_query-from>1456</Hsp_query-from>
+      <Hsp_query-to>1590</Hsp_query-to>
+      <Hsp_hit-from>2200</Hsp_hit-from>
+      <Hsp_hit-to>2066</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>131</Hsp_identity>
+      <Hsp_positive>131</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>ATGCAGAAGACTGCCACTTGGATGTCCAAGGGTGGTATTGACGGGGAGTGGGATGCGTACTGCAAGCAGCTCGACAGCCTTGGTCTGCAGGAGAACGTGAAGATCTGGCAGAAGTGGTACGACACCTACACGAAG</Hsp_qseq>
+      <Hsp_hseq>ATGCAGAAGACTGCTACTTGGATGTCCAAGGGTGGTATTGACGAGGAGTGGGATGCGTATTGCAAGCAGCTCGACAGCCTTGGTCTGCAGGAGAACGTGAAGATCTGGCAGAAGTGGTACGACATCTACACGAAG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||| |||||||||||||||||||||||||||| ||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>23</Statistics_hsp-len>
+      <Statistics_eff-space>4374613460</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>21</Iteration_iter-num>
+  <Iteration_query-ID>Query_21</Iteration_query-ID>
+  <Iteration_query-def>blon_2351 NC_011593.1:c2624124-2622520 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1605</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2964.99</Hsp_bit-score>
+      <Hsp_score>1605</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1605</Hsp_query-to>
+      <Hsp_hit-from>7726</Hsp_hit-from>
+      <Hsp_hit-to>6122</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1605</Hsp_identity>
+      <Hsp_positive>1605</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1605</Hsp_align-len>
+      <Hsp_qseq>ATGAGAAGGCAAACTATGGTGAAGGCGGGTGCCGTTGCGTGCGCCGTGGCCTTGCTGGGGTCGCTGTCTGCGTGTGGGGGCAGCAAGAAGTCGACCACGACGGCTGACGGCAAGCCGATTGTGACGGTTCTGGTCAAGAAGAACGCCAATCAGGAAAAGATGGCCAACATGCAGTGGGCCAAGGACTTGGAGGCCGACTGCGATTGCAAGATCGAGTGGCAGGAAGTGACTCGAGAAGCTTGGGCCCAGCAGAAGAACGCCACCTTGGCCTCTGGAGATATCGCGGATGTGAACCTGAATGGATACGGTGCTGTTGAGGCTTACCAGTATCCCGGTATGTTCGAGGATCTGAGCAAGGATCTTGACAAGCTGCCGAACGTCAAGGCCTTCTTTAAGCAGAAGCCGGATGCCAAGAAGATGTCCACTGACTCCAAAGGGCGGATTTATGCGATAGCCGATGGTCGAGGCAAGGCCTACTCCGGCACAGGTCAGCATATGCTGATCAACAAGGCCTGGCTTGACAAGCTGGGTCTGCAGGTGCCGACCACGTGGGACGAGCTGGAGAACGTGCTCAAGGCGTTCAAGACCCAGGATCCGAACGGCAACGGCCAAGCGGACGAGATCCCGATGAACATTAAGAAACTCGAAGGCAGCTATTTCACGTGGTACAGCCCGATGCTGCTGCTCAACTCCACCGGCATCGTCACCGGCTTCAACAAGGGTGTGTCTGAATACGGCTTCTACGCCAAGAACGGCGTGGTCAAGAGCTTCCTGACCTCCGATGAATACAAGGAGGTTATCAAGTACTACCACAAGCTCATCTCCGAGGGCCTGATTCCCGCCGAGTGGGCCACCAAGGACGATGACGCCTACAACGCGGATCAGATCAGTGACGGCAAGACTGCGAAGACCGGCGTGGTGTTCGGTTGGTCTCCATCCGACAATTTCGGCAAGCTCAAGGACCAGTACATCGCTATGCCGGTGCCGTCCGCCCCGGGCGTCTCCCCGGACCAGACCGTGTGGGATGGTTCCTCCAGTGAGTTGTCCCCTGCAGGACTGTCGATTTCCTCCCACGCCGCGAACAAGGACGCCGCGCTGAAGCTGGCCAACCTGCTGTACTCCGAGAAGTACTCCGTGCAGCAGTTCCTCGGCTCCTTCGGCAAGGCAATAACCAAGACTGGTGAGCATGAGTACACTGTGGATAATGACAAGCTGAGCCAGTTGACCGGTGACAACCAGTATCCTGGCCTGTCGGAATTGTTGGTGGGCTGGATTCCTGATGAAGCTACTATCAAGGGCGATACTCACGCCGATGAATTGATTGAAGTGAACAAGGTGTACGAGGAGCAGCGCAGCCACTTCGATCCCGTCAAGGACTATATTCCCGACTACGTCAATATGGATAATATGGATCCTTCCGATGCGACGAAGCTGAACACTAATAATGCCGAGATTTTCAATACCACTATGCAGAAAACTGCTACTTGGATGTCCAAGGGTGGCATTGACGAAGAATGGGATGCCTACTGCAAGCAGCTCGACAGCATTGGTCTGCAGGAGAGCACCAAGATCTGGCAGAAGTGGTACGACACCTACACGAAGTGA</Hsp_qseq>
+      <Hsp_hseq>ATGAGAAGGCAAACTATGGTGAAGGCGGGTGCCGTTGCGTGCGCCGTGGCCTTGCTGGGGTCGCTGTCTGCGTGTGGGGGCAGCAAGAAGTCGACCACGACGGCTGACGGCAAGCCGATTGTGACGGTTCTGGTCAAGAAGAACGCCAATCAGGAAAAGATGGCCAACATGCAGTGGGCCAAGGACTTGGAGGCCGACTGCGATTGCAAGATCGAGTGGCAGGAAGTGACTCGAGAAGCTTGGGCCCAGCAGAAGAACGCCACCTTGGCCTCTGGAGATATCGCGGATGTGAACCTGAATGGATACGGTGCTGTTGAGGCTTACCAGTATCCCGGTATGTTCGAGGATCTGAGCAAGGATCTTGACAAGCTGCCGAACGTCAAGGCCTTCTTTAAGCAGAAGCCGGATGCCAAGAAGATGTCCACTGACTCCAAAGGGCGGATTTATGCGATAGCCGATGGTCGAGGCAAGGCCTACTCCGGCACAGGTCAGCATATGCTGATCAACAAGGCCTGGCTTGACAAGCTGGGTCTGCAGGTGCCGACCACGTGGGACGAGCTGGAGAACGTGCTCAAGGCGTTCAAGACCCAGGATCCGAACGGCAACGGCCAAGCGGACGAGATCCCGATGAACATTAAGAAACTCGAAGGCAGCTATTTCACGTGGTACAGCCCGATGCTGCTGCTCAACTCCACCGGCATCGTCACCGGCTTCAACAAGGGTGTGTCTGAATACGGCTTCTACGCCAAGAACGGCGTGGTCAAGAGCTTCCTGACCTCCGATGAATACAAGGAGGTTATCAAGTACTACCACAAGCTCATCTCCGAGGGCCTGATTCCCGCCGAGTGGGCCACCAAGGACGATGACGCCTACAACGCGGATCAGATCAGTGACGGCAAGACTGCGAAGACCGGCGTGGTGTTCGGTTGGTCTCCATCCGACAATTTCGGCAAGCTCAAGGACCAGTACATCGCTATGCCGGTGCCGTCCGCCCCGGGCGTCTCCCCGGACCAGACCGTGTGGGATGGTTCCTCCAGTGAGTTGTCCCCTGCAGGACTGTCGATTTCCTCCCACGCCGCGAACAAGGACGCCGCGCTGAAGCTGGCCAACCTGCTGTACTCCGAGAAGTACTCCGTGCAGCAGTTCCTCGGCTCCTTCGGCAAGGCAATAACCAAGACTGGTGAGCATGAGTACACTGTGGATAATGACAAGCTGAGCCAGTTGACCGGTGACAACCAGTATCCTGGCCTGTCGGAATTGTTGGTGGGCTGGATTCCTGATGAAGCTACTATCAAGGGCGATACTCACGCCGATGAATTGATTGAAGTGAACAAGGTGTACGAGGAGCAGCGCAGCCACTTCGATCCCGTCAAGGACTATATTCCCGACTACGTCAATATGGATAATATGGATCCTTCCGATGCGACGAAGCTGAACACTAATAATGCCGAGATTTTCAATACCACTATGCAGAAAACTGCTACTTGGATGTCCAAGGGTGGCATTGACGAAGAATGGGATGCCTACTGCAAGCAGCTCGACAGCATTGGTCTGCAGGAGAGCACCAAGATCTGGCAGAAGTGGTACGACACCTACACGAAGTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>23</Statistics_hsp-len>
+      <Statistics_eff-space>4408049996</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>22</Iteration_iter-num>
+  <Iteration_query-ID>Query_22</Iteration_query-ID>
+  <Iteration_query-def>blon_2352 NC_011593.1:c2626110-2624512 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1599</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2953.91</Hsp_bit-score>
+      <Hsp_score>1599</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1599</Hsp_query-to>
+      <Hsp_hit-from>9712</Hsp_hit-from>
+      <Hsp_hit-to>8114</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1599</Hsp_identity>
+      <Hsp_positive>1599</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1599</Hsp_align-len>
+      <Hsp_qseq>ATGAGAAGACAAACTATGGTGAAGGCGGGTGCCGTTGTGTGTGCCGTGGCCTTGTTGGGGTCGCTGTCTGCGTGTGGGGGCAGCAAGAAGCCGACCACGACGGCTGACGGCAAGCCGATTGTGACGGTTCTGGTCAAGAAGAACGCCAATCAGGAAAAGATGGCTGATATGCAGTGGGCCAAGGACCTGGAGGCCGACTGCGATTGCAAGATCGAGTGGCAGGAAGTGACTCGAGAAGCTTGGGGGCAGCAGAAGAACGCCACCTTGGCCTCTGGAGATATCGCGGACGTGAACCTGAATGGATACGGTGCCGTTGATGCTTACCAATATCCCGGTATGCTCGAGGATCTGAGCAAGGATCTTGACAAGCTGCCAAACGTCAAGGCATTCTTTAAGCAGAAGCCGGAAGCTGAAAAATTCTCTGCTGATACCAAGGGAAAGATTTATTCGATAGCTACAGGGCGCGGCAAGTCCTATTCCGGCACGGGCCAGCACATGCTGATCAACAAGGCCTGGCTCGACAAGCTGGGTCTGCAGGTGCCGACCACGTGGGACGAGCTGGAGAACGTGCTCAAGGCGTTCAAGACCCAGGACCCGAACGGCAACGGCCAGGCCGACGAGATCCCGATGAACATTAAGAAGCTCGAAAGCAGCTACTACACCTGGTATAGCCCGATGCTGCTGCTCAACTCCACCGGTATTTCGACCGGATTTAATATGAGCGCGGCGTCCGAAACCGGCTTCTACGCCAAGAACGGCGTGGTCAAGAGCTTCATGACCTCCGACGAATACAAGCAGGTCATCAAGTACTACCACAAGCTCATCTCCGAGGGCCTGATCCCCGCCGACTGGGCCACCAAGGACGATGACGCCTACAACGCGGACCAAATTAGTGATGGTCAGACCGCGAAGACCGGCGTGGTGTTCGGTTGGTCTCCATCCGACAATTTCGGCAAGCTCAAGGACCAGTACATCGCCATGCCGGTGCCGTCTGCCCCGGGCGTCTCGCCGGACCAGACCGTGTGGGACGGCTCCTCCAGTGAGCTGTCTGTTGCCGGACTGTCGATTTCCGCGCATGCCGCGAACAAGGACGCTGCGCTGAAGCTGGCCAACCTGCTCTACTCCGAGAAGTACTCCGTGCAGCAGTTCCTCGGTTCGTTTGGGCAGACCTTGACCAAGACCGGTGAGCACGAGTACACCGTGGATAACGACAAGTTGAGCCAATTGACCGGTGATAACCAGTATCCTGGCCTATCGGAATTGCTGGTGGGCTGGATTCCTGATGAAGTCACCATCAAAGGCGATAGTCACGCCGATGAGCTGATTGAAGTGAACAAGGTGTACGAGGAGCAGCGCAGCAACTTCGATCCCGTCAAGGACTATATTCCCGACTACGTCAATATGGATTCGGCTGATGCGGCAAAGTTGAATACAAGCAATGCTGAGATTTTCAATACCGTCATGCAGAAGACTGCCACTTGGATGTCCAAGGGTGGTATTGACGAGGAGTGGGATGCGTATTGCAAGCAGCTCGACAGCCTTGGCCTTCAGGATAACATCAAGATTTGGCAGAAGTGGTACGACCTTTGCGTAAAGTGA</Hsp_qseq>
+      <Hsp_hseq>ATGAGAAGACAAACTATGGTGAAGGCGGGTGCCGTTGTGTGTGCCGTGGCCTTGTTGGGGTCGCTGTCTGCGTGTGGGGGCAGCAAGAAGCCGACCACGACGGCTGACGGCAAGCCGATTGTGACGGTTCTGGTCAAGAAGAACGCCAATCAGGAAAAGATGGCTGATATGCAGTGGGCCAAGGACCTGGAGGCCGACTGCGATTGCAAGATCGAGTGGCAGGAAGTGACTCGAGAAGCTTGGGGGCAGCAGAAGAACGCCACCTTGGCCTCTGGAGATATCGCGGACGTGAACCTGAATGGATACGGTGCCGTTGATGCTTACCAATATCCCGGTATGCTCGAGGATCTGAGCAAGGATCTTGACAAGCTGCCAAACGTCAAGGCATTCTTTAAGCAGAAGCCGGAAGCTGAAAAATTCTCTGCTGATACCAAGGGAAAGATTTATTCGATAGCTACAGGGCGCGGCAAGTCCTATTCCGGCACGGGCCAGCACATGCTGATCAACAAGGCCTGGCTCGACAAGCTGGGTCTGCAGGTGCCGACCACGTGGGACGAGCTGGAGAACGTGCTCAAGGCGTTCAAGACCCAGGACCCGAACGGCAACGGCCAGGCCGACGAGATCCCGATGAACATTAAGAAGCTCGAAAGCAGCTACTACACCTGGTATAGCCCGATGCTGCTGCTCAACTCCACCGGTATTTCGACCGGATTTAATATGAGCGCGGCGTCCGAAACCGGCTTCTACGCCAAGAACGGCGTGGTCAAGAGCTTCATGACCTCCGACGAATACAAGCAGGTCATCAAGTACTACCACAAGCTCATCTCCGAGGGCCTGATCCCCGCCGACTGGGCCACCAAGGACGATGACGCCTACAACGCGGACCAAATTAGTGATGGTCAGACCGCGAAGACCGGCGTGGTGTTCGGTTGGTCTCCATCCGACAATTTCGGCAAGCTCAAGGACCAGTACATCGCCATGCCGGTGCCGTCTGCCCCGGGCGTCTCGCCGGACCAGACCGTGTGGGACGGCTCCTCCAGTGAGCTGTCTGTTGCCGGACTGTCGATTTCCGCGCATGCCGCGAACAAGGACGCTGCGCTGAAGCTGGCCAACCTGCTCTACTCCGAGAAGTACTCCGTGCAGCAGTTCCTCGGTTCGTTTGGGCAGACCTTGACCAAGACCGGTGAGCACGAGTACACCGTGGATAACGACAAGTTGAGCCAATTGACCGGTGATAACCAGTATCCTGGCCTATCGGAATTGCTGGTGGGCTGGATTCCTGATGAAGTCACCATCAAAGGCGATAGTCACGCCGATGAGCTGATTGAAGTGAACAAGGTGTACGAGGAGCAGCGCAGCAACTTCGATCCCGTCAAGGACTATATTCCCGACTACGTCAATATGGATTCGGCTGATGCGGCAAAGTTGAATACAAGCAATGCTGAGATTTTCAATACCGTCATGCAGAAGACTGCCACTTGGATGTCCAAGGGTGGTATTGACGAGGAGTGGGATGCGTATTGCAAGCAGCTCGACAGCCTTGGCCTTCAGGATAACATCAAGATTTGGCAGAAGTGGTACGACCTTTGCGTAAAGTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>NZ_CCWU01000032.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000032.1</Hit_accession>
+  <Hit_len>92440</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.5198</Hsp_bit-score>
+      <Hsp_score>30</Hsp_score>
+      <Hsp_evalue>4.25056e-08</Hsp_evalue>
+      <Hsp_query-from>1555</Hsp_query-from>
+      <Hsp_query-to>1584</Hsp_query-to>
+      <Hsp_hit-from>60107</Hsp_hit-from>
+      <Hsp_hit-to>60078</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>AACATCAAGATTTGGCAGAAGTGGTACGAC</Hsp_qseq>
+      <Hsp_hseq>AACATCAAGATTTGGCAGAAGTGGTACGAC</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>23</Statistics_hsp-len>
+      <Statistics_eff-space>4391331728</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>23</Iteration_iter-num>
+  <Iteration_query-ID>Query_23</Iteration_query-ID>
+  <Iteration_query-def>blon_2353 NC_011593.1:c2626386-2626264 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>123</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>228.258</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>5.61745e-61</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>123</Hsp_query-to>
+      <Hsp_hit-from>9988</Hsp_hit-from>
+      <Hsp_hit-to>9866</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>GTGGCCGAGTCCTTGCCCGGCGCCACGCAGGGCAAGCTTGACGATGCAGCCAAGGATATCGCCCCGCTGTTCCGCATCCAACGTGTGGTATGGCGCGCGGCGGACGTGCTGCGTTCCATTTAA</Hsp_qseq>
+      <Hsp_hseq>GTGGCCGAGTCCTTGCCCGGCGCCACGCAGGGCAAGCTTGACGATGCAGCCAAGGATATCGCCCCGCTGTTCCGCATCCAACGTGTGGTATGGCGCGCGGCGGACGTGCTGCGTTCCATTTAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>84.2195</Hsp_bit-score>
+      <Hsp_score>45</Hsp_score>
+      <Hsp_evalue>1.28677e-17</Hsp_evalue>
+      <Hsp_query-from>72</Hsp_query-from>
+      <Hsp_query-to>122</Hsp_query-to>
+      <Hsp_hit-from>11967</Hsp_hit-from>
+      <Hsp_hit-to>11917</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>51</Hsp_align-len>
+      <Hsp_qseq>CCGCATCCAACGTGTGGTATGGCGCGCGGCGGACGTGCTGCGTTCCATTTA</Hsp_qseq>
+      <Hsp_hseq>CCGCATCCAACACGTGGTATGGCGCGCGGCGGACGTGCTGCGTTCCATTTA</Hsp_hseq>
+      <Hsp_midline>|||||||||||  ||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>19</Statistics_hsp-len>
+      <Statistics_eff-space>289804112</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>24</Iteration_iter-num>
+  <Iteration_query-ID>Query_24</Iteration_query-ID>
+  <Iteration_query-def>blon_2354 NC_011593.1:c2628158-2626563 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1596</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2948.37</Hsp_bit-score>
+      <Hsp_score>1596</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1596</Hsp_query-to>
+      <Hsp_hit-from>11760</Hsp_hit-from>
+      <Hsp_hit-to>10165</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1596</Hsp_identity>
+      <Hsp_positive>1596</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1596</Hsp_align-len>
+      <Hsp_qseq>ATGAGGAATGTCGCGATGAAGGTGGGTGCTGCGGTATGCGCCGTGGCCTTGCTGGGTTCGCTGTCTGCGTGTGGCAATAAGAAGTCGACCACGACGGCTGACGGCAAGCCGATTGTGACGGTTCTGGTCAAGAAGAACGCCAATCAGGACAAGATCGCCAATATGCAGTGGGCCAAGGACTTGGAGGCCGACTGCGATTGCAAGATCGAGTGGCAGGAAGTGACTCGAGAAGCTTGGTCACAGCAGAAGAACGCCACCTTGGCCTCTGGGGATATCGCGGACGTGAACCTTAACGGATTTAATTCCCTTGACGCCTATCAGTATTCGGGAATGTTTGAGGATCTAGGCAAGAGTCTCGACAAGTTGCCAAATATCAAGGCATTCTTTAAGGAGAAGCCGGAAGCTAAGAAATTCTCGACTGATTCCAAGGGTAGAGTCTATGCAATAGCCACTGCGCGCGGAAAATCTTATTCCGGTACGGGCCAGCACATGCTGATCAACAAGGCCTGGCTCGACAAGCTGGGTCTGCAGGTGCCGACCACGTGGGACGAGCTGGAGAACGTGCTTATGGCGTTCAAGACCCAGGACCCGAACGGCAACGGACAGGCCGACGAGATCCCGATGAACATACAGAAGCTCGGAAGCGGTTTCTCCTGGTATAGCCCGATGCTGCTGCTCAATTCCACCGGCATCCCGACCGGCTTCAATAAAGGCGTATCCACTTCTGGTTATTATGTCAAGAACGGCGTGGTCAAGAGCTTCCTGACCTCCGACGAATACAAGGAGGTCGTCAAGTACTACCACAAGCTCATCTCCGAGGGGCTGATTCCAGCGGACTGGGCCACCAAGGACGATGACGCCTACAACGCGAACCAGATTAGTGACGGCCAGATCGCGAAGACCGGCGTGGTGTTCGGTTGGTCTCCGACTGACAATTTCGGCAAGCTCAAGGACCAGTACATCGCTATGCCGGCACCTTCTGCTCCGGGCGTTTCCCCGGATGAGACCGTGTGGGATGGTTCCTCTAGCGAATTGGCTCCTGCTGGGCTGACCATTTCCGCGCATGCCGCGAACAAGGACGCTGCGCTGAAGCTGGCCAACCTGCTCTACTCCGAGAAGTACTCCGTGCAGCAGTTCCTCGGATCGTTTGGTCAGACTTTGACTAAGACCGGTGAGCATAAGTATACTGTGGACAGCGCCAAGTTAGACAAGCTGACTAAGGATAATCTTTACCCTGGTTTGTCGGAATTGCTGGTGGGTTGGATTCCCAATGAAGTCATCATTAAGGGTGATACCCACGCCGATGAACTGATTGAGGTGAACAAGGTGTACGAGGAGCAGCGCAGCCACTTCGATCCCGTCAAGGACTATATTCCCGACTACGTCAATATGGATAATATGGATCCTTCCGATTCCGCGAAGTTGAGTACAAGCAATGCGGAGATTAACAACACCGTTATGCAGAAGACTGCTGCTTGGATGTCCAAGGGCGGCATCGACGAGGAATGGGATGCCTACTGCAAGCAGCTCGACAGCATTGGCCTTCAGGATAACATCAAGATCTGGCAGAAGTGGTACGACACCTACACGAAGTGA</Hsp_qseq>
+      <Hsp_hseq>ATGAGGAATGTCGCGATGAAGGTGGGTGCTGCGGTATGCGCCGTGGCCTTGCTGGGTTCGCTGTCTGCGTGTGGCAATAAGAAGTCGACCACGACGGCTGACGGCAAGCCGATTGTGACGGTTCTGGTCAAGAAGAACGCCAATCAGGACAAGATCGCCAATATGCAGTGGGCCAAGGACTTGGAGGCCGACTGCGATTGCAAGATCGAGTGGCAGGAAGTGACTCGAGAAGCTTGGTCACAGCAGAAGAACGCCACCTTGGCCTCTGGGGATATCGCGGACGTGAACCTTAACGGATTTAATTCCCTTGACGCCTATCAGTATTCGGGAATGTTTGAGGATCTAGGCAAGAGTCTCGACAAGTTGCCAAATATCAAGGCATTCTTTAAGGAGAAGCCGGAAGCTAAGAAATTCTCGACTGATTCCAAGGGTAGAGTCTATGCAATAGCCACTGCGCGCGGAAAATCTTATTCCGGTACGGGCCAGCACATGCTGATCAACAAGGCCTGGCTCGACAAGCTGGGTCTGCAGGTGCCGACCACGTGGGACGAGCTGGAGAACGTGCTTATGGCGTTCAAGACCCAGGACCCGAACGGCAACGGACAGGCCGACGAGATCCCGATGAACATACAGAAGCTCGGAAGCGGTTTCTCCTGGTATAGCCCGATGCTGCTGCTCAATTCCACCGGCATCCCGACCGGCTTCAATAAAGGCGTATCCACTTCTGGTTATTATGTCAAGAACGGCGTGGTCAAGAGCTTCCTGACCTCCGACGAATACAAGGAGGTCGTCAAGTACTACCACAAGCTCATCTCCGAGGGGCTGATTCCAGCGGACTGGGCCACCAAGGACGATGACGCCTACAACGCGAACCAGATTAGTGACGGCCAGATCGCGAAGACCGGCGTGGTGTTCGGTTGGTCTCCGACTGACAATTTCGGCAAGCTCAAGGACCAGTACATCGCTATGCCGGCACCTTCTGCTCCGGGCGTTTCCCCGGATGAGACCGTGTGGGATGGTTCCTCTAGCGAATTGGCTCCTGCTGGGCTGACCATTTCCGCGCATGCCGCGAACAAGGACGCTGCGCTGAAGCTGGCCAACCTGCTCTACTCCGAGAAGTACTCCGTGCAGCAGTTCCTCGGATCGTTTGGTCAGACTTTGACTAAGACCGGTGAGCATAAGTATACTGTGGACAGCGCCAAGTTAGACAAGCTGACTAAGGATAATCTTTACCCTGGTTTGTCGGAATTGCTGGTGGGTTGGATTCCCAATGAAGTCATCATTAAGGGTGATACCCACGCCGATGAACTGATTGAGGTGAACAAGGTGTACGAGGAGCAGCGCAGCCACTTCGATCCCGTCAAGGACTATATTCCCGACTACGTCAATATGGATAATATGGATCCTTCCGATTCCGCGAAGTTGAGTACAAGCAATGCGGAGATTAACAACACCGTTATGCAGAAGACTGCTGCTTGGATGTCCAAGGGCGGCATCGACGAGGAATGGGATGCCTACTGCAAGCAGCTCGACAGCATTGGCCTTCAGGATAACATCAAGATCTGGCAGAAGTGGTACGACACCTACACGAAGTGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>23</Statistics_hsp-len>
+      <Statistics_eff-space>4382972594</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>25</Iteration_iter-num>
+  <Iteration_query-ID>Query_25</Iteration_query-ID>
+  <Iteration_query-def>blon_2355 NC_011593.1:c2630269-2628314 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1956</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>3613.17</Hsp_bit-score>
+      <Hsp_score>1956</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1956</Hsp_query-to>
+      <Hsp_hit-from>13871</Hsp_hit-from>
+      <Hsp_hit-to>11916</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1956</Hsp_identity>
+      <Hsp_positive>1956</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1956</Hsp_align-len>
+      <Hsp_qseq>ATGGTGCAGGAACCAACATTGGAATGGCATGTCATACCGGAGCCGACGAATGTCGAGCCGCTGGTGGGAACATGCTCGTTGCCGTTGTCGGGAACGGTTGTGGAGCAACGAGGTGCGGATGATGCGGAGGCCGTGTTTGCGCGTCAGCTTGTCGACGACATTAAGCGCGTGTGCGGAGGCCGCTGGCAGGTGGCCTCCGGAGAGGTTCAGCGGGAGGTGACTTTGCGGACCAGTCCTTCGCTCGATGACTGGTCGTACGTGCTTGAGGTCTCGCCGGACGGCGTTGTGATCACTGGTTCGGGGTTCGAAGGCGTTCGCGATGGCGTGCAGACATTGCGTCAGATTATTCGCCAGATTGGTTTGACGATACCGTGCATGGTCATCAGGGATCGGCCGGCGTTCTCGACCCGCGGTTACTATCTGGACGTGACTCGTGGCCGTGTGCCCTCTATGGCTTGGCTGAAATCGTGGGTGGATCGCCTGTGCTTCTACAAGTACAACCAATTCCAGTTGTACATCGAGCATACGTTCCAGTTCAATGGTCTTAGCGAAGTGTGGCGTGGCGCCGATCCGTTGACTTCGTCCGACATTCTCGAGCTTGATTCCTATTGCGCGGCGCGTGGCATAGAGCTCGTGCCCTCCGTGTCGACGTTCGGACATCATTACACCGCGCTGCGGACGCGGCAACTACGTGATCTGGGAGAGTTTCCGGAGGACGCGGATCGTCCTTTCAGCCTGATCGAGCGAATGACGCACCATACGCTCAACATCACCGATGAGCGGTCCTATGAGTTTTCGACATCATTGATCGATGAGCTGATGCCGTTGTTCCGTTCGCGGAAGTTCAATATCTGCGCCGATGAGACGTTTGATCTCGGCAAGGGGAGGTCGAAGCAGGAATCGGCGAAACGTGGCGTTGGCGCGATGTATGCCGATTTCGTCGAGCGACTGTGCCGCCATGTTGATGATCGTGGGCATGATGTCATGGTGTGGGCCGATGTCGCGCTCGAGCACCCTGAGATCATCGATACGCTTCCCAAGAACATCACCTGGCTGAATTGGCAGTATGAGCCCAACGTGGATGATGGCACAACGGCAGCTCTCGCCGATGCCGGCGCGACGCAGATGGTGTGCCCGGCGGTGTGGTGCTGGAATGCGCTGATTCCGCGGATCGACGATGCGTGGAATAACATCACCAGGATGGCGCGCCATGGCCGCGCCCATGATGTTTCGGGGATGCTGGTCACTGATTGGGGGGATTTCGGACACGTCAACGATCCCCGCATGTCGGTTCCGGGCATGATCTTCGGTGCGCAGCAATCCTGGAATCCGGATGCCGAGCTCAGCGAAGTCGATATGCTGTCGCGCATATCCACCATCGAATACGGCGACCATACTGGTAGCGTGGTCGGTGCGCTCAGGGGCGCTTCTGCCAAAGGCGGATTCTCGTGGAGCGATCTCGTCACCTATCTGGAACTGGACGACGGCCGTGGCGGATGCAATACGGAGATCGTGCGGGTCATGGGCTGTCTGGAAGCGTATCGGAATGATTTGCCGCAGTCCGGTCAGGCAAGGTTGGCGGATGCTCGCGTTTCGATGCTGCGGACGTTGCGTGACTCCATTCTCGCGGGCCGGGAATTGAACGGCAAGCTTGACGATGCAGCCAAGGATATCACCCAGCTGCTCCGCGTGGCCGGTGATCCCTCCTCCGCTGCGGTCTGGTCGTTGGCCATCGACGGTCAGCGTCTGCTGAACCGTGTCGGGTTGGCGTTGTTGGCCGCGCATGGCGTGGTGCGGCAGGATGAGGCCGGAATCGATGCGGCGAAGCTGGCCGATGAACTGGAATGCTGGACCGAACAGTATTCGAGGCTCTGGCATGAGGTCAGTCGGCAGTCGGAACTGGCCCGCATCCAACACGTGGTATGGCGCGCGGCGGACGTGCTGCGTTCCATTTAG</Hsp_qseq>
+      <Hsp_hseq>ATGGTGCAGGAACCAACATTGGAATGGCATGTCATACCGGAGCCGACGAATGTCGAGCCGCTGGTGGGAACATGCTCGTTGCCGTTGTCGGGAACGGTTGTGGAGCAACGAGGTGCGGATGATGCGGAGGCCGTGTTTGCGCGTCAGCTTGTCGACGACATTAAGCGCGTGTGCGGAGGCCGCTGGCAGGTGGCCTCCGGAGAGGTTCAGCGGGAGGTGACTTTGCGGACCAGTCCTTCGCTCGATGACTGGTCGTACGTGCTTGAGGTCTCGCCGGACGGCGTTGTGATCACTGGTTCGGGGTTCGAAGGCGTTCGCGATGGCGTGCAGACATTGCGTCAGATTATTCGCCAGATTGGTTTGACGATACCGTGCATGGTCATCAGGGATCGGCCGGCGTTCTCGACCCGCGGTTACTATCTGGACGTGACTCGTGGCCGTGTGCCCTCTATGGCTTGGCTGAAATCGTGGGTGGATCGCCTGTGCTTCTACAAGTACAACCAATTCCAGTTGTACATCGAGCATACGTTCCAGTTCAATGGTCTTAGCGAAGTGTGGCGTGGCGCCGATCCGTTGACTTCGTCCGACATTCTCGAGCTTGATTCCTATTGCGCGGCGCGTGGCATAGAGCTCGTGCCCTCCGTGTCGACGTTCGGACATCATTACACCGCGCTGCGGACGCGGCAACTACGTGATCTGGGAGAGTTTCCGGAGGACGCGGATCGTCCTTTCAGCCTGATCGAGCGAATGACGCACCATACGCTCAACATCACCGATGAGCGGTCCTATGAGTTTTCGACATCATTGATCGATGAGCTGATGCCGTTGTTCCGTTCGCGGAAGTTCAATATCTGCGCCGATGAGACGTTTGATCTCGGCAAGGGGAGGTCGAAGCAGGAATCGGCGAAACGTGGCGTTGGCGCGATGTATGCCGATTTCGTCGAGCGACTGTGCCGCCATGTTGATGATCGTGGGCATGATGTCATGGTGTGGGCCGATGTCGCGCTCGAGCACCCTGAGATCATCGATACGCTTCCCAAGAACATCACCTGGCTGAATTGGCAGTATGAGCCCAACGTGGATGATGGCACAACGGCAGCTCTCGCCGATGCCGGCGCGACGCAGATGGTGTGCCCGGCGGTGTGGTGCTGGAATGCGCTGATTCCGCGGATCGACGATGCGTGGAATAACATCACCAGGATGGCGCGCCATGGCCGCGCCCATGATGTTTCGGGGATGCTGGTCACTGATTGGGGGGATTTCGGACACGTCAACGATCCCCGCATGTCGGTTCCGGGCATGATCTTCGGTGCGCAGCAATCCTGGAATCCGGATGCCGAGCTCAGCGAAGTCGATATGCTGTCGCGCATATCCACCATCGAATACGGCGACCATACTGGTAGCGTGGTCGGTGCGCTCAGGGGCGCTTCTGCCAAAGGCGGATTCTCGTGGAGCGATCTCGTCACCTATCTGGAACTGGACGACGGCCGTGGCGGATGCAATACGGAGATCGTGCGGGTCATGGGCTGTCTGGAAGCGTATCGGAATGATTTGCCGCAGTCCGGTCAGGCAAGGTTGGCGGATGCTCGCGTTTCGATGCTGCGGACGTTGCGTGACTCCATTCTCGCGGGCCGGGAATTGAACGGCAAGCTTGACGATGCAGCCAAGGATATCACCCAGCTGCTCCGCGTGGCCGGTGATCCCTCCTCCGCTGCGGTCTGGTCGTTGGCCATCGACGGTCAGCGTCTGCTGAACCGTGTCGGGTTGGCGTTGTTGGCCGCGCATGGCGTGGTGCGGCAGGATGAGGCCGGAATCGATGCGGCGAAGCTGGCCGATGAACTGGAATGCTGGACCGAACAGTATTCGAGGCTCTGGCATGAGGTCAGTCGGCAGTCGGAACTGGCCCGCATCCAACACGTGGTATGGCGCGCGGCGGACGTGCTGCGTTCCATTTAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>84.2195</Hsp_bit-score>
+      <Hsp_score>45</Hsp_score>
+      <Hsp_evalue>2.39148e-16</Hsp_evalue>
+      <Hsp_query-from>1905</Hsp_query-from>
+      <Hsp_query-to>1955</Hsp_query-to>
+      <Hsp_hit-from>9917</Hsp_hit-from>
+      <Hsp_hit-to>9867</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>51</Hsp_align-len>
+      <Hsp_qseq>CCGCATCCAACACGTGGTATGGCGCGCGGCGGACGTGCTGCGTTCCATTTA</Hsp_qseq>
+      <Hsp_hseq>CCGCATCCAACGTGTGGTATGGCGCGCGGCGGACGTGCTGCGTTCCATTTA</Hsp_hseq>
+      <Hsp_midline>|||||||||||  ||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>23</Statistics_hsp-len>
+      <Statistics_eff-space>5386068674</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>26</Iteration_iter-num>
+  <Iteration_query-ID>Query_26</Iteration_query-ID>
+  <Iteration_query-def>blon_2356 NC_011593.1:c2631106-2630366 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>741</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1369.49</Hsp_bit-score>
+      <Hsp_score>741</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>741</Hsp_query-to>
+      <Hsp_hit-from>14708</Hsp_hit-from>
+      <Hsp_hit-to>13968</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>741</Hsp_identity>
+      <Hsp_positive>741</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>741</Hsp_align-len>
+      <Hsp_qseq>TTGGATGGTAGAGCTGTGAACGGTGATTCGGCATTCGCGGTGGCTTTCGATTTCGACGGCACGGTATGCCTCGGCGATGGTCCGGTCAAGGCCTACGCCGAGGCGGTGTGCGCGCATCTTGATCGTGATGATGCGGCCACGTTGAACGATGAGCTGGAGCGGTTTCTGGCATGTCCGGCGGATATGCCGAAGTATTCGGATGCCTATGACGTCGTGCAGGCTCATGCGGCAGGGCGTCTGACCGTCGAGCAGTCGCAGGATGCGTATATGCGTTCGCGTCGGATGTTGGCCGAAGGCACGTTCGACGTGCGCCCGCCCGAGGGATTGGAATCCCTCTTGGAGCGGTTGGGTGAGCTGGGTTGCCGGCGCGTGCTGGTCACGAACTCGCCGATGATCGGGCTGCGTGAGACGTTGGACCGTCTGGGCGTGCTCGAAGGATTCGATGGCATCATCGCCGGTGCCGCCAAGCCAGGCGGATGGCCGAAGGTGATCGAAAGGCTGTCGGCGGTTCGCCGACGGACGGGCGAGTTGAGCATGATGAGTATCGGCGACTACTGGACGAACGATATCGCTCCGGTGCGTGCCGCCGGTGGGCTTACCGCGTTCATCCACGAGCCTGATCCATCCTTGCCCGCGACCATCACCGCCCCGACCTTGCGGCAGATGGTCGATGACATTGTGGATGTATGCGCCGCCGCGACGGCGGATGCCGGTGGGGCCGAGGCCGCTTTCCGGGACTGA</Hsp_qseq>
+      <Hsp_hseq>TTGGATGGTAGAGCTGTGAACGGTGATTCGGCATTCGCGGTGGCTTTCGATTTCGACGGCACGGTATGCCTCGGCGATGGTCCGGTCAAGGCCTACGCCGAGGCGGTGTGCGCGCATCTTGATCGTGATGATGCGGCCACGTTGAACGATGAGCTGGAGCGGTTTCTGGCATGTCCGGCGGATATGCCGAAGTATTCGGATGCCTATGACGTCGTGCAGGCTCATGCGGCAGGGCGTCTGACCGTCGAGCAGTCGCAGGATGCGTATATGCGTTCGCGTCGGATGTTGGCCGAAGGCACGTTCGACGTGCGCCCGCCCGAGGGATTGGAATCCCTCTTGGAGCGGTTGGGTGAGCTGGGTTGCCGGCGCGTGCTGGTCACGAACTCGCCGATGATCGGGCTGCGTGAGACGTTGGACCGTCTGGGCGTGCTCGAAGGATTCGATGGCATCATCGCCGGTGCCGCCAAGCCAGGCGGATGGCCGAAGGTGATCGAAAGGCTGTCGGCGGTTCGCCGACGGACGGGCGAGTTGAGCATGATGAGTATCGGCGACTACTGGACGAACGATATCGCTCCGGTGCGTGCCGCCGGTGGGCTTACCGCGTTCATCCACGAGCCTGATCCATCCTTGCCCGCGACCATCACCGCCCCGACCTTGCGGCAGATGGTCGATGACATTGTGGATGTATGCGCCGCCGCGACGGCGGATGCCGGTGGGGCCGAGGCCGCTTTCCGGGACTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>2003441732</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>27</Iteration_iter-num>
+  <Iteration_query-ID>Query_27</Iteration_query-ID>
+  <Iteration_query-def>blon_2357 NC_011593.1:c2632432-2631140 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1293</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2388.84</Hsp_bit-score>
+      <Hsp_score>1293</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1293</Hsp_query-to>
+      <Hsp_hit-from>16034</Hsp_hit-from>
+      <Hsp_hit-to>14742</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1293</Hsp_identity>
+      <Hsp_positive>1293</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1293</Hsp_align-len>
+      <Hsp_qseq>ATGACACTACACGGTAATATGCGTGCGAAAGCGGTGCTGACCGCATTGATGGCTGGCGTGCTAGCCTTATCTGGATGCGGCTCGACCAGCGCGGCGAGCGATGGTGGACAATCCGACAAGATCGTCTCCGACATCAAAGGAAACGTTGAGATCACGTTCTGGCACGGCATGACAGGCAACCAGGAGAAGACCCTGCAGAGCCTGACCGATACGTTCATGAAACAGAACCCGAACATCAAGGTGACTTTGCAGAACCAGTCCAGCTACAGTGACCTGCAGCAGAAGCTCACCGCCACGATGCAGAGCCCGAAGGATTTGCCGACCATCACCCAGGCGTACCCGAGCTGGCTGGTCGACGCGATCTCCGATGGTCAGGTCGTCAACCTTGACCCCTACATCGCATCCAAGGACGGCAATCTTGCATTCGACAACTGGGACGATGTGCTGCCCGGCCTGCGCGATGGCGTGAAGATCGACGGCAAGACGTATGGCATGCCGTTCAACAAGTCCACTGAGGTGCTGTGGTACAACAAGACCATGCTCGACGAGCTGGGACTCAAGGTGCCCACCACGTATGACGAGCTCGCCGAAACCTCCAAGAAAATCGAGAGCGCGAAGGGCATTCCCGGCGCGGGCTTCGACTCGCTGTCGAACTACTACATCACCTATATGAAGAACGAGGGGGTGACGTTCGGCAAGGGCCTCGATGTGACCGGCGAGAAGTCCGCCAAGGCCTTCGACTACTACGACAAAGGCGTCAAGGATGGCTACTTCCGCATCGCCGGCACCGACAAGTACATGTCCGGTCCGTTCTCCAACCAGAAGGTCGCCATGTATGTTGGGTCCAACGCCGGTGAATCCTTCGTTAAGAAGGGCGCCGAGGGCAAGTTTGAATATGGTGTGGTGCCGTATCCGGCGAAGCACACGATGCAGCAGGGCACCGATATCTACATGTTCTCCTCGGCCAGCCCCGAGCAGCGCACGGCGGCCTATCTGTATGAGAAGTTCCTGACGTCCAAGGACAGCCAGATTGAGTGGGCGATCGGTACCGGTTACATTCCTGTTCGTAAGTCCGCGATCGCCGATGCCAAGTATGCCAACTCGGGCAGTGCCATTGCGCCCATCTTGGCTGATGCCACCAAGAACCTGTTCACCATTCCGTTGACGCCCGGCATGCAACAGGCCAGCGACGATGTGCAGAAGTCCTTGGAGAGCGTGCTTTCCGGTGCGGGTGACGTCAAGTCTTCGCTGAGCACGCTCAAGCCGACGTTCGATTCGGATTGGGAACAGTGA</Hsp_qseq>
+      <Hsp_hseq>ATGACACTACACGGTAATATGCGTGCGAAAGCGGTGCTGACCGCATTGATGGCTGGCGTGCTAGCCTTATCTGGATGCGGCTCGACCAGCGCGGCGAGCGATGGTGGACAATCCGACAAGATCGTCTCCGACATCAAAGGAAACGTTGAGATCACGTTCTGGCACGGCATGACAGGCAACCAGGAGAAGACCCTGCAGAGCCTGACCGATACGTTCATGAAACAGAACCCGAACATCAAGGTGACTTTGCAGAACCAGTCCAGCTACAGTGACCTGCAGCAGAAGCTCACCGCCACGATGCAGAGCCCGAAGGATTTGCCGACCATCACCCAGGCGTACCCGAGCTGGCTGGTCGACGCGATCTCCGATGGTCAGGTCGTCAACCTTGACCCCTACATCGCATCCAAGGACGGCAATCTTGCATTCGACAACTGGGACGATGTGCTGCCCGGCCTGCGCGATGGCGTGAAGATCGACGGCAAGACGTATGGCATGCCGTTCAACAAGTCCACTGAGGTGCTGTGGTACAACAAGACCATGCTCGACGAGCTGGGACTCAAGGTGCCCACCACGTATGACGAGCTCGCCGAAACCTCCAAGAAAATCGAGAGCGCGAAGGGCATTCCCGGCGCGGGCTTCGACTCGCTGTCGAACTACTACATCACCTATATGAAGAACGAGGGGGTGACGTTCGGCAAGGGCCTCGATGTGACCGGCGAGAAGTCCGCCAAGGCCTTCGACTACTACGACAAAGGCGTCAAGGATGGCTACTTCCGCATCGCCGGCACCGACAAGTACATGTCCGGTCCGTTCTCCAACCAGAAGGTCGCCATGTATGTTGGGTCCAACGCCGGTGAATCCTTCGTTAAGAAGGGCGCCGAGGGCAAGTTTGAATATGGTGTGGTGCCGTATCCGGCGAAGCACACGATGCAGCAGGGCACCGATATCTACATGTTCTCCTCGGCCAGCCCCGAGCAGCGCACGGCGGCCTATCTGTATGAGAAGTTCCTGACGTCCAAGGACAGCCAGATTGAGTGGGCGATCGGTACCGGTTACATTCCTGTTCGTAAGTCCGCGATCGCCGATGCCAAGTATGCCAACTCGGGCAGTGCCATTGCGCCCATCTTGGCTGATGCCACCAAGAACCTGTTCACCATTCCGTTGACGCCCGGCATGCAACAGGCCAGCGACGATGTGCAGAAGTCCTTGGAGAGCGTGCTTTCCGGTGCGGGTGACGTCAAGTCTTCGCTGAGCACGCTCAAGCCGACGTTCGATTCGGATTGGGAACAGTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>3541549988</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>28</Iteration_iter-num>
+  <Iteration_query-ID>Query_28</Iteration_query-ID>
+  <Iteration_query-def>blon_2358 NC_011593.1:c2633881-2632562 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1320</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2438.7</Hsp_bit-score>
+      <Hsp_score>1320</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1320</Hsp_query-to>
+      <Hsp_hit-from>17483</Hsp_hit-from>
+      <Hsp_hit-to>16164</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1320</Hsp_identity>
+      <Hsp_positive>1320</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1320</Hsp_align-len>
+      <Hsp_qseq>ATGGCATCAAGGGATAACGATCTGCGCGACAAAACGCGCATCACGTTCTACCGGGGCATCCGCACGATCGGAGGCAATCTCATCGAGGTGTCCTATGGCGATAGCCGCATCGTGTTCGACTGCGGTTGCGAATATAACCCTGCCGCTCCCAAGCAGCCCCGAGATCTCGCCGATCTCATCTCGCAAGGCTACGTACCGTATCTGCCGGCGATATTCGACCGCACGATAGACGTGCCCGGTCACCACTGGTCTGCGGACCCGTATGCGCACAGTGCGGTCTTCGTCTCGCATGCGCATCTCGACCATTCCAAGATGCTCAACTATATCGATTCCGCCATCCCCGTCTACGCTTCGCAGAACACCAAGAGGGTGCTCGAAGCCATGAACGTGAACGACGATTTCGATTTCCCGCCGTATCGCAAGGATTGCGGCCATACTCGGCCGATTACCGGCGTGGAGCCCAACGGCGTCGTGCGTGTCGGTTCCATCTCGGTCACGGTCATGCCCGTAGACCACGATGCCTACGGTGCGTCCGGTCTGCGCGTCGTCACGCCTGACGCGGTCATCGCGTACACGGGCGACATTCGTTTCCACGGATTTCTTGAGCATGACACCCGTGCGTTCCTCCAAGCGAACGCGGGTGCCGATGCGCTCATCATGGAAGGCACGTCGATCTCCTTCCGCAAGCCGGGTGATCCCGTCGACCGCCCGGAGACCACCGAGCAGCAGGTGTGCGATCGCATCGAGGCGCTCGTTCGGGACAATCCGCATCGTCAGATCACGTTCAACTACTATCTGACGAACATCGAACGAATCCAGCACATCATCGTGTCCAGTCCGCGCACCGTCGTGCTCAGTGCGTACGCGGCTTTCGTCTACACTTCCGTGACCGGTGACCCCGTGCATTACTACCGTCTGAATGATGATCGTGATTATTCGTCGCTCGACTCGACGCTGGAGATTCCGTTCGATGAACTGCTGTCCGATCAGGATGCGTATCTGTGGCAGCTCGACGATCGTGCGAGAGCCGCACATCTGCACGATCTTCGACGCAACGGATTGTATGTGCACACGGGTGCCGCGCCTCTCGGAGAATACGACCCCGCGTATAAGCCGTTCTTCCAAGGATTCGCCGATCAGGATGTCGAAGCCGTCACGATTTCGTGCTCCGGACACGCCACGGTGGAGAAGGCGTTCGAGATCATCGATGCGGTGCGTCCCCGTCTGCTGTTCCCGGTGCATGGCGAGCATCCCGAACGGTATCGCAACGATTATGGAGCGATGATCTTGCCCGAACCGGGGTTGACTGTTGAGCTGTGA</Hsp_qseq>
+      <Hsp_hseq>ATGGCATCAAGGGATAACGATCTGCGCGACAAAACGCGCATCACGTTCTACCGGGGCATCCGCACGATCGGAGGCAATCTCATCGAGGTGTCCTATGGCGATAGCCGCATCGTGTTCGACTGCGGTTGCGAATATAACCCTGCCGCTCCCAAGCAGCCCCGAGATCTCGCCGATCTCATCTCGCAAGGCTACGTACCGTATCTGCCGGCGATATTCGACCGCACGATAGACGTGCCCGGTCACCACTGGTCTGCGGACCCGTATGCGCACAGTGCGGTCTTCGTCTCGCATGCGCATCTCGACCATTCCAAGATGCTCAACTATATCGATTCCGCCATCCCCGTCTACGCTTCGCAGAACACCAAGAGGGTGCTCGAAGCCATGAACGTGAACGACGATTTCGATTTCCCGCCGTATCGCAAGGATTGCGGCCATACTCGGCCGATTACCGGCGTGGAGCCCAACGGCGTCGTGCGTGTCGGTTCCATCTCGGTCACGGTCATGCCCGTAGACCACGATGCCTACGGTGCGTCCGGTCTGCGCGTCGTCACGCCTGACGCGGTCATCGCGTACACGGGCGACATTCGTTTCCACGGATTTCTTGAGCATGACACCCGTGCGTTCCTCCAAGCGAACGCGGGTGCCGATGCGCTCATCATGGAAGGCACGTCGATCTCCTTCCGCAAGCCGGGTGATCCCGTCGACCGCCCGGAGACCACCGAGCAGCAGGTGTGCGATCGCATCGAGGCGCTCGTTCGGGACAATCCGCATCGTCAGATCACGTTCAACTACTATCTGACGAACATCGAACGAATCCAGCACATCATCGTGTCCAGTCCGCGCACCGTCGTGCTCAGTGCGTACGCGGCTTTCGTCTACACTTCCGTGACCGGTGACCCCGTGCATTACTACCGTCTGAATGATGATCGTGATTATTCGTCGCTCGACTCGACGCTGGAGATTCCGTTCGATGAACTGCTGTCCGATCAGGATGCGTATCTGTGGCAGCTCGACGATCGTGCGAGAGCCGCACATCTGCACGATCTTCGACGCAACGGATTGTATGTGCACACGGGTGCCGCGCCTCTCGGAGAATACGACCCCGCGTATAAGCCGTTCTTCCAAGGATTCGCCGATCAGGATGTCGAAGCCGTCACGATTTCGTGCTCCGGACACGCCACGGTGGAGAAGGCGTTCGAGATCATCGATGCGGTGCGTCCCCGTCTGCTGTTCCCGGTGCATGGCGAGCATCCCGAACGGTATCGCAACGATTATGGAGCGATGATCTTGCCCGAACCGGGGTTGACTGTTGAGCTGTGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>3616783544</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>29</Iteration_iter-num>
+  <Iteration_query-ID>Query_29</Iteration_query-ID>
+  <Iteration_query-def>blon_2359 NC_011593.1:c2634683-2633865 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>819</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1513.53</Hsp_bit-score>
+      <Hsp_score>819</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>819</Hsp_query-to>
+      <Hsp_hit-from>18285</Hsp_hit-from>
+      <Hsp_hit-to>17467</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>819</Hsp_identity>
+      <Hsp_positive>819</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>819</Hsp_align-len>
+      <Hsp_qseq>GTGAGGTTTCTCGGTAAGGGTCTGGTCTACGTGTTCGTCATCGTCATGGCGGCGCTTACGCTCTTCCCGTTCCTGTACATGCTGTCCAGCAGCCTGATGACCTATCAGGAGGTCACGAGCATCCCGCCGACGATAGTGCCTCACGTCCCGCAGTGGCACAATTTCGTCGAAGCCATGAGGCAGGCGCCGTTCCCCCGTTATTTCCTCAACACGGTACTGGTGTCCGGGTTGTCGACGTTGGGCACGATCATCACCACCGTACTTGCGGCCTTCGCCTTGGTGAGGTTGCGTTTCCGTTTCAAGAAGGCGTTGATGATGGGCATGATGGCGTTGCTCATGGTTCCGTATGAGGTCGTTGTGTTCACCAACTATCGCACGATCAACCAGCTGGGTTTGCTGGATACGTATTGGGCGTTGATCTTGCCCTCCTTGGCAAGCGTGTTCTACATCTTCTATTTGCAGCAGTACCTGTCGTCCATACCGGCGGCATATTACAACGCGGCGAAGGTCGACGGGTGCGGTGATCTCGAATTCATCTGGAAAGTGATGATTCCGATGAGCAGGCCCGCTTTGTTCACCATGGCGTTGCTGCTGTTCATCGGCGGCTGGAATTCGTTCCTCTGGCCGATTCTCGTCACCAACAGCACGGATATGCGTCTGATCAGCAACGGTCTGAGCGCGTTCGCTACTGAGACCGGCACGGCGGTACAACTTCAGATGGCGGCCAGCACGGCCACGATTGTGCCGATATTGGTGCTGTACTTCATCTTCCATAAGCAAATCATCGAAGGAGTGTCCAGCAATGGCATCAAGGGATAA</Hsp_qseq>
+      <Hsp_hseq>GTGAGGTTTCTCGGTAAGGGTCTGGTCTACGTGTTCGTCATCGTCATGGCGGCGCTTACGCTCTTCCCGTTCCTGTACATGCTGTCCAGCAGCCTGATGACCTATCAGGAGGTCACGAGCATCCCGCCGACGATAGTGCCTCACGTCCCGCAGTGGCACAATTTCGTCGAAGCCATGAGGCAGGCGCCGTTCCCCCGTTATTTCCTCAACACGGTACTGGTGTCCGGGTTGTCGACGTTGGGCACGATCATCACCACCGTACTTGCGGCCTTCGCCTTGGTGAGGTTGCGTTTCCGTTTCAAGAAGGCGTTGATGATGGGCATGATGGCGTTGCTCATGGTTCCGTATGAGGTCGTTGTGTTCACCAACTATCGCACGATCAACCAGCTGGGTTTGCTGGATACGTATTGGGCGTTGATCTTGCCCTCCTTGGCAAGCGTGTTCTACATCTTCTATTTGCAGCAGTACCTGTCGTCCATACCGGCGGCATATTACAACGCGGCGAAGGTCGACGGGTGCGGTGATCTCGAATTCATCTGGAAAGTGATGATTCCGATGAGCAGGCCCGCTTTGTTCACCATGGCGTTGCTGCTGTTCATCGGCGGCTGGAATTCGTTCCTCTGGCCGATTCTCGTCACCAACAGCACGGATATGCGTCTGATCAGCAACGGTCTGAGCGCGTTCGCTACTGAGACCGGCACGGCGGTACAACTTCAGATGGCGGCCAGCACGGCCACGATTGTGCCGATATTGGTGCTGTACTTCATCTTCCATAAGCAAATCATCGAAGGAGTGTCCAGCAATGGCATCAAGGGATAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>2220783116</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>30</Iteration_iter-num>
+  <Iteration_query-ID>Query_30</Iteration_query-ID>
+  <Iteration_query-def>blon_2360 NC_011593.1:c2635627-2634680 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>948</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1751.74</Hsp_bit-score>
+      <Hsp_score>948</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>948</Hsp_query-to>
+      <Hsp_hit-from>19229</Hsp_hit-from>
+      <Hsp_hit-to>18282</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>948</Hsp_identity>
+      <Hsp_positive>948</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>948</Hsp_align-len>
+      <Hsp_qseq>ATGGAAGAGAGGCGCGAGAAGTCGATTGCGGTGACTGCCCTGAATGAGGGCGGGGGAGGGAAATCTCATCGCTCAGGTCGATATTCCGCCGAGCGGCAGCCCCATGCGTGGCTGTTGCTGTTCCCGGCCTTGGCGCTGATCACCGTGTTCAATCTGCTTCCCCTGGTGCGTATCTTCATCATGTCGCTGCAGGGCGGGACGTTGACCCGTCAACGGTTTGTGGGAATGCGTAATTTTGTTTTCGTGTTCGCGGATCCCGAATTCCGCAAGGCCATCGCCAATACGGCGCTGTTCGCATTCGTCGTGGTGTCGGTCGGGCTGGTGCTGTCGATGGCGGTGGCCGTGGCCATCAATGGAAAGCTTCGCGGAGGCAGGGTCTTCGAAATCCTGTTCTTCATCCCCTATCTGACCTCGGTGATCGCCATCGGCATGGTGTTCCGGTATCTGTTCAACGGCGATTACGGTCTTGTCAATTACGTGTTGGGTCTGTGCGGCCTTGGACCCTATGATTTTCTCAACGATCCGAAGTTCAATATGCCCACGCTCATCATCTTCGGCATATGGTCGTCCCTGGCGTTCAACATCATCATTCTGTTGTCGGGCCTGCGCGGCATAGACAAGGAATATTACAAGGTGGCCGACATGTTCGGCGCCACGGCCTGGGAGAAGTTCCGCCGGATCACGTTGCCGCAGATGGTGCCGATTCTGACGTTCCTGTCCATCGTGGATTTCATCAATTCCTTCAAGGTGTATACGGAGGTGTACGCCTTGTTCAACGGGAAGGCCGGTATCGGCGATAGCGCCACGACGGCGGTGTTCTACGTGTTCAACAAGTTCTACGTGGACAACAAGTATGGGCAGGGCATGGCCGCGGCGGTGGTGCTGTTCCTGGTGATTCTGGCTTTCACCATCATCCAAGGCATCGTATTGAGGAGGCTGGCGAAGTGA</Hsp_qseq>
+      <Hsp_hseq>ATGGAAGAGAGGCGCGAGAAGTCGATTGCGGTGACTGCCCTGAATGAGGGCGGGGGAGGGAAATCTCATCGCTCAGGTCGATATTCCGCCGAGCGGCAGCCCCATGCGTGGCTGTTGCTGTTCCCGGCCTTGGCGCTGATCACCGTGTTCAATCTGCTTCCCCTGGTGCGTATCTTCATCATGTCGCTGCAGGGCGGGACGTTGACCCGTCAACGGTTTGTGGGAATGCGTAATTTTGTTTTCGTGTTCGCGGATCCCGAATTCCGCAAGGCCATCGCCAATACGGCGCTGTTCGCATTCGTCGTGGTGTCGGTCGGGCTGGTGCTGTCGATGGCGGTGGCCGTGGCCATCAATGGAAAGCTTCGCGGAGGCAGGGTCTTCGAAATCCTGTTCTTCATCCCCTATCTGACCTCGGTGATCGCCATCGGCATGGTGTTCCGGTATCTGTTCAACGGCGATTACGGTCTTGTCAATTACGTGTTGGGTCTGTGCGGCCTTGGACCCTATGATTTTCTCAACGATCCGAAGTTCAATATGCCCACGCTCATCATCTTCGGCATATGGTCGTCCCTGGCGTTCAACATCATCATTCTGTTGTCGGGCCTGCGCGGCATAGACAAGGAATATTACAAGGTGGCCGACATGTTCGGCGCCACGGCCTGGGAGAAGTTCCGCCGGATCACGTTGCCGCAGATGGTGCCGATTCTGACGTTCCTGTCCATCGTGGATTTCATCAATTCCTTCAAGGTGTATACGGAGGTGTACGCCTTGTTCAACGGGAAGGCCGGTATCGGCGATAGCGCCACGACGGCGGTGTTCTACGTGTTCAACAAGTTCTACGTGGACAACAAGTATGGGCAGGGCATGGCCGCGGCGGTGGTGCTGTTCCTGGTGATTCTGGCTTTCACCATCATCCAAGGCATCGTATTGAGGAGGCTGGCGAAGTGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>2580232328</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>31</Iteration_iter-num>
+  <Iteration_query-ID>Query_31</Iteration_query-ID>
+  <Iteration_query-def>blon_2361 NC_011593.1:c2636747-2635629 Bifidobacterium longum subsp. infantis ATCC 15697, complete genome</Iteration_query-def>
+  <Iteration_query-len>1119</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>NZ_CCWU01000047.1</Hit_id>
+  <Hit_def>Bifidobacterium longum subsp. infantis strain BIB1401242951, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NZ_CCWU01000047.1</Hit_accession>
+  <Hit_len>109297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>2067.52</Hsp_bit-score>
+      <Hsp_score>1119</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>1119</Hsp_query-to>
+      <Hsp_hit-from>20349</Hsp_hit-from>
+      <Hsp_hit-to>19231</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>1119</Hsp_identity>
+      <Hsp_positive>1119</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1119</Hsp_align-len>
+      <Hsp_qseq>ATGGGAATCTCAATCAAGAATCTCAGGAAGGTGTATGAGAACGGATATGAGGCCCTGAAGGATATCAGCCTTGATATTCAAGACGGAGAACTGGTCTGCCTGCTTGGTCCCAGCGGCTGCGGCAAAAGCACTACGCTGAACATCATCGCGGGTCTTCTGGATCCCACTTCCGGCGATATCGCCATCGACGGCCAATCCGTCGTCGGACTGCATCCCAAGAATCGCAACATCGGGATGGTCTTCCAGAATTATGCCCTCTACCCGCATATGACGGTATTGGAGAACGTCATGTTTCCGCTGCGTGTGGGAGAACATCGCCGCAGCAGGGAAGAGGCGGCGAAGATCGCCCACAAGTTCATGGACATGACGAACATCGAGAATCTGGCGGACAAGAAACCTTCCGCGTTGTCGGGCGGGCAGCAGCAGCGTGTGGCCATCGCTCGTGCACTCGTGCAGACTCCCCGGGTGCTGCTGCTAGACGAGCCGTTGAGCAATTTGGATGCGCGTCTACGGTTGCATATTCGCGAGGAGATTCGCCGTCTGGTCAAGGGGACGGGCATCACCACGATCTTCGTCACTCACGATCAGGAGGAGGCGCTGTCGATTTCCGATCGCATCGTGCTGATGAACGAGGGTGTGGTGCAGCAGTACGACAATCCGCAAAAACTCTATCTCGACCCGGCCAACCTGTTTGTGGCGCAGTTCATGGGAAGTCCGATCATCAATATCTTCGACATGAGATTCGACCGTTCTGACGGCATGCTGCGGGGAAAGGCCTTCGACATCGCGCTCGCGGATCTTGATGGTTCCCGGTTCCGCGCCGACGCCGCGGGCGGAATGCTGACGGAGGAGCGCTACAAGGTCGGCATTCGTCCTGAATATTTCCTGACGGAGCCCGTGAAAGGGCATGCCGATGGATTCAAGCCGGCGTTTGAGGCCGAAATCGAGTCTTTGGAAATGATCGGCCGTTATGCCGTCCTGCATTTTGACGCCGGCGGGCAACATGCGCGCAGCGTGGTCGATGCACGCACGGGAATCCGCCAAGGGCAACGGGTCGCGTTCGCCATCGGGTATGACGATATATATCTGTTCTCCGAGGATGGAACGAGGGTGTACTGA</Hsp_qseq>
+      <Hsp_hseq>ATGGGAATCTCAATCAAGAATCTCAGGAAGGTGTATGAGAACGGATATGAGGCCCTGAAGGATATCAGCCTTGATATTCAAGACGGAGAACTGGTCTGCCTGCTTGGTCCCAGCGGCTGCGGCAAAAGCACTACGCTGAACATCATCGCGGGTCTTCTGGATCCCACTTCCGGCGATATCGCCATCGACGGCCAATCCGTCGTCGGACTGCATCCCAAGAATCGCAACATCGGGATGGTCTTCCAGAATTATGCCCTCTACCCGCATATGACGGTATTGGAGAACGTCATGTTTCCGCTGCGTGTGGGAGAACATCGCCGCAGCAGGGAAGAGGCGGCGAAGATCGCCCACAAGTTCATGGACATGACGAACATCGAGAATCTGGCGGACAAGAAACCTTCCGCGTTGTCGGGCGGGCAGCAGCAGCGTGTGGCCATCGCTCGTGCACTCGTGCAGACTCCCCGGGTGCTGCTGCTAGACGAGCCGTTGAGCAATTTGGATGCGCGTCTACGGTTGCATATTCGCGAGGAGATTCGCCGTCTGGTCAAGGGGACGGGCATCACCACGATCTTCGTCACTCACGATCAGGAGGAGGCGCTGTCGATTTCCGATCGCATCGTGCTGATGAACGAGGGTGTGGTGCAGCAGTACGACAATCCGCAAAAACTCTATCTCGACCCGGCCAACCTGTTTGTGGCGCAGTTCATGGGAAGTCCGATCATCAATATCTTCGACATGAGATTCGACCGTTCTGACGGCATGCTGCGGGGAAAGGCCTTCGACATCGCGCTCGCGGATCTTGATGGTTCCCGGTTCCGCGCCGACGCCGCGGGCGGAATGCTGACGGAGGAGCGCTACAAGGTCGGCATTCGTCCTGAATATTTCCTGACGGAGCCCGTGAAAGGGCATGCCGATGGATTCAAGCCGGCGTTTGAGGCCGAAATCGAGTCTTTGGAAATGATCGGCCGTTATGCCGTCCTGCATTTTGACGCCGGCGGGCAACATGCGCGCAGCGTGGTCGATGCACGCACGGGAATCCGCCAAGGGCAACGGGTCGCGTTCGCCATCGGGTATGACGATATATATCTGTTCTCCGAGGATGGAACGAGGGTGTACTGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>50</Statistics_db-num>
+      <Statistics_db-len>2787528</Statistics_db-len>
+      <Statistics_hsp-len>22</Statistics_hsp-len>
+      <Statistics_eff-space>3056711516</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

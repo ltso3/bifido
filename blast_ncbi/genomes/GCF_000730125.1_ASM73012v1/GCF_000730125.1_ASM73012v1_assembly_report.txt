@@ -1,0 +1,70 @@
+# Assembly name:  ASM73012v1
+# Organism name:  Bifidobacterium longum subsp. infantis EK3 (high GC Gram+)
+# Infraspecific name:  strain=EK3
+# Taxid:          1457183
+# BioSample:      SAMN02862995
+# BioProject:     PRJNA236798
+# Submitter:      Pirogov Russian National Research Medical University
+# Date:           2014-7-16
+# Assembly type:  n/a
+# Release type:   major
+# Assembly level: Scaffold
+# Genome representation: full
+# WGS project:    JNWB01
+# Assembly method: CLC Genomics Workbench v. 6.0.2
+# Expected final version: yes
+# Reference guided assembly: de-novo
+# Genome coverage: 1161.0x
+# Sequencing technology: Illumina HiSeq
+# GenBank assembly accession: GCA_000730125.1
+# RefSeq assembly accession: GCF_000730125.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000730145.1	GCF_000730145.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+seq1	unplaced-scaffold	na	na	JNWB01000001.1	=	NZ_JNWB01000001.1	Primary Assembly	121806	na
+seq2	unplaced-scaffold	na	na	JNWB01000002.1	=	NZ_JNWB01000002.1	Primary Assembly	36790	na
+seq3	unplaced-scaffold	na	na	JNWB01000003.1	=	NZ_JNWB01000003.1	Primary Assembly	28679	na
+seq4	unplaced-scaffold	na	na	JNWB01000004.1	=	NZ_JNWB01000004.1	Primary Assembly	34427	na
+seq5	unplaced-scaffold	na	na	JNWB01000005.1	=	NZ_JNWB01000005.1	Primary Assembly	68374	na
+seq6	unplaced-scaffold	na	na	JNWB01000006.1	=	NZ_JNWB01000006.1	Primary Assembly	179236	na
+seq7	unplaced-scaffold	na	na	JNWB01000007.1	=	NZ_JNWB01000007.1	Primary Assembly	44705	na
+seq8	unplaced-scaffold	na	na	JNWB01000008.1	=	NZ_JNWB01000008.1	Primary Assembly	3773	na
+seq9	unplaced-scaffold	na	na	JNWB01000009.1	=	NZ_JNWB01000009.1	Primary Assembly	84547	na
+seq10	unplaced-scaffold	na	na	JNWB01000010.1	=	NZ_JNWB01000010.1	Primary Assembly	77826	na
+seq11	unplaced-scaffold	na	na	JNWB01000011.1	=	NZ_JNWB01000011.1	Primary Assembly	11045	na
+seq12	unplaced-scaffold	na	na	JNWB01000012.1	=	NZ_JNWB01000012.1	Primary Assembly	33024	na
+seq13	unplaced-scaffold	na	na	JNWB01000013.1	=	NZ_JNWB01000013.1	Primary Assembly	55469	na
+seq14	unplaced-scaffold	na	na	JNWB01000014.1	=	NZ_JNWB01000014.1	Primary Assembly	210529	na
+seq15	unplaced-scaffold	na	na	JNWB01000015.1	=	NZ_JNWB01000015.1	Primary Assembly	10580	na
+seq16	unplaced-scaffold	na	na	JNWB01000016.1	=	NZ_JNWB01000016.1	Primary Assembly	50513	na
+seq17	unplaced-scaffold	na	na	JNWB01000017.1	=	NZ_JNWB01000017.1	Primary Assembly	6041	na
+seq18	unplaced-scaffold	na	na	JNWB01000018.1	=	NZ_JNWB01000018.1	Primary Assembly	315514	na
+seq19	unplaced-scaffold	na	na	JNWB01000019.1	=	NZ_JNWB01000019.1	Primary Assembly	32800	na
+seq20	unplaced-scaffold	na	na	JNWB01000020.1	=	NZ_JNWB01000020.1	Primary Assembly	3958	na
+seq21	unplaced-scaffold	na	na	JNWB01000021.1	=	NZ_JNWB01000021.1	Primary Assembly	1836	na
+seq22	unplaced-scaffold	na	na	JNWB01000022.1	=	NZ_JNWB01000022.1	Primary Assembly	182911	na
+seq23	unplaced-scaffold	na	na	JNWB01000023.1	=	NZ_JNWB01000023.1	Primary Assembly	737	na
+seq24	unplaced-scaffold	na	na	JNWB01000024.1	=	NZ_JNWB01000024.1	Primary Assembly	1220	na
+seq25	unplaced-scaffold	na	na	JNWB01000025.1	=	NZ_JNWB01000025.1	Primary Assembly	2585	na
+seq26	unplaced-scaffold	na	na	JNWB01000026.1	=	NZ_JNWB01000026.1	Primary Assembly	114267	na
+seq27	unplaced-scaffold	na	na	JNWB01000027.1	=	NZ_JNWB01000027.1	Primary Assembly	3783	na
+seq28	unplaced-scaffold	na	na	JNWB01000028.1	=	NZ_JNWB01000028.1	Primary Assembly	5571	na
+seq29	unplaced-scaffold	na	na	JNWB01000029.1	=	NZ_JNWB01000029.1	Primary Assembly	1182	na
+seq30	unplaced-scaffold	na	na	JNWB01000030.1	=	NZ_JNWB01000030.1	Primary Assembly	142926	na
+seq31	unplaced-scaffold	na	na	JNWB01000031.1	=	NZ_JNWB01000031.1	Primary Assembly	2909	na
+seq32	unplaced-scaffold	na	na	JNWB01000032.1	=	NZ_JNWB01000032.1	Primary Assembly	764	na
+seq33	unplaced-scaffold	na	na	JNWB01000033.1	=	NZ_JNWB01000033.1	Primary Assembly	237675	na
+seq34	unplaced-scaffold	na	na	JNWB01000034.1	=	NZ_JNWB01000034.1	Primary Assembly	614	na
+seq35	unplaced-scaffold	na	na	JNWB01000035.1	=	NZ_JNWB01000035.1	Primary Assembly	479	na
+seq36	unplaced-scaffold	na	na	JNWB01000036.1	=	NZ_JNWB01000036.1	Primary Assembly	153455	na
+seq37	unplaced-scaffold	na	na	JNWB01000037.1	=	NZ_JNWB01000037.1	Primary Assembly	1420	na
+seq38	unplaced-scaffold	na	na	JNWB01000038.1	=	NZ_JNWB01000038.1	Primary Assembly	300839	na

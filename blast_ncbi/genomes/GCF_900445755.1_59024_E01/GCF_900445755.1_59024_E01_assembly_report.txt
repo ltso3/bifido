@@ -1,0 +1,73 @@
+# Assembly name:  59024_E01
+# Organism name:  Bifidobacterium longum subsp. infantis (high GC Gram+)
+# Infraspecific name:  strain=NCTC13219
+# Taxid:          1682
+# BioSample:      SAMEA104318167
+# BioProject:     PRJEB6403
+# Submitter:      SC
+# Date:           2018-6-28
+# Assembly type:  n/a
+# Release type:   major
+# Assembly level: Contig
+# Genome representation: full
+# WGS project:    UAQL01
+# Genome coverage: 100x
+# GenBank assembly accession: GCA_900445755.1
+# RefSeq assembly accession: GCF_900445755.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_900445754.1	GCF_900445754.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+UAQL01000045.1	unplaced-scaffold	na	na	UAQL01000045.1	=	NZ_UAQL01000045.1	Primary Assembly	5727	na
+UAQL01000040.1	unplaced-scaffold	na	na	UAQL01000040.1	=	NZ_UAQL01000040.1	Primary Assembly	425	na
+UAQL01000039.1	unplaced-scaffold	na	na	UAQL01000039.1	=	NZ_UAQL01000039.1	Primary Assembly	3163	na
+UAQL01000038.1	unplaced-scaffold	na	na	UAQL01000038.1	=	NZ_UAQL01000038.1	Primary Assembly	6536	na
+UAQL01000037.1	unplaced-scaffold	na	na	UAQL01000037.1	=	NZ_UAQL01000037.1	Primary Assembly	2879	na
+UAQL01000030.1	unplaced-scaffold	na	na	UAQL01000030.1	=	NZ_UAQL01000030.1	Primary Assembly	4012	na
+UAQL01000044.1	unplaced-scaffold	na	na	UAQL01000044.1	=	NZ_UAQL01000044.1	Primary Assembly	19411	na
+UAQL01000032.1	unplaced-scaffold	na	na	UAQL01000032.1	=	NZ_UAQL01000032.1	Primary Assembly	207042	na
+UAQL01000029.1	unplaced-scaffold	na	na	UAQL01000029.1	=	NZ_UAQL01000029.1	Primary Assembly	123720	na
+UAQL01000028.1	unplaced-scaffold	na	na	UAQL01000028.1	=	NZ_UAQL01000028.1	Primary Assembly	66752	na
+UAQL01000027.1	unplaced-scaffold	na	na	UAQL01000027.1	=	NZ_UAQL01000027.1	Primary Assembly	5967	na
+UAQL01000026.1	unplaced-scaffold	na	na	UAQL01000026.1	=	NZ_UAQL01000026.1	Primary Assembly	17995	na
+UAQL01000042.1	unplaced-scaffold	na	na	UAQL01000042.1	=	NZ_UAQL01000042.1	Primary Assembly	48418	na
+UAQL01000013.1	unplaced-scaffold	na	na	UAQL01000013.1	=	NZ_UAQL01000013.1	Primary Assembly	1552	na
+UAQL01000009.1	unplaced-scaffold	na	na	UAQL01000009.1	=	NZ_UAQL01000009.1	Primary Assembly	274954	na
+UAQL01000021.1	unplaced-scaffold	na	na	UAQL01000021.1	=	NZ_UAQL01000021.1	Primary Assembly	86912	na
+UAQL01000007.1	unplaced-scaffold	na	na	UAQL01000007.1	=	NZ_UAQL01000007.1	Primary Assembly	43524	na
+UAQL01000034.1	unplaced-scaffold	na	na	UAQL01000034.1	=	NZ_UAQL01000034.1	Primary Assembly	58294	na
+UAQL01000020.1	unplaced-scaffold	na	na	UAQL01000020.1	=	NZ_UAQL01000020.1	Primary Assembly	984	na
+UAQL01000003.1	unplaced-scaffold	na	na	UAQL01000003.1	=	NZ_UAQL01000003.1	Primary Assembly	1249	na
+UAQL01000011.1	unplaced-scaffold	na	na	UAQL01000011.1	=	NZ_UAQL01000011.1	Primary Assembly	416	na
+UAQL01000041.1	unplaced-scaffold	na	na	UAQL01000041.1	=	NZ_UAQL01000041.1	Primary Assembly	48667	na
+UAQL01000005.1	unplaced-scaffold	na	na	UAQL01000005.1	=	NZ_UAQL01000005.1	Primary Assembly	5583	na
+UAQL01000002.1	unplaced-scaffold	na	na	UAQL01000002.1	=	NZ_UAQL01000002.1	Primary Assembly	45109	na
+UAQL01000025.1	unplaced-scaffold	na	na	UAQL01000025.1	=	NZ_UAQL01000025.1	Primary Assembly	501	na
+UAQL01000023.1	unplaced-scaffold	na	na	UAQL01000023.1	=	NZ_UAQL01000023.1	Primary Assembly	18579	na
+UAQL01000016.1	unplaced-scaffold	na	na	UAQL01000016.1	=	NZ_UAQL01000016.1	Primary Assembly	160003	na
+UAQL01000010.1	unplaced-scaffold	na	na	UAQL01000010.1	=	NZ_UAQL01000010.1	Primary Assembly	31118	na
+UAQL01000012.1	unplaced-scaffold	na	na	UAQL01000012.1	=	NZ_UAQL01000012.1	Primary Assembly	125581	na
+UAQL01000001.1	unplaced-scaffold	na	na	UAQL01000001.1	=	NZ_UAQL01000001.1	Primary Assembly	2271	na
+UAQL01000024.1	unplaced-scaffold	na	na	UAQL01000024.1	=	NZ_UAQL01000024.1	Primary Assembly	34910	na
+UAQL01000006.1	unplaced-scaffold	na	na	UAQL01000006.1	=	NZ_UAQL01000006.1	Primary Assembly	20331	na
+UAQL01000015.1	unplaced-scaffold	na	na	UAQL01000015.1	=	NZ_UAQL01000015.1	Primary Assembly	7159	na
+UAQL01000035.1	unplaced-scaffold	na	na	UAQL01000035.1	=	NZ_UAQL01000035.1	Primary Assembly	63103	na
+UAQL01000031.1	unplaced-scaffold	na	na	UAQL01000031.1	=	NZ_UAQL01000031.1	Primary Assembly	59189	na
+UAQL01000014.1	unplaced-scaffold	na	na	UAQL01000014.1	=	NZ_UAQL01000014.1	Primary Assembly	743905	na
+UAQL01000017.1	unplaced-scaffold	na	na	UAQL01000017.1	=	NZ_UAQL01000017.1	Primary Assembly	2345	na
+UAQL01000036.1	unplaced-scaffold	na	na	UAQL01000036.1	=	NZ_UAQL01000036.1	Primary Assembly	6465	na
+UAQL01000033.1	unplaced-scaffold	na	na	UAQL01000033.1	=	NZ_UAQL01000033.1	Primary Assembly	67385	na
+UAQL01000004.1	unplaced-scaffold	na	na	UAQL01000004.1	=	NZ_UAQL01000004.1	Primary Assembly	720	na
+UAQL01000018.1	unplaced-scaffold	na	na	UAQL01000018.1	=	NZ_UAQL01000018.1	Primary Assembly	471	na
+UAQL01000043.1	unplaced-scaffold	na	na	UAQL01000043.1	=	NZ_UAQL01000043.1	Primary Assembly	60668	na
+UAQL01000019.1	unplaced-scaffold	na	na	UAQL01000019.1	=	NZ_UAQL01000019.1	Primary Assembly	106049	na
+UAQL01000008.1	unplaced-scaffold	na	na	UAQL01000008.1	=	NZ_UAQL01000008.1	Primary Assembly	254	na
+UAQL01000022.1	unplaced-scaffold	na	na	UAQL01000022.1	=	NZ_UAQL01000022.1	Primary Assembly	12293	na
