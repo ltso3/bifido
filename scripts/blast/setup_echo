@@ -21,7 +21,7 @@ for filename in kneaddata/*kneaddata_paired_1*; do
     
     # blast 30 HMO gene query against single sample
     # blastn -db db/blast_${sample}.faa -query query/hmo_genes.faa -perc_identity 95 -out output/${sample} -outfmt 7
-    tblastn -db db/blast_${sample}.faa -query query/hmo_proteins.faa -qcov_hsp_perc 95 -max_hsps 1 -num_threads 6 -out output/${sample} -outfmt 7
+    tblastn -db db/blast_${sample}.faa -query query/hmo_proteins.faa -db_gencode 11 -num_threads 4 -out output/${sample} -outfmt 7
 
     # delete blastdb files to save space
     rm -r db/blast_*

@@ -4,6 +4,7 @@ library(Cairo)
 library(RColorBrewer)
 library(gplots)
 library(phytools)
+library(phangorn)
 
 # read in identity matrix from pyani
 n <- as.matrix(read.table("~/Desktop/repos/bifido/ani/ANIm_output/ANIm_percentage_identity.tab", 
@@ -79,4 +80,15 @@ dev.off()
 png('root_combo.png', width=4000, height=4400)
 phylo.heatmap(root, root_df, colors=colorRampPalette(c("dodgerblue3", "white"))(200)[200:1])
 dev.off()
+
+# -------------------------------------------------------------------------------------------------
+
+# read in blon protein genes from clustal omega
+tree <- read.tree("~/Desktop/repos/bifido/scripts/blast/blons/blon_2331.tree")
+png('blon_2331.png', width = 2500, height = 2000)
+plot(tree, main="Neighbor Joining")
+add.scale.bar(cex = 4, font = 2, col = "red")
+layout(1)
+dev.off()
+
 
