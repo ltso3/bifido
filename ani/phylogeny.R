@@ -84,11 +84,32 @@ dev.off()
 # -------------------------------------------------------------------------------------------------
 
 # read in blon protein genes from clustal omega
-tree <- read.tree("~/Desktop/repos/bifido/scripts/blast/blons/blon_2331.tree")
-png('blon_2331.png', width = 2500, height = 2000)
-plot(tree, main="Neighbor Joining")
+tree <- read.tree("~/Desktop/repos/bifido/scripts/blast/protein_blons/blon_2361.tree")
+species <- tree$tip.label
+split_spec <- sapply(strsplit(species, "!"), function(x) x[2], simplify=TRUE)
+
+# color branch labels by unique names (needs some specification for final figure)
+# add specific colors for infantis and longum and suis
+# if infantis in the string replace with infantis, same with all subspecies
+split1 <- replace(split_spec, grepl("infantis",split_spec), "infantis")
+split2 <- replace(split1, grepl("subsp.-longum",split1), "subsp.-longum")
+
+tipcol <- rep('black', length(tree$tip.label))
+colors <- rainbow(length(unique(split2)))
+for(i in 1:length(unique(split2))) {
+  tipcol[grep(unique(split2)[i], tree$tip.label)] <- colors[i]
+}
+
+png('blon_2361.png', width = 2500, height = 2000)
+plot(tree, main="Neighbor Joining", tip.color=tipcol)
 add.scale.bar(cex = 4, font = 2, col = "red")
 layout(1)
 dev.off()
 
+# -------------------------------------------------------------------------------------------------
+# tree from concatenated infantis cluster
+tree <- read.tree("~/Desktop/repos/bifido/scripts/blast/cluster_genomes.tree")
+png('cluster_genomes.png', width = 2500, height = 2000)
+plot(tree, main="Neighbor Joining")
+dev.off()
 

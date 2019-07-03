@@ -1,6 +1,7 @@
 from Bio import SeqIO
 from Bio import Entrez
 from Bio.Blast import NCBIXML
+from Bio.Seq import Seq
 from urllib.error import HTTPError
 from os import listdir
 import time
@@ -29,14 +30,32 @@ for filename in output:
                                 genome_dict[filename][query_id].append(hit_pos)
                                 genome_dict[filename][query_id].append(hit_id)
                                 try:
-                                        seq = Entrez.efetch(db="nucleotide", id=hit_id, rettype="fasta", strand=1, \
-                                                               seq_start=min(hit_pos), seq_stop=max(hit_pos))
-                                        genome_dict[filename][query_id].append(seq.read().strip().replace('\n', ''))
+                                        start, end = hit_pos
+                                        if start < end:
+                                                seq = Entrez.efetch(db="nucleotide", id=hit_id, rettype="fasta", strand=1, \
+                                                                seq_start=min(hit_pos), seq_stop=max(hit_pos))
+                                                genome_dict[filename][query_id].append(seq.read().strip().replace('\n', ''))
+                                        else:
+                                                seq = Entrez.efetch(db="nucleotide", id=hit_id, rettype="fasta", strand=1, \
+                                                                seq_start=min(hit_pos), seq_stop=max(hit_pos))
+                                                for record in SeqIO.parse(seq, "fasta"):
+                                                        seq = Seq(str(record.seq))
+                                                seq = seq.reverse_complement()
+                                                genome_dict[filename][query_id].append(str(seq).strip().replace('\n', ''))
                                 except HTTPError as err:
                                         time.sleep(20)
-                                        seq = Entrez.efetch(db="nucleotide", id=hit_id, rettype="fasta", strand=1, \
-                                                               seq_start=min(hit_pos), seq_stop=max(hit_pos))
-                                        genome_dict[filename][query_id].append(seq.read().strip().replace('\n', ''))
+                                        start, end = hit_pos
+                                        if start < end:
+                                                seq = Entrez.efetch(db="nucleotide", id=hit_id, rettype="fasta", strand=1, \
+                                                                seq_start=min(hit_pos), seq_stop=max(hit_pos))
+                                                genome_dict[filename][query_id].append(seq.read().strip().replace('\n', ''))
+                                        else:
+                                                seq = Entrez.efetch(db="nucleotide", id=hit_id, rettype="fasta", strand=1, \
+                                                                seq_start=min(hit_pos), seq_stop=max(hit_pos))
+                                                for record in SeqIO.parse(seq, "fasta"):
+                                                        seq = Seq(str(record.seq))
+                                                seq = seq.reverse_complement()
+                                                genome_dict[filename][query_id].append(str(seq).strip().replace('\n', ''))
 
 f = open("cluster_dict.txt","w")
 f.write(str(genome_dict))
