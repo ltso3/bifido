@@ -1,5 +1,6 @@
 import pandas as pd
 import re 
+import math
 
 with open('cluster_dict.txt', 'r') as file:
     dic = file.read().replace('\n', '')
@@ -51,7 +52,21 @@ df["sequence"] = sequences
 cols = ["genome", "blon", "position", "start", "end", "accession", "sequence"]
 df = df[cols] 
 
-df.to_csv("cluster_dict.csv")
+# df.to_csv("cluster_dict.csv")
+
+letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", \
+           "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", \
+           "ab", "ac", "ad", "ae", "af"]
+
+for genome in list(set(df['genome'])):
+    i = 0
+    with open ('cytobands/{}.txt'.format(genome),'a') as f:
+        f.write("chr\tstart\tend\tend\tname\tgieStain\n")
+        for index, row in df.loc[df['genome'] == genome].iterrows():
+            # print(row["start"], type(row['start']))
+            if not math.isnan(row["start"]):
+                f.write("infantis\t{}\t{}\t{}\t{}\n".format(row["start"], row["end"], row["blon"], letters[i]))
+                i += 1    
 
 # blons = ["blon_2331", "blon_2332", "blon_2334", "blon_2335", "blon_2336", "blon_2337", "blon_2338" \
 #          "blon_2339", "blon_2340", "blon_2348", "blon_2349", "blon_2354", "blon_2355"]
