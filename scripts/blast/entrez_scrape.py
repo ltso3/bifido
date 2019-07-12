@@ -27,6 +27,7 @@ for filename in output:
                         hit_pos = (hsp.sbjct_start, hsp.sbjct_end)
                         hit_len = hsp.align_length / query_len * 100
                         if hit_len > 80:
+                                print(filename, query_id, hit_id)
                                 genome_dict[filename][query_id].append(hit_pos)
                                 genome_dict[filename][query_id].append(hit_id)
                                 try:
@@ -57,6 +58,6 @@ for filename in output:
                                                 seq = seq.reverse_complement()
                                                 genome_dict[filename][query_id].append(str(seq).strip().replace('\n', ''))
 
-f = open("cluster_dict.txt","w")
-f.write(str(genome_dict))
-f.close()
+# f = open("cluster_dict.txt","w")
+# f.write(str(genome_dict))
+# f.close()

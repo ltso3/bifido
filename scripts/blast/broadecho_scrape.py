@@ -9,14 +9,35 @@ import matplotlib.pyplot as plt
 # read in all blast files, one for each sample
 blast_output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_output")]
 
+blons = open("/Users/laurentso/Desktop/repos/bifido/scripts/blast/blon_map.txt", "r")
+queries = []
+blon_names = []
+for line in blons.readlines():
+   blon, nc = line.split()
+   queries.append(nc)
+   blon_names.append(blon.lower())
+queries = blon_names
+
+lengths = open("/Users/laurentso/Desktop/repos/bifido/blast_broad/query/hmo_genes_lengths.txt", "r")
+len_dict = {}
+i = 0
+for line in lengths.readlines():
+    if re.search("^NC", line):
+        name = line.split()[0]
+        blon = blon_names[i]
+        i += 1
+    else:
+        len_dict[blon] = float(line)/3.
+print(len_dict['blon_2353'])
+
 match_dict = {}
 for filename in blast_output:
     match_dict[filename] = {}
     f = open('/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_output/{}'.format(filename))
     for line in f.readlines():
         if re.search("^# Query:", line): # if line with the HMO query
-            query = "NC_011593.1:"+(line.split(":")[2].split()[0].strip())
-
+            # query = "NC_011593.1:"+(line.split(":")[2].split()[0].strip())
+            query = line.split(":")[1].strip()
         if re.search("hits found$", line): # if line with the number of hits
             num_hits = line.split()[1].strip()
             if query not in match_dict[filename]:
@@ -25,27 +46,11 @@ for filename in blast_output:
                 match_dict[filename][query] += int(num_hits)
 
         # if alignment length is less than 90bp, consider number of hits to be 0
-        if re.search("^NC", line):
+        if re.search("^blon", line):
             query, genome, identity, length, mismatches, gaps, \
             q_start, q_end, s_start, s_end, evalue, bit_score = line.split()
-            if int(length) < 90:
+            if float(identity) < 90 or (float(length)/(float(len_dict[query.lower()])) < 0.96 and float(length) < 48):
                 match_dict[filename][query] -= 1
-
-blons = open("/Users/laurentso/Desktop/repos/bifido/scripts/blast/blon_map.txt", "r")
-queries = []
-blon_names = []
-for line in blons.readlines():
-   blon, nc = line.split()
-   queries.append(nc)
-   blon_names.append(blon)
-
-lengths = open("/Users/laurentso/Desktop/repos/bifido/blast_broad/query/hmo_genes_lengths.txt", "r")
-len_dict = {}
-for line in lengths.readlines():
-    if re.search("^NC", line):
-       blon = line.split()[0]
-    else:
-        len_dict[blon] = line
 
 df = pd.DataFrame(np.nan, index = [i.split('_S')[0] for i in match_dict.keys()], columns = queries)
 for key in match_dict.keys():
@@ -58,28 +63,28 @@ for key in match_dict.keys():
 
 normalized_df = df.copy()
 for key in match_dict.keys():
-    norms = [int(num)/int(len) for num, len in zip(pd.Series(match_dict[key]), len_dict.values())]
+    norms = [int(num)/(float(len)) for num, len in zip(pd.Series(match_dict[key]), len_dict.values())]
     normalized_df.loc[key.split('_S')[0]] = [math.log(num+0.00000000001) for num in norms]
 
-normalized_df.to_csv("output/normalized.tsv", sep = '\t')
+# normalized_df.to_csv("output/normalized.tsv", sep = '\t')
 
 # normal results
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(df.astype(int))
 fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_1.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_broadecho.png")
 
 # logged results
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(log_df.astype(int)) #, cmap="YlGnBu")
 fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_1.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_broadecho_log.png")
 
 # logged and normalized results
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(normalized_df.astype(int)) #, cmap="YlGnBu")
 fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_norm_1.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_broadecho_log_norm.png")
 
 # ---------------------------------------------------------------------------------------------------------
 
@@ -110,11 +115,11 @@ for key in subjects:
     else:
         meta_df.loc[key] = np.nan
 
-plt.subplots(figsize=(5,15))
-mask = meta_df.isnull()
-heatmap = sns.heatmap(meta_df, mask=mask)
-fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_meta.png")
+# plt.subplots(figsize=(5,15))
+# mask = meta_df.isnull()
+# heatmap = sns.heatmap(meta_df, mask=mask)
+# fig = heatmap.get_figure()
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_meta.png")
 
 # ---------------------------------------------------------------------------------------------------------
 
@@ -140,14 +145,14 @@ norm_df = norm_df.drop('adj_index', 1)
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(norm_df.astype(int)) #, cmap="YlGnBu")
 fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_norm_adj_1.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_broadecho_log_norm_adj.png")
 
 # just samples with blon 2355 to focus in on infantis
-df_2355 = norm_df.copy()
-df_2355 = df_2355[df_2355['Blon_2355'] > -12]
+# df_2355 = norm_df.copy()
+# df_2355 = df_2355[df_2355['Blon_2355'] > -12]
 
-plt.subplots(figsize=(20,15))
-heatmap = sns.heatmap(df_2355.astype(int)) #, cmap="YlGnBu")
-fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_norm_adj_2355.png")
+# plt.subplots(figsize=(20,15))
+# heatmap = sns.heatmap(df_2355.astype(int)) #, cmap="YlGnBu")
+# fig = heatmap.get_figure()
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_norm_adj_2355.png")
 

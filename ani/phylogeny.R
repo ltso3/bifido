@@ -95,9 +95,11 @@ split1 <- replace(split_spec, grepl("infantis",split_spec), "infantis")
 split2 <- replace(split1, grepl("subsp.-longum",split1), "subsp.-longum")
 
 tipcol <- rep('black', length(tree$tip.label))
-colors <- rainbow(length(unique(split2)))
+colors <- rainbow(length(sort(unique(split2))))
 for(i in 1:length(unique(split2))) {
-  tipcol[grep(unique(split2)[i], tree$tip.label)] <- colors[i]
+  if(sort(unique(split2))[i] != "") {
+    tipcol[grep(sort(unique(split2))[i], tree$tip.label)] <- colors[i]
+  }
 }
 
 png('blon_2361.png', width = 2500, height = 2000)
