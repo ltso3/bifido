@@ -1,5 +1,6 @@
 scripts/metadata
 scripts/blast/output/echo_output
+scripts/blast/output/prot_output
 blast/query
 blast/query/all_bifidum_genomes.faa
 blast/query/all_breve_genomes.faa
