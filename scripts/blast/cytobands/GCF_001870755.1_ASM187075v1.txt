@@ -1,0 +1,22 @@
+chr	start	end	end	name	gieStain
+infantis	61761.0	63284.0	blon_2331	a
+infantis	65339.0	66845.0	blon_2332	b
+infantis	67162.0	70233.0	blon_2334	c
+infantis	70409.0	72757.0	blon_2335	d
+infantis	72789.0	74225.0	blon_2336	e
+infantis	74247.0	74684.0	blon_2337	f
+infantis	74721.0	75617.0	blon_2338	g
+infantis	75761.0	76552.0	blon_2339	h
+infantis	76572.0	77849.0	blon_2340	i
+infantis	78000.0	78659.0	blon_2341	j
+infantis	78802.0	79764.0	blon_2342	k
+infantis	79783.0	80736.0	blon_2343	l
+infantis	78802.0	79764.0	blon_2345	m
+infantis	79783.0	80736.0	blon_2346	n
+infantis	5956.0	7551.0	blon_2347	o
+infantis	7686.0	8870.0	blon_2348	p
+infantis	9036.0	9992.0	blon_2349	q
+infantis	12645.0	14243.0	blon_2352	r
+infantis	14397.0	14519.0	blon_2353	s
+infantis	24113.0	25492.0	blon_2354	t
+infantis	22002.0	23957.0	blon_2355	u
