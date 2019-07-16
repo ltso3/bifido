@@ -138,21 +138,10 @@ norm_df["adj_index"] = adj_index
 norm_df.sort_values(by=['adj_index'], inplace=True)
 norm_df = norm_df.drop('adj_index', 1)
 
-# compute the matrix height in points and inches
-# matrix_height_pt = 22 * norm_df.shape[0]
-# matrix_height_in = matrix_height_pt / dpi
+dm = pd.DataFrame(distance_matrix(norm_df.values, norm_df.values), index=norm_df.index, columns=norm_df.index)
+dm.to_csv("output/broadecho_dm.csv")
 
-# # compute the required figure height 
-# top_margin = 0.04  # in percentage of the figure height
-# bottom_margin = 0.04 # in percentage of the figure height
-# figure_height = matrix_height_in / (1 - top_margin - bottom_margin)
-
-# build the figure instance with the desired height
-# fig, ax = plt.subplots(
-#         figsize=(100,figure_height), 
-#         gridspec_kw=dict(top=1-top_margin, bottom=bottom_margin))
-
-# plt.subplots(figsize=(20,15))
+plt.subplots(figsize=(20,15))
 heatmap = sns.clustermap(norm_df.astype(int))#, yticklabels=True, figsize=(100, figure_height)) #, cmap="YlGnBu")
 # fig = heatmap.get_figure()
 heatmap.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/broadecho_cluster.png")

@@ -1,4 +1,4 @@
-chr	start	end	end	name	gieStain
+chr	start	end	name	gieStain
 infantis	48823.0	50346.0	blon_2331	a
 infantis	50565.0	52097.0	blon_2332	b
 infantis	9534.0	10889.0	blon_2333	c

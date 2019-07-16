@@ -2,57 +2,58 @@ import pandas as pd
 import re 
 import math
 
-with open('cluster_dict.txt', 'r') as file:
-    dic = file.read().replace('\n', '')
+# with open('cluster_dict.txt', 'r') as file:
+#     dic = file.read().replace('\n', '')
 
-dic = eval(dic)
+# dic = eval(dic)
 
-df = pd.DataFrame.from_dict({(i,j): dic[i][j] 
-                            for i in dic.keys()  
-                            for j in dic[i].keys()},
-                            orient='index').reset_index()
-df = df.iloc[:,:4]
-df.columns = ["genome_blon", "position", "accession", "sequence"]
+# df = pd.DataFrame.from_dict({(i,j): dic[i][j] 
+#                             for i in dic.keys()  
+#                             for j in dic[i].keys()},
+#                             orient='index').reset_index()
+# df = df.iloc[:,:4]
+# df.columns = ["genome_blon", "position", "accession", "sequence"]
 
-genomes = []
-blons = []
-for row in df["genome_blon"]:
-    genome, blon = tuple(row)
-    genomes.append(genome)
-    blons.append(blon)
-df.drop('genome_blon', axis=1, inplace=True)
+# genomes = []
+# blons = []
+# for row in df["genome_blon"]:
+#     genome, blon = tuple(row)
+#     genomes.append(genome)
+#     blons.append(blon)
+# df.drop('genome_blon', axis=1, inplace=True)
 
-df["genome"] = genomes
-df["blon"] = blons
+# df["genome"] = genomes
+# df["blon"] = blons
 
-starts = []
-ends = []
-for row in df["position"]:
-    if row != None:
-        first, second = tuple(row)
-        mini = min(int(first), int(second))
-        maxi = max(int(first), int(second))
-        starts.append(mini)
-        ends.append(maxi)
-    else:
-        starts.append(None)
-        ends.append(None)
+# starts = []
+# ends = []
+# for row in df["position"]:
+#     if row != None:
+#         first, second = tuple(row)
+#         mini = min(int(first), int(second))
+#         maxi = max(int(first), int(second))
+#         starts.append(mini)
+#         ends.append(maxi)
+#     else:
+#         starts.append(None)
+#         ends.append(None)
 
-df["start"] = starts
-df["end"] = ends
+# df["start"] = starts
+# df["end"] = ends
 
-sequences = []
-for row in df["sequence"]:
-    sequence = re.sub('>.*?sequence', '', str(row))
-    sequence1 = re.sub('>.*?genome', '', str(sequence))
-    sequence2 = re.sub(' assembly.*?1', '', str(sequence1))
-    sequences.append(sequence2)
-df["sequence"] = sequences
+# sequences = []
+# for row in df["sequence"]:
+#     sequence = re.sub('>.*?sequence', '', str(row))
+#     sequence1 = re.sub('>.*?genome', '', str(sequence))
+#     sequence2 = re.sub(' assembly.*?1', '', str(sequence1))
+#     sequences.append(sequence2)
+# df["sequence"] = sequences
 
-cols = ["genome", "blon", "position", "start", "end", "accession", "sequence"]
-df = df[cols] 
+# cols = ["genome", "blon", "position", "start", "end", "accession", "sequence"]
+# df = df[cols] 
 
 # df.to_csv("cluster_dict.csv")
+df = pd.read_csv("cluster_dict.csv")
 
 letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", \
            "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", \
@@ -61,7 +62,7 @@ letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", \
 for genome in list(set(df['genome'])):
     i = 0
     with open ('cytobands/{}.txt'.format(genome),'a') as f:
-        f.write("chr\tstart\tend\tend\tname\tgieStain\n")
+        f.write("chr\tstart\tend\tname\tgieStain\n")
         for index, row in df.loc[df['genome'] == genome].iterrows():
             # print(row["start"], type(row['start']))
             if not math.isnan(row["start"]):
