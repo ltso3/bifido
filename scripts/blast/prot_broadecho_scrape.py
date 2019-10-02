@@ -7,7 +7,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # read in all blast files, one for each sample
-blast_output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/echo_output")]
+blast_output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_output")]
 
 blons = open("/Users/laurentso/Desktop/repos/bifido/scripts/blast/blon_map.txt", "r")
 queries = []
@@ -28,7 +28,6 @@ for line in lengths.readlines():
         i += 1
     else:
         len_dict[blon] = float(line)/3.
-print(len_dict['blon_2353'])
 
 match_dict = {}
 for filename in blast_output:
@@ -69,22 +68,22 @@ for key in match_dict.keys():
 # normalized_df.to_csv("output/normalized.tsv", sep = '\t')
 
 # normal results
-plt.subplots(figsize=(20,15))
-heatmap = sns.heatmap(df.astype(int))
-fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_broadecho.png")
+# plt.subplots(figsize=(20,15))
+# heatmap = sns.heatmap(df.astype(int))
+# fig = heatmap.get_figure()
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_broadecho.png")
 
-# logged results
-plt.subplots(figsize=(20,15))
-heatmap = sns.heatmap(log_df.astype(int)) #, cmap="YlGnBu")
-fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_broadecho_log.png")
+# # logged results
+# plt.subplots(figsize=(20,15))
+# heatmap = sns.heatmap(log_df.astype(int)) #, cmap="YlGnBu")
+# fig = heatmap.get_figure()
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_broadecho_log.png")
 
-# logged and normalized results
-plt.subplots(figsize=(20,15))
-heatmap = sns.heatmap(normalized_df.astype(int)) #, cmap="YlGnBu")
-fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_broadecho_log_norm.png")
+# # logged and normalized results
+# plt.subplots(figsize=(20,15))
+# heatmap = sns.heatmap(normalized_df.astype(int)) #, cmap="YlGnBu")
+# fig = heatmap.get_figure()
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_broadecho_log_norm.png")
 
 # ---------------------------------------------------------------------------------------------------------
 
@@ -140,10 +139,20 @@ norm_df.index = subjects
 # assign adj_index to column, sort df by it, then drop it
 norm_df["adj_index"] = adj_index
 norm_df.sort_values(by=['adj_index'], inplace=True)
+norm_df.sort_values(by=['adj_index'], inplace=True)
+kid_df = norm_df.copy()
 norm_df = norm_df.drop('adj_index', 1)
 
+kid_df = kid_df[kid_df["adj_index"] < 9999]
+kid_df = kid_df.drop('adj_index', 1)
+# plt.subplots(figsize=(20,15))
+# heatmap = sns.heatmap(norm_df.astype(int)) #, cmap="YlGnBu")
+# fig = heatmap.get_figure()
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_broadecho_log_norm_adj.png")
+
 plt.subplots(figsize=(20,15))
-heatmap = sns.heatmap(norm_df.astype(int)) #, cmap="YlGnBu")
+# heatmap = sns.clustermap(norm_df.astype(int), yticklabels=False)#, yticklabels=True, figsize=(100, figure_height)) #, cmap="YlGnBu")
+heatmap = sns.heatmap(kid_df, yticklabels=False)#, yticklabels=True, figsize=(100, figure_height)) #, cmap="YlGnBu")
 fig = heatmap.get_figure()
 fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/prot_broadecho_log_norm_adj.png")
 

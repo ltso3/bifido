@@ -68,25 +68,24 @@ for key in match_dict.keys():
 # plt.subplots(figsize=(20,15))
 # heatmap = sns.heatmap(df.astype(int))
 # fig = heatmap.get_figure()
-# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_1.png")
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/broadecho.png")
 
 # # logged results
 # plt.subplots(figsize=(20,15))
 # heatmap = sns.heatmap(log_df.astype(int)) #, cmap="YlGnBu")
 # fig = heatmap.get_figure()
-# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_1.png")
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/broadecho_log.png")
 
 # # logged and normalized results
 # plt.subplots(figsize=(20,15))
-# heatmap = sns.heatmap(normalized_df.astype(int)) #, cmap="YlGnBu")
+# heatmap = sns.heatmap(normalized_df.astype(int), cmap="diverging")
 # fig = heatmap.get_figure()
-# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/existing_broadecho_log_norm_1.png")
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/broadecho_log_norm.png")
 
 # ---------------------------------------------------------------------------------------------------------
 
 mapping = pd.read_csv('/Users/laurentso/Desktop/repos/bifido/scripts/metadata/master_fecal_samples.csv')
 metadata = pd.read_csv('/Users/laurentso/Desktop/repos/bifido/scripts/metadata/metadata_with_brain.csv')
-
 
 # need to get a dictionary of sample id to subject id
 ids = list(zip(mapping["SampleID"], mapping["SubjectID"]))
@@ -110,6 +109,10 @@ for key in subjects:
         meta_df.loc[key] = metadata.iloc[index[0]]['correctedAgeDays'] / 365
     else:
         meta_df.loc[key] = np.nan
+
+print(len(meta_df[meta_df["age"] <= 2.]))
+print(len(set(meta_df.index[meta_df["age"] <= 2.].tolist())))
+print(len(set(meta_df.index[meta_df["age"] > 2.].tolist())))
 
 # plt.subplots(figsize=(5,15))
 # mask = meta_df.isnull()
@@ -136,15 +139,21 @@ norm_df.index = subjects
 # assign adj_index to column, sort df by it, then drop it
 norm_df["adj_index"] = adj_index
 norm_df.sort_values(by=['adj_index'], inplace=True)
+kid_df = norm_df.copy()
 norm_df = norm_df.drop('adj_index', 1)
 
-dm = pd.DataFrame(distance_matrix(norm_df.values, norm_df.values), index=norm_df.index, columns=norm_df.index)
-dm.to_csv("output/broadecho_dm.csv")
+kid_df = kid_df[kid_df["adj_index"] < 9999]
+kid_df = kid_df.drop('adj_index', 1)
+
+# dm = pd.DataFrame(distance_matrix(norm_df.values, norm_df.values), index=norm_df.index, columns=norm_df.index)
+# dm.to_csv("output/broadecho_dm.csv")
 
 plt.subplots(figsize=(20,15))
-heatmap = sns.clustermap(norm_df.astype(int))#, yticklabels=True, figsize=(100, figure_height)) #, cmap="YlGnBu")
-# fig = heatmap.get_figure()
-heatmap.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/broadecho_cluster.png")
+# heatmap = sns.clustermap(norm_df.astype(int), yticklabels=False) #, yticklabels=True, figsize=(100, figure_height)) #, cmap="YlGnBu")
+heatmap = sns.heatmap(kid_df.astype(int), yticklabels=False) #, yticklabels=True, figsize=(100, figure_height)) #, cmap="YlGnBu")
+fig = heatmap.get_figure()
+# heatmap.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/broadecho_cluster.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/broadecho_log_norm_adj.png")
 
 # # just samples with blon 2355 to focus in on infantis
 # df_2355 = norm_df.copy()
