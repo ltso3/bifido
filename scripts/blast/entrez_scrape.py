@@ -9,12 +9,12 @@ import time
 Entrez.email = "ltso@wellesley.edu"
 
 # for every file in the list of files (each file is a sample = row)
-output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/blast_ncbi/out")]
+output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/figure2/out/")]
 
 genome_dict = {}
 for filename in output:
         print(filename)
-        handle = open("/Users/laurentso/Desktop/repos/bifido/blast_ncbi/out/{}".format(filename))
+        handle = open("/Users/laurentso/Desktop/repos/bifido/figure2/out/{}".format(filename))
         records = NCBIXML.parse(handle)
         genome_dict[filename] = {}
         for record in records:
@@ -58,6 +58,6 @@ for filename in output:
                                                 seq = seq.reverse_complement()
                                                 genome_dict[filename][query_id].append(str(seq).strip().replace('\n', ''))
 
-# f = open("cluster_dict.txt","w")
-# f.write(str(genome_dict))
-# f.close()
+f = open("core_genes_cluster_dict.txt","w")
+f.write(str(genome_dict))
+f.close()

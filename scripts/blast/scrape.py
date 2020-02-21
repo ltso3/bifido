@@ -10,7 +10,7 @@ cols = ["query", "genome", "identity", "alignment_length", "mismatches", "gaps",
 
 # read in blast output in a tabular format
 # f = open("/Users/laurentso/Desktop/repos/bifido/blast/output/blast_output_fmt", "r")
-f = open("/Users/laurentso/Desktop/repos/bifido/blast/output/blast_output_bifidum", "r")
+f = open("/Users/laurentso/Desktop/repos/bifido/figure2/ncbi_out", "r")
 
 matchDict = {}
 for line in f.readlines():
@@ -54,18 +54,18 @@ df["genome"] = genomes
 df["length"] = lengths
 
 df_pivot = df.pivot_table(index="genome", columns="query", values="length")
-print(df_pivot)
-fig, ax = plt.subplots(figsize=(10,10))
-# black = present, beige = no hits (missing data)
-sns.set(font_scale=0.4)
-heatmap = sns.heatmap(df_pivot.isnull(), cbar=False, linewidths=.5)
-fig = heatmap.get_figure()
-# fig.savefig("output/missing.png")
-fig.savefig("output/missing_bifidum.png")
+# print(df_pivot)
+# fig, ax = plt.subplots(figsize=(10,10))
+# # black = present, beige = no hits (missing data)
+# sns.set(font_scale=0.4)
+# heatmap = sns.heatmap(df_pivot.isnull(), cbar=False, linewidths=.5)
+# fig = heatmap.get_figure()
+# # fig.savefig("output/missing.png")
+# fig.savefig("output/missing_bifidum.png")
 
 df_pivot.fillna(value=0, inplace=True)
 plt.subplots(figsize=(20,15))
 heatmap = sns.heatmap(df_pivot.astype(int))
 fig = heatmap.get_figure()
 # fig.savefig("output/existing.png")
-fig.savefig("output/existing_bifidum.png")
+fig.savefig("output/heatmap_fig2.png")

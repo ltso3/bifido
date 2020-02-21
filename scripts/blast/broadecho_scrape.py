@@ -130,7 +130,7 @@ subjects = [str(id_dict[sample]) for sample in samples]
 adj_index = []
 for i in subjects:
     if len(i.split("_")) > 1:
-        adj_index.append(int(i.split("_")[0]) + 9999) # add 999 to the adjusted index of mothers
+        adj_index.append(int(i.split("_")[0]) + 9999) # add 9999 to the adjusted index of mothers
     else:
         adj_index.append(int(i))
 

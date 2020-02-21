@@ -1,0 +1,3 @@
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/741/625/GCF_000741625.1_Biflon_sub.sui
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/771/285/GCF_000771285.1_DSM-20211
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/870/705/GCF_001870705.1_ASM187070v1

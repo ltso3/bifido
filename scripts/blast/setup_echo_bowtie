@@ -1,0 +1,38 @@
+#!/bin/bash
+# bowtie2 echo samples
+
+# batches=("01" "02" "03" "04" "05" "06" "07" "08" "09" "10" "11" "12")
+
+# for batch in ${batches[*]}; do 
+#     cp /lovelace/echo/analysis/engaging/batch0${batch}/output/kneaddata/*kneaddata_paired* kneaddata; 
+# done 
+
+# for each sample in a batch
+for filename in kneaddata/*kneaddata_paired_1*; do
+    f=${filename##*/} # name without the path
+    spath=${filename%%_kneaddata_paired*}
+    sample=${f%%_kneaddata_paired*} # sample name 
+
+    # print out filename 
+    echo ${sample}
+
+    # concatenate paired_1 and paired_2 files
+    # cat ${spath}_kneaddata_paired_1.fastq.gz ${spath}_kneaddata_paired_2.fastq.gz > ${sample}.fastq.gz
+
+    # unzip fastq file into fasta file
+    gunzip -c ${spath}_kneaddata_paired_1.fastq.gz | sed -n '1~4s/^@/>/p;2~4p' > ${sample}_paired_1.fasta
+    gunzip -c ${spath}_kneaddata_paired_2.fastq.gz | sed -n '1~4s/^@/>/p;2~4p' > ${sample}_paired_2.fasta
+    
+    # truncate sequence ids
+    sed -i 's/:N:0.*#/#/g' ${sample}_paired_1.fasta
+    sed -i 's/:N:0.*#/#/g' ${sample}_paired_2.fasta
+
+    # query bowtie sequences against same hmo_gene database
+    bowtie2 -f -x hmo_genes -1 ${sample}_paired_1.fasta -2 ${sample}_paired_2.fasta -S output/${sample}.sam
+    # samtools view -S -b output/${sample}.sam > output/${sample}.bam
+
+    # clean up
+    rm *.fasta
+    # rm output/*.sam
+    
+done

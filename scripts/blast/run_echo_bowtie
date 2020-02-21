@@ -1,0 +1,15 @@
+#!/bin/bash
+# bowtie2 echo samples
+
+# decompress all bam files into sam files
+for filename in output/*; do
+    f=${filename##*/}
+    sample=${f%%.*} # sample name 
+    samtools view -h output/${sample}.bam > sam/${sample}.sam
+done
+
+# run bowtie scraping script
+python countxpression.py 0 135 meta_count.txt sam/*
+
+# remove sam files to increase space
+# rm -r sam

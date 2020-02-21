@@ -1,0 +1,4 @@
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/158/015/GCF_000158015.1_ASM15801v1
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/213/865/GCF_000213865.1_ASM21386v1
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/220/135/GCF_000220135.1_ASM22013v1
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/226/175/GCF_000226175.1_ASM22617v2

@@ -7,12 +7,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # read in all blast files, one for each sample
-blast_output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/blast_ncbi/out")]
+blast_output = [f for f in listdir("/Users/laurentso/Desktop/repos/bifido/figure2/ncbi_out")]
 
 match_dict = {}
 for filename in blast_output:
     match_dict[filename] = {}
-    f = open('/Users/laurentso/Desktop/repos/bifido/blast_ncbi/out/{}'.format(filename))
+    f = open('/Users/laurentso/Desktop/repos/bifido/figure2/ncbi_out/{}'.format(filename))
     for line in f.readlines():
         if re.search("^# Query:", line): # if line with the HMO query
             query = "NC_011593.1:"+(line.split(":")[2].split()[0].strip())
@@ -57,18 +57,18 @@ for key in match_dict.keys():
     norms = [int(num)/int(len) for num, len in zip(pd.Series(match_dict[key]), len_dict.values())]
     normalized_df.loc[key] = [math.log(num+0.00000000001) for num in norms]
 
-normalized_df.to_csv("output/blongum.csv", sep=',')
+normalized_df.to_csv("output/heatmap_all.csv", sep=',')
 
-# normal results
-plt.subplots(figsize=(20,15))
-heatmap = sns.heatmap(df.astype(int))#, vmin=0.0, vmax = 2)
-fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/blongum.png")
+# # normal results
+# plt.subplots(figsize=(20,15))
+# heatmap = sns.heatmap(df.astype(int))#, vmin=0.0, vmax = 2)
+# fig = heatmap.get_figure()
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/blongum.png")
 
-# logged and normalized results
-plt.subplots(figsize=(20,15))
-heatmap = sns.heatmap(normalized_df.astype(int)) #, cmap="YlGnBu")
-fig = heatmap.get_figure()
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/blongum_log_norm.png")
+# # logged and normalized results
+# plt.subplots(figsize=(20,15))
+# heatmap = sns.heatmap(normalized_df.astype(int)) #, cmap="YlGnBu")
+# fig = heatmap.get_figure()
+# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/blongum_log_norm.png")
 
 
