@@ -106,15 +106,15 @@ big = big[(big["sample"].str.contains("C")) | (big.index.isin(mothers))]
 big = big.drop("sample", axis = 1)
 
 # sort by breastfeeding percentage
-big = big.sort_values(by=["breastFedPercent"])
+big = big.sort_values(by=["breastFedPercent"], ascending=False)
 
 # only plot samples found to harbor infantis by HMOs or PCR
-# small_big = big[(big["pcr"] == True) | (big.index.isin(["C1217_1F_1A", "C0611_1F_1A"]))]
+small_big = big[(big["pcr"] == True) | (big.index.isin(["C1217_1F_1A", "C0611_1F_1A"]))]
 
 from matplotlib.gridspec import GridSpec
 fig = plt.figure(figsize = (300, 200))
 
-gs = GridSpec(1,3, height_ratios=[300], width_ratios=[30,30,1200])
+gs = GridSpec(1,3, height_ratios=[300], width_ratios=[30,30,1000])
 
 ax1 = fig.add_subplot(gs[0,0])
 ax2 = fig.add_subplot(gs[0,1])
@@ -123,38 +123,80 @@ ax1.autoscale_view('tight')
 ax2.autoscale_view('tight')
 
 # fragment big dataframe into breastfeeding and gene data
-hmos = big.drop(["breastFedPercent", "correctedAgeDays", "mgx", "pcr", "birthType"], axis = 1)
-sorted_bf = big[["breastFedPercent"]]
-sorted_mgx = big[["mgx"]]
-sorted_pcr = big[["pcr"]]
+hmos = small_big.drop(["breastFedPercent", "correctedAgeDays", "mgx", "pcr", "birthType"], axis = 1)
+sorted_bf = small_big[["breastFedPercent"]]
+sorted_mgx = small_big[["mgx"]]
+sorted_pcr = small_big[["pcr"]]
 
 cmap1 = mpl.colors.ListedColormap(['w', 'b'])
 cmap2 = mpl.colors.ListedColormap(['w', 'r'])
 
+sns.set(font_scale=200)
 sns.heatmap(sorted_mgx, cmap=cmap1, ax=ax1, cbar = False)
 sns.heatmap(sorted_pcr, cmap=cmap2, ax=ax2, cbar = False)
 sns.heatmap(hmos, ax=ax3, xticklabels=True)
-sns.set(font_scale=5)
+cbar = ax3.collections[0].colorbar
+cbar.ax.tick_params(labelsize=200)
 
 ax1.set_ylabel('')  
 ax1.set_xlabel('mgx')
+ax1.xaxis.set_tick_params(labelsize=200)
 
 ax2.set_ylabel('')    
 ax2.set_xlabel('pcr')
+ax2.xaxis.set_tick_params(labelsize=200)
 
 ax3.set_ylabel('')  
+ax3.set_xticklabels(ax3.get_xticklabels(), rotation=90)
 
 plt.setp(ax1.get_yticklabels(), visible=False)
-
 plt.setp(ax2.get_yticklabels(), visible=False)
-
 plt.setp(ax3.get_yticklabels(), visible=False)
-ax3.xaxis.set_tick_params(labelsize=5)
+ax3.xaxis.set_tick_params(labelsize=200)
 
 ax1.tick_params(axis='both', which='both', length=0)
 ax2.tick_params(axis='both', which='both', length=0)
 ax3.tick_params(axis='y', which='both', length=0)
 
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/figure4_sorted.png")
+# add lines separating groups by breastfeeding
+ax3.hlines([44, 63, 103], *ax3.get_xlim(), color="green", linewidth=50)
+ax2.hlines([44, 63, 103], *ax2.get_xlim(), color="green", linewidth=50)
+ax1.hlines([44, 63, 103], *ax1.get_xlim(), color="green", linewidth=50)
 
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/figure4_small.png")
 
+# ---------------------------------------------------------------------------------------------------------
+
+# read in metaphlan bifidobacterium longum data
+# interested in only abundance, sample
+longum = pd.read_csv('/Users/laurentso/Desktop/repos/bifido/scripts/metadata/longum.csv')
+longum = longum[['sample', 'abundance']]
+longum = longum[longum['sample'].str.contains("E") == False]
+longum = longum.sort_values(by=['sample'])
+
+# pair data with breastfeeding percentages
+metadata = metadata[metadata['sample'].isin(longum["sample"])]
+metadata = metadata[['sample', 'breastFedPercent']]
+metadata = metadata.sort_values(by=['sample'])
+
+bigger = metadata.copy()
+bigger["abundance"] = list(longum['abundance'])
+
+# create new column: exclusive bf or ff, other, unreported
+bigger["bf"] = ['Other'] * 783 
+bigger["bf"][bigger["breastFedPercent"] == 100] = "Breastfed"
+bigger["bf"][bigger["breastFedPercent"] == 0] = "Formula Fed"
+bigger["bf"][bigger["breastFedPercent"].isnull()] = "Unreported"
+
+bigger.to_csv("~/Downloads/bigger.csv")
+
+# barplot average abundance of b. longum within each bf category
+fig = plt.figure(figsize = (20, 15))
+sns.barplot(x = 'bf', y = 'abundance', data = bigger,
+            color = 'skyblue',
+            capsize = 0.05,             
+            saturation = 8,             
+            errcolor = 'gray', errwidth = 2,  
+            ci = 'sd'   
+            )
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/longum_bf.png")
