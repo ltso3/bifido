@@ -5,3 +5,6 @@ blast/query
 blast/query/all_bifidum_genomes.faa
 blast/query/all_breve_genomes.faa
 blast/query/all_longum_genomes.faa
+figure2/ncbi_out
+figure2/out
+figure2/db
