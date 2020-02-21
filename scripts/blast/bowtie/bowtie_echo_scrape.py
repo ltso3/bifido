@@ -46,10 +46,13 @@ for key in match_dict.keys():
     hmos.loc[key.split('_S')[0]] = [math.log(num+0.00000000001) for num in norms]
 hmos.columns = blon_names
 
-# need to add 13 missing sequences that have no hits
+# need to add 13 child and 20 mother missing sequences that have no hits
 missing = ["C0388_7F_1A", "C0461_4F_1A", "C0698_2F_1A", "C0828_4F_1A", "C0839_4F_1A", "C0851_4F_1A", \
             "C0936_1F_1A", "C1026_1F_1A", "C1062_3F_1A", "C1075_1F_1A", "C1089_1F_1A", "C1090_1F_1A", \
-            "C1102_1F_1A", "C2018_4F_1A"]
+            "C1102_1F_1A", "C2018_4F_1A", "M1008_3F_1A", "M1022_2F_1A", "M1056_2F_1A", "M1057_1F_1A", \
+            "M1059_1F_1A", "M1061_2F_1A", "M1064_2F_1A", "M1067_1F_1A", "M1078_1F_1A", \
+            "M1082_1F_1A", "M1083_1F_1A", "M1088_1F_1A", "M1095_1F_1A", "M1096_1F_1A", "M1099_1F_1A", \
+            "M1109_1F_1A", "M1110_1F_1A", "M1113_1F_1A", "M1115_1F_1A", "M1116_1F_1A"]
 for miss in missing:
     hmos.loc[miss] = [-25] * 31
 
@@ -58,72 +61,6 @@ hmos['sample'].replace('-', '_', inplace = True, regex = True)
 hmos = hmos[hmos['sample'].str.contains("E") == False]
 hmos.set_index('sample', inplace = True)
 hmos.sort_index(inplace = True)
-hmos.to_csv("~/Downloads/hmo.csv")
-
-# plt.subplots(figsize=(20,15))
-# heatmap = sns.heatmap(meta.astype(int), yticklabels=False)
-# fig = heatmap.get_figure()
-# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/bowtie_log_norm_adj.png")
-
-# mapping = pd.read_csv('/Users/laurentso/Desktop/repos/bifido/scripts/metadata/master_fecal_sample_12.csv')
-
-
-# # need to get a dictionary of sample id to subject id
-# ids = list(zip(mapping["SampleID"], mapping["SubjectID"]))
-# id_dict = {}
-# for sample, subject in ids:
-#     if "E" in sample:
-#         id_dict[sample] = str(subject)+"_E"
-#     elif sample.startswith("M"):
-#         id_dict[sample] = str(subject)+"_m"
-#     else:
-#         id_dict[sample] = subject
-
-
-# meta_sort = meta.copy()
-# samples = [re.sub('-', '_', i.split('_S')[0]) for i in match_dict.keys()]
-# samples = samples + missing
-# subjects = [str(id_dict[sample]) for sample in samples]
-
-# # create an adjusted index such that children sorted on top, then mothers sorted on bottom
-# adj_index = []
-# for i in subjects:
-#     if len(i.split("_")) > 1:
-#         adj_index.append(int(i.split("_")[0]) + 9999) # add 9999 to the adjusted index of mothers
-#     else:
-#         adj_index.append(int(i))
-# meta_sort.index = subjects
-
-# # assign adj_index to column, sort df by it, then drop it
-# meta_sort["adj_index"] = adj_index
-# meta_sort.sort_values(by=['adj_index'], inplace=True)
-# kid_df = meta_sort.copy()
-# meta_sort = meta_sort.drop('adj_index', 1)
-
-# kid_df = kid_df[kid_df["adj_index"] < 9999]
-# kid_df = kid_df.drop('adj_index', 1)
-
-# plt.subplots(figsize=(20,15))
-# heatmap = sns.heatmap(meta_sort.astype(int), yticklabels=False) #, yticklabels=True, figsize=(100, figure_height)) #, cmap="YlGnBu")
-# fig = heatmap.get_figure()
-# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/bowtie_sorted.png")
-
-# plt.subplots(figsize=(20,15))
-# heatmap = sns.heatmap(kid_df.astype(int), yticklabels=False) #, yticklabels=True, figsize=(100, figure_height)) #, cmap="YlGnBu")
-# fig = heatmap.get_figure()
-# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/bowtie_kids.png")
-
-# # plot only the subjects with blon_2355
-# df_2355 = meta.copy()
-# df_2355["samples"] = samples
-# df_2355 = df_2355[df_2355['Blon_2355'] > -12]
-# lst_2355 = list(df_2355["samples"])
-# df_2355 = df_2355.drop('samples', 1)
-
-# plt.subplots(figsize=(20,15))
-# heatmap = sns.heatmap(df_2355.astype(int)) #, cmap="YlGnBu")
-# fig = heatmap.get_figure()
-# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/bowtie_2355.png")
 
 # ---------------------------------------------------------------------------------------------------------
 
@@ -151,103 +88,73 @@ metadata = metadata.sort_values(by=['sample'])
 pcrmgx = pcrmgx.sort_values(by=['SampleID_PCR'])
 
 big = hmos.copy()
-big["birthType"] = metadata["birthType"]
-big["correctedAgeDays"] = metadata["correctedAgeDays"]
-big["breastFedPercent"] = metadata["breastFedPercent"]
-big["mgx"] = pcrmgx["mgx"]
-big["pcr"] = pcrmgx["pcr"]
+big["birthType"] = list(metadata["birthType"])
+big["correctedAgeDays"] = list(metadata["correctedAgeDays"])
+big["breastFedPercent"] = list(metadata["breastFedPercent"])
+big["mgx"] = list(pcrmgx["mgx"])
+big["pcr"] = list(pcrmgx["pcr"])
 
-print(len(hmos))
-hmos.to_csv("~/Downloads/hmos.csv")
-
-big.to_csv("~/Downloads/big.csv")
-
-# big = pd.read_csv("big.csv")
-
-# cmap = mpl.colors.ListedColormap(['w', 'b'])
-# plt.subplots(figsize=(5,15))
-# heatmap = sns.heatmap(meta_df, cmap=cmap)
-# fig = heatmap.get_figure()
-# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/bowtie_bf.png")
-
-# from matplotlib.gridspec import GridSpec
-# fig = plt.figure()
-
-# gs = GridSpec(1,4, height_ratios=[300], width_ratios=[30,30,30,1200])
-
-# ax1 = fig.add_subplot(gs[0,0])
-# ax2 = fig.add_subplot(gs[0,1])
-# ax3 = fig.add_subplot(gs[0,2])
-# ax4 = fig.add_subplot(gs[0,3])
-# ax1.autoscale_view('tight')
-
-# # fragment big dataframe into breastfeeding and gene data
-# sorted_kids = big.drop(["bf", "age", "mgx", "pcr"], axis = 1)
-# sorted_bf = big[["bf"]]
-# sorted_mgx = big[["mgx"]]
-# sorted_pcr = big[["pcr"]]
-
-# sorted_kids.to_csv("sorted_kids.csv")
-
-# cmap1 = mpl.colors.ListedColormap(['w', 'g'])
-# cmap2 = mpl.colors.ListedColormap(['w', 'r'])
-
-# plt.subplots(figsize=(20,15))
-# sns.heatmap(sorted_bf, cmap=cmap, ax=ax1, cbar = False)
-# sns.heatmap(sorted_mgx, cmap=cmap1, ax=ax2, cbar = False)
-# sns.heatmap(sorted_pcr, cmap=cmap2, ax=ax3, cbar = False)
-# sns.heatmap(sorted_kids, ax=ax4, xticklabels=True)
-# sns.set(font_scale=5)
-
-# ax1.set_ylabel('')    
-# ax2.set_ylabel('')    
-# ax3.set_ylabel('')  
-# ax4.set_ylabel('')    
-
-# plt.setp(ax1.get_xticklabels(), visible=False)
-# plt.setp(ax1.get_yticklabels(), visible=False)
-
-# plt.setp(ax2.get_xticklabels(), visible=False)
-# plt.setp(ax2.get_yticklabels(), visible=False)
-
-# plt.setp(ax3.get_xticklabels(), visible=False)
-# plt.setp(ax3.get_yticklabels(), visible=False)
-
-# plt.setp(ax4.get_yticklabels(), visible=False)
-# ax4.xaxis.set_tick_params(labelsize=5)
-
-# ax1.tick_params(axis='both', which='both', length=0)
-# ax2.tick_params(axis='both', which='both', length=0)
-# ax3.tick_params(axis='both', which='both', length=0)
-# ax4.tick_params(axis='y', which='both', length=0)
-
-# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/bowtie_both.png")
+hmos.to_csv("hmos.csv")
+big.to_csv("big.csv")
 
 # ---------------------------------------------------------------------------------------------------------
 
-# fig = plt.figure()
+# drop mothers except for the four found by PCR
+mothers = ["M0886_3F_1A", "M0951_2F_1A", "M1183_1F_1A", "M1153_1F_1A"]
+big["sample"] = big.index
+big = big[(big["sample"].str.contains("C")) | (big.index.isin(mothers))]
+big = big.drop("sample", axis = 1)
 
-# gs = GridSpec(2,2, height_ratios=[150,1], width_ratios=[30,600])
+# sort by breastfeeding percentage
+big = big.sort_values(by=["breastFedPercent"])
 
-# ax1 = fig.add_subplot(gs[0,0])
-# ax2 = fig.add_subplot(gs[0,1])
-# ax1.autoscale_view('tight')
-# ax2.autoscale_view('tight')
+# only plot samples found to harbor infantis by HMOs or PCR
+# small_big = big[(big["pcr"] == True) | (big.index.isin(["C1217_1F_1A", "C0611_1F_1A"]))]
 
-# meta_df["samples"] = samples
-# meta_df["true"] = meta_df.samples.apply(lambda x: True if x in lst_2355 else False)
+from matplotlib.gridspec import GridSpec
+fig = plt.figure(figsize = (300, 200))
 
-# filtered = meta_df[meta_df["true"] == True]
-# filtered = filtered.drop('samples', 1)
-# filtered = filtered.drop('true', 1)
+gs = GridSpec(1,3, height_ratios=[300], width_ratios=[30,30,1200])
 
-# plt.subplots(figsize=(20,15))
-# sns.heatmap(filtered, cmap=cmap, ax=ax1, cbar = False)
-# sns.heatmap(df_2355, ax=ax2)
+ax1 = fig.add_subplot(gs[0,0])
+ax2 = fig.add_subplot(gs[0,1])
+ax3 = fig.add_subplot(gs[0,2])
+ax1.autoscale_view('tight')
+ax2.autoscale_view('tight')
 
-# plt.setp(ax1.get_xticklabels(), visible=False)
-# plt.setp(ax2.get_yticklabels(), visible=False)
-# ax2.xaxis.set_tick_params(labelsize=5)
-# ax1.yaxis.set_tick_params(labelsize=5)
+# fragment big dataframe into breastfeeding and gene data
+hmos = big.drop(["breastFedPercent", "correctedAgeDays", "mgx", "pcr", "birthType"], axis = 1)
+sorted_bf = big[["breastFedPercent"]]
+sorted_mgx = big[["mgx"]]
+sorted_pcr = big[["pcr"]]
 
-# fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/bowtie_2355_both.png")
+cmap1 = mpl.colors.ListedColormap(['w', 'b'])
+cmap2 = mpl.colors.ListedColormap(['w', 'r'])
+
+sns.heatmap(sorted_mgx, cmap=cmap1, ax=ax1, cbar = False)
+sns.heatmap(sorted_pcr, cmap=cmap2, ax=ax2, cbar = False)
+sns.heatmap(hmos, ax=ax3, xticklabels=True)
+sns.set(font_scale=5)
+
+ax1.set_ylabel('')  
+ax1.set_xlabel('mgx')
+
+ax2.set_ylabel('')    
+ax2.set_xlabel('pcr')
+
+ax3.set_ylabel('')  
+
+plt.setp(ax1.get_yticklabels(), visible=False)
+
+plt.setp(ax2.get_yticklabels(), visible=False)
+
+plt.setp(ax3.get_yticklabels(), visible=False)
+ax3.xaxis.set_tick_params(labelsize=5)
+
+ax1.tick_params(axis='both', which='both', length=0)
+ax2.tick_params(axis='both', which='both', length=0)
+ax3.tick_params(axis='y', which='both', length=0)
+
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/figure4_sorted.png")
+
+
