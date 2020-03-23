@@ -1,16 +1,17 @@
 import pandas as pd
 
-df = pd.read_csv("output/heatmap_all.csv")
-mapping = pd.read_csv("~/Desktop/repos/bifido/figure2/genome_map.csv")
-map_dict = dict(zip(list(mapping.gcfs), list(mapping.species)))
+df = pd.read_csv("~/Downloads/genome_status.csv")
 
-# need to convert index to be blo, inf, lon
-names = []
-for name in df["Unnamed: 0"]:
-    genome = str(name.split(".fna")[0])
-    names.append(map_dict[genome])
+split = list(df["genome	representation	level	coverage"])
+genome = [i.split("\t", 1)[0] for i in split]
+representation = [i.split("\t", 2)[1] for i in split]
+level = [i.split("\t", 3)[2] for i in split]
+coverage = [i.split("\t", 4)[3] for i in split]
 
-df["Unnamed: 0"] = names
-df.set_index("Unnamed: 0")
+new = pd.DataFrame(columns = ['genome', 'representation', 'level', 'coverage']) 
+new['genome'] = genome
+new['representation'] = representation
+new['level'] = level
+new['coverage'] = coverage
 
-df.to_csv("output/heatmap_all_species.csv")
+new.to_csv("../metadata/genome_status.csv")

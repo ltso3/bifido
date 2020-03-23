@@ -54,8 +54,8 @@ import math
 # df = df[cols] 
 
 # df.to_csv("core_genes_cluster_dict.csv")
-df = pd.read_csv("core_genes_cluster_dict.csv")
-mapping = pd.read_csv("genome_map.csv")
+df = pd.read_csv("~/Desktop/repos/bifido/figure2/core_genes_cluster_dict.csv")
+mapping = pd.read_csv("~/Desktop/repos/bifido/figure2/genome_map.csv")
 
 # letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", \
 #            "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", \
@@ -80,29 +80,60 @@ missing = set(missing)
 print(len(missing), len(df))
 # print(missing)
 
+# check how many genomes each gene is missing in
+gene_count = {}
+genomes = {}
+for index, row in df.iterrows():
+    if row['sequence'] == "None":
+        if row['blon'] not in gene_count:
+            gene_count[row['blon']] = 1
+            genomes[row['blon']] = [row['genome']]
+        else:
+            gene_count[row['blon']] += 1
+            genomes[row['blon']].append(row['genome'])
+
+counts = pd.DataFrame(gene_count.items(), columns=['blon', 'num_genomes'])
+
+# add the names of genomes that the genes are missing from
+counts["genomes"] = genomes.values()
+
+counts.to_csv("~/Downloads/test.csv")
+
+# create a separate dataframe showing which how many genes each genome has
+gene_count = {}
+for index, row in df.iterrows():
+    if row["sequence"] != "None":
+        if row['genome'] not in gene_count:
+            gene_count[row['genome']] = 1
+        else:
+            gene_count[row['genome']] += 1
+
+counts = pd.DataFrame(gene_count.items(), columns=['genome', 'num_genes'])
+# counts.to_csv("~/Downloads/test.csv")
+
 for gene in missing:
     df = df[df.blon != gene]
 
 print(len(df))
 print(len(set(list(df['genome']))))
 
-# add a column mapping genome GCF... names to species inf_1 names
-map_dict = dict(zip(list(mapping.gcfs), list(mapping.species)))
+# # add a column mapping genome GCF... names to species inf_1 names
+# map_dict = dict(zip(list(mapping.gcfs), list(mapping.species)))
 
-# blon genes that exist across all genomes
-# blons = ["blon_2331", "blon_2332", "blon_2334", "blon_2335", "blon_2336", "blon_2337", "blon_2338" \
-#          "blon_2339", "blon_2340", "blon_2348", "blon_2349", "blon_2354", "blon_2355"]
+# # blon genes that exist across all genomes
+# # blons = ["blon_2331", "blon_2332", "blon_2334", "blon_2335", "blon_2336", "blon_2337", "blon_2338" \
+# #          "blon_2339", "blon_2340", "blon_2348", "blon_2349", "blon_2354", "blon_2355"]
 
-# need to concatenate across blon genes for genomes
-# only certain genes that are present for all of the genomes
-for genome in set(df["genome"]):
-    species = map_dict[genome.split(".fna")[0]]
-    with open('move/{}.txt'.format(species), 'w') as f:
-        print(">{}".format(species), file=f)
-        for index, row in df.loc[df['genome'] == genome].iterrows():
-            # if row['blon'] in blons:
-            print(row['sequence'], file=f, end='')
-        print("\n", file=f, end='')
+# # need to concatenate across blon genes for genomes
+# # only certain genes that are present for all of the genomes
+# for genome in set(df["genome"]):
+#     species = map_dict[genome.split(".fna")[0]]
+#     with open('move/{}.txt'.format(species), 'w') as f:
+#         print(">{}".format(species), file=f)
+#         for index, row in df.loc[df['genome'] == genome].iterrows():
+#             # if row['blon'] in blons:
+#             print(row['sequence'], file=f, end='')
+#         print("\n", file=f, end='')
 
 # for index, row in df.loc[df['genome'] == "GCF_000226175.1_ASM22617v2.fna"].iterrows():
 #     print(row["sequence"])

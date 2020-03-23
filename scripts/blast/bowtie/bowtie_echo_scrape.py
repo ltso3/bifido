@@ -109,7 +109,7 @@ big = big.drop("sample", axis = 1)
 big = big.sort_values(by=["breastFedPercent"], ascending=False)
 
 # only plot samples found to harbor infantis by HMOs or PCR
-small_big = big[(big["pcr"] == True) | (big.index.isin(["C1217_1F_1A", "C0611_1F_1A"]))]
+# small_big = big[(big["pcr"] == True) | (big.index.isin(["C1217_1F_1A", "C0611_1F_1A"]))]
 
 from matplotlib.gridspec import GridSpec
 fig = plt.figure(figsize = (300, 200))
@@ -123,10 +123,10 @@ ax1.autoscale_view('tight')
 ax2.autoscale_view('tight')
 
 # fragment big dataframe into breastfeeding and gene data
-hmos = small_big.drop(["breastFedPercent", "correctedAgeDays", "mgx", "pcr", "birthType"], axis = 1)
-sorted_bf = small_big[["breastFedPercent"]]
-sorted_mgx = small_big[["mgx"]]
-sorted_pcr = small_big[["pcr"]]
+hmos = big.drop(["breastFedPercent", "correctedAgeDays", "mgx", "pcr", "birthType"], axis = 1)
+sorted_bf = big[["breastFedPercent"]]
+sorted_mgx = big[["mgx"]]
+sorted_pcr = big[["pcr"]]
 
 cmap1 = mpl.colors.ListedColormap(['w', 'b'])
 cmap2 = mpl.colors.ListedColormap(['w', 'r'])
@@ -159,11 +159,11 @@ ax2.tick_params(axis='both', which='both', length=0)
 ax3.tick_params(axis='y', which='both', length=0)
 
 # add lines separating groups by breastfeeding
-ax3.hlines([44, 63, 103], *ax3.get_xlim(), color="green", linewidth=50)
-ax2.hlines([44, 63, 103], *ax2.get_xlim(), color="green", linewidth=50)
-ax1.hlines([44, 63, 103], *ax1.get_xlim(), color="green", linewidth=50)
+# ax3.hlines([44, 63, 103], *ax3.get_xlim(), color="green", linewidth=50)
+# ax2.hlines([44, 63, 103], *ax2.get_xlim(), color="green", linewidth=50)
+# ax1.hlines([44, 63, 103], *ax1.get_xlim(), color="green", linewidth=50)
 
-fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/figure4_small.png")
+fig.savefig("/Users/laurentso/Desktop/repos/bifido/scripts/blast/output/figure4_nolines.png")
 
 # ---------------------------------------------------------------------------------------------------------
 
