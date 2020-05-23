@@ -8,3 +8,5 @@ blast/query/all_longum_genomes.faa
 figure2/ncbi_out
 figure2/out
 figure2/db
+hmo_trees/
+figure3/blasts

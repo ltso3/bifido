@@ -6,13 +6,13 @@ library(gplots)
 library(phytools)
 library(phangorn)
 
-# #read in identity matrix from pyani
-# n <- as.matrix(read.table("~/Desktop/repos/bifido/ani/ANIm_output/ANIm_percentage_identity.tab",
-#                           head=T, row.names = 1))
-# ones <- matrix(1, 274, 274) # matrix as ones for element subtraction
-# 
-# dm <- ones - n # subtract to create distance matrix
-# tree <- nj(as.dist(dm)) # create a tree from the distance matrix
+# read in identity matrix from pyani
+n <- as.matrix(read.table("~/Desktop/repos/bifido/ani/ANIm_output/ANIm_percentage_identity.tab",
+                         head=T, row.names = 1))
+ones <- matrix(1, 274, 274) # matrix as ones for element subtraction
+
+dm <- ones - n # subtract to create distance matrix
+tree <- nj(as.dist(dm)) # create a tree from the distance matrix
 
 # plot tree
 # png('tree.png', width = 4000, height = 4400)
@@ -20,19 +20,19 @@ library(phangorn)
 # dev.off()
 
 # reduce number of breve genomes to be monophyletic
-# breve <- read.csv('~/Desktop/repos/bifido/scripts/blast/output/breve.csv')
-# breves <- as.character(breve[['Unnamed..0']])
-# keep <- c("breve_GCF_000220135.1_ASM22013v1", "breve_GCF_000213865.1_ASM21386v1",
-#           "breve_GCF_000158015.1_ASM15801v1")
-# breves <- setdiff(breves, keep)
-# tree_red <- drop.tip(tree, breves)
-# 
+breve <- read.csv('~/Desktop/repos/bifido/scripts/blast/output/breve.csv')
+breves <- as.character(breve[['Unnamed..0']])
+keep <- c("breve_GCF_000220135.1_ASM22013v1", "breve_GCF_000213865.1_ASM21386v1",
+          "breve_GCF_000158015.1_ASM15801v1")
+breves <- setdiff(breves, keep)
+tree_red <- drop.tip(tree, breves)
+
 # png('tree_red.png', width = 4000, height = 4400)
 # plot(tree_red, main="Neighbor Joining")
 # dev.off()
 
 # set three breve genomes as root
-# root <- root(tree_red, keep)
+root <- root(tree_red, keep)
 
 # color branch labels by species/subspecies
 # tipcol <- rep('black', length(root$tip.label))
@@ -55,8 +55,8 @@ library(phangorn)
 # write.tree(root, file="root.tre")
 
 # read in heatmap csv
-# df <- as.matrix(read.table("~/Desktop/repos/bifido/scripts/blast/output/heatmap.csv",
-#                           header=T, row.names = 1, sep=','))
+df <- as.matrix(read.table("~/Desktop/repos/bifido/scripts/blast/output/heatmap.csv",
+                          header=T, row.names = 1, sep=','))
 
 # create heatmap
 # png('tree_heatmap.png', width=800)
@@ -64,7 +64,7 @@ library(phangorn)
 # dev.off()
 
 # drop all but three of the breve genomes in df
-# root_df <- df[!rownames(df) %in% breves,]
+root_df <- df[!rownames(df) %in% breves,]
 
 # create heatmap
 # png('root_heatmap.png', width=800)
@@ -77,11 +77,39 @@ library(phangorn)
 # dev.off()
 
 # pair phylogenetic tree with heatmap
-# png('root_combo.png', width=4000, height=4400)
+# png('~/Downloads/root_combo.png', width=4000, height=4400)
 # phylo.heatmap(root, root_df, colors=colorRampPalette(c("dodgerblue3", "white"))(200)[200:1],
-#              fsize=c(1,4,4), grid=TRUE, ftype="off", leg.txt="Num. of BLAST hits")
+#              fsize=c(1,4,4), ftype="b",lwd=6, grid=TRUE, leg.txt="Num. of BLAST hits")
 # dev.off()
- 
+
+# bootstrap the ANI neighbor joining tree
+x <- as.dist(dm)
+
+x <- read.csv("~/Downloads/mysavior.csv",
+                head=T, row.names = 1)
+# need to remove breve genomes
+
+
+boot <- boot.phylo(root, x, function(x) nj(dist.gene(x)), B = 100, rooted = TRUE, trees = TRUE)
+png('~/Downloads/testtree.png', height=3300, width = 3000)
+plot(root)
+nodelabels(boot$BP)
+dev.off()
+
+png('~/Downloads/ml_ANI.png')
+dat <- as.phyDat(n)
+fitStart = pml(root, dat, k=4, inv=.2)
+fit = optim.pml(fitStart, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, model="WAG")
+BS <- bootstrap.pml(fit, bs = 1000, optNni=TRUE)
+plotBS(fit$tree, BS, type = "phylogram", bs.col="black")
+add.scale.bar(cex = 2, font = 2, col = "red")
+dev.off()
+
+png('~/Downloads/root_combo.png', width=4000, height=4400)
+phylo.heatmap(fit$tree, root_df, colors=colorRampPalette(c("dodgerblue3", "white"))(200)[200:1],
+             fsize=c(1,4,4), ftype="b",lwd=6, grid=TRUE, leg.txt="Num. of BLAST hits")
+dev.off()
+  
 # # -------------------------------------------------------------------------------------------------
 # 
 # # read in blon protein genes from clustal omega
@@ -120,119 +148,126 @@ library(phangorn)
 # plot(tree, main="Neighbor Joining")
 # -------------------------------------------------------------------------------------------------
 # creating maximum likelihood trees from protein_blons
-# files <- list.files(path="~/Desktop/repos/bifido/scripts/blast/protein_blons", full.names = TRUE)
-# blons <- list.files(path="~/Desktop/repos/bifido/scripts/blast/protein_blons", full.names = FALSE)
-# likes <- numeric(length(files))
-# blon_names <- numeric(length(files))
-# 
-# for(i in 1:length(files)) {
-#   sequences <- read.FASTA(files[i], type="AA")
-#   aligned <- muscle(sequences)
-#   dat <- as.phyDat(aligned, type="AA")
-#   dm = dist.ml(dat)
-#   tree = NJ(dm)
-#   
-#   species <- tree$tip.label
-#   split_spec <- sapply(strsplit(species, "!"), function(x) x[2], simplify=TRUE)
-#   
-#   # color branch labels by unique names (needs some specification for final figure)
-#   # add specific colors for infantis and longum and suis
-#   # if infantis in the string replace with infantis, same with all subspecies
-#   split1 <- replace(split_spec, grepl("infantis",split_spec), "infantis")
-#   split2 <- replace(split1, grepl("subsp.-longum",split1), "subsp.-longum")
-#   
-#   tipcol <- rep('black', length(tree$tip.label))
-#   colors <- topo.colors(length(sort(unique(split2))))
-#   for(i in 1:length(unique(split2))) {
-#     if(sort(unique(split2))[i] != "") {
-#       tipcol[grep(sort(unique(split2))[i], tree$tip.label)] <- colors[i]
-#     }
-#   }
-#   
-#   # png("~/Downloads/test.png", height = 1000, width = 1000)
-#   fitStart = pml(tree, dat, k=4, inv=.2)
-#   fit = optim.pml(fitStart, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE)
-#   # root_name = "blon_2361-WP_094369814.1-ABC-transporter-ATP-binding-protein-!Romboutsia-weinsteinii!"
-#   # plot(ladderize(root(fit$tree, match(root_name,fit$tree$tip.label))),
-#   # plot(ladderize(fit$tree),type="phylogram", show.node.label=T,underscore=T,cex=0.8,no.margin=T, tip.color=tipcol)
-#   # add.scale.bar(cex = 2, font = 2, col = "red")
-#   # dev.off()
-#   likes[i] <- fit["logLik"]
-#   
-#   blon <- strsplit(blons[i], ".faa")[[1]]
-#   blon_names[i] <- blon
-#   png(sprintf("%s.png", blon), height=3000, width=3000)
-#   # need to add boostrapping step from NCBI paper
-#   BS <- bootstrap.pml(fit, optNni=TRUE)
-#   plotBS(fit$tree, BS, type = "phylogram", tip.color=tipcol)
-#   add.scale.bar(cex = 2, font = 2, col = "red")
-#   dev.off()
-#   
-#   write.tree(BS, file=sprintf("%s.tree", blon))
-# }
-# 
+files <- list.files(path="~/Desktop/repos/bifido/scripts/blast/protein_blons/test", full.names = TRUE)
+blons <- list.files(path="~/Desktop/repos/bifido/scripts/blast/protein_blons/test", full.names = FALSE)
+likes <- numeric(length(files))
+blon_names <- numeric(length(files))
+
+for(i in 1:length(files)) {
+  sequences <- read.FASTA(files[i], type="AA")
+  aligned <- muscle(sequences)
+  dat <- as.phyDat(aligned, type="AA")
+  dm = dist.ml(dat)
+  tree = NJ(dm)
+
+  species <- tree$tip.label
+  split_spec <- sapply(strsplit(species, "\\["), function(x) x[2], simplify=TRUE)
+  split_spec <- sapply(strsplit(split_spec, ":"), function(x) x[1], simplify=TRUE)
+
+  # color branch labels by unique names (needs some specification for final figure)
+  # add specific colors for infantis and longum and suis
+  # if infantis in the string replace with infantis, same with all subspecies
+  # split1 <- replace(split_spec, grepl("infantis",split_spec), "infantis")
+  # split2 <- replace(split1, grepl("subsp.-longum",split1), "subsp.-longum")
+  # 
+  # tipcol <- rep('black', length(tree$tip.label))
+  # colors <- topo.colors(length(sort(unique(split2))))
+  # for(i in 1:length(unique(split2))) {
+  #   if(sort(unique(split2))[i] != "") {
+  #     tipcol[grep(sort(unique(split2))[i], tree$tip.label)] <- colors[i]
+  #   }
+  # }
+
+  #png("~/Downloads/test.png", height = 1500, width = 1500)
+  fitStart = pml(tree, dat, k=4, inv=.2)
+  fit = optim.pml(fitStart, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, model="WAG")
+  # root_name = "blon_2361-WP_094369814.1-ABC-transporter-ATP-binding-protein-!Romboutsia-weinsteinii!"
+  # plot(ladderize(root(fit$tree, match(root_name,fit$tree$tip.label))),
+  # plot(ladderize(fit$tree),type="phylogram", show.node.label=T,underscore=T,cex=0.8,no.margin=T, tip.color=tipcol)
+  # add.scale.bar(cex = 2, font = 2, col = "red")
+  # dev.off()
+  # likes[i] <- fit["logLik"]
+  # 
+  blon <- strsplit(blons[i], ".faa")[[1]]
+  blon_names[i] <- blon
+  png(sprintf("~/Downloads/%s.png", blon), height=1000, width=1000)
+
+  # try reading in a tree
+  # tree <- read.tree(file = "~/Desktop/repos/bifido/scripts/blast/protein_blons/test/blon_2361.tree")
+  
+  # need to add boostrapping step from NCBI paper
+  BS <- bootstrap.pml(fit, bs = 1000, optNni=TRUE)
+  plotBS(fit$tree, BS, type = "phylogram", bs.col="black")
+  add.scale.bar(cex = 2, font = 2, col = "red")
+  dev.off()
+
+  #write.tree(BS, file=sprintf("%s.tree", blon))
+}
+
 # df <- data.frame(blon_names, likes, stringsAsFactors=FALSE)
 # write.csv(file="tree_logs.csv", x=df)
 
 # -------------------------------------------------------------------------------------------------
 
-# sequences <- read.FASTA("~/Desktop/repos/bifido/figure2/core_gene_genomes.fna", type="DNA")
-# aligned <- muscle(sequences)
+#sequences <- read.FASTA("~/Desktop/repos/bifido/figure2/core_gene_genomes.fna", type="DNA")
+#aligned <- muscle(sequences)
 dat <- read.phyDat("~/Desktop/repos/bifido/figure2/core_alignment.phylip", type="DNA")
 dm = dist.ml(dat)
-tree = NJ(dm)
-tree <- root(tree, c("breve_1", "breve_2", "breve_3", "breve_4"))
+# tree = NJ(dm)
+# tree <- root(tree, c("breve_1", "breve_2", "breve_3", "breve_4"))
+ 
+# # color branch labels by species/subspecies
+# tipcol <- rep('black', length(tree$tip.label))
+# categs <- c("lon", "blo", "inf", "suis", "breve")
+# colors <- c("dodgerblue2", "black", "firebrick2", "purple", "magenta")
+# for(i in 1:length(categs)) {
+#   tipcol[grep(categs[i], tree$tip.label)] <- colors[i]
+# }
+# 
+# png('~/Downloads/nj_core.png', width = 4000, height = 4400)
+# plot(tree, main="Neighbor Joining", tip.color=tipcol)
+# dev.off()
+# 
+# # read in heatmap csv
+#df <- as.matrix(read.table("~/Desktop/repos/bifido/figure2/heatmap_all_species.csv",
+#                           header=T, row.names = 1, sep=','))
+# 
+# # create heatmap
+# png('~/Downloads/tree_heatmap.png', width=800)
+# heatmap.2(df)
+# dev.off()
+# 
+# # pair phylogenetic tree with heatmap
+# png('~/Downloads/tree_combo.png', width=4000, height=4400)
+# phylo.heatmap(tree, df, colors=colorRampPalette(c("dodgerblue3", "white"))(200)[200:1],
+#               fsize=c(1,4,4), grid=TRUE, ftype="b", lwd = 3, leg.txt="Num. of BLAST hits")
+# dev.off()
 
-# color branch labels by species/subspecies
-tipcol <- rep('black', length(tree$tip.label))
-categs <- c("lon", "blo", "inf", "suis", "breve")
-colors <- c("dodgerblue2", "black", "firebrick2", "purple", "magenta")
-for(i in 1:length(categs)) {
-  tipcol[grep(categs[i], tree$tip.label)] <- colors[i]
-}
-
-png('~/Downloads/nj_core.png', width = 4000, height = 4400)
-plot(tree, main="Neighbor Joining", tip.color=tipcol)
-dev.off()
-
-# read in heatmap csv
-df <- as.matrix(read.table("~/Desktop/repos/bifido/figure2/heatmap_all_species.csv",
-                           header=T, row.names = 1, sep=','))
-
-# create heatmap
-png('~/Downloads/tree_heatmap.png', width=800)
-heatmap.2(df)
-dev.off()
-
-# pair phylogenetic tree with heatmap
-png('~/Downloads/tree_combo.png', width=4000, height=4400)
-phylo.heatmap(tree, df, colors=colorRampPalette(c("dodgerblue3", "white"))(200)[200:1],
-              fsize=c(1,4,4), grid=TRUE, ftype="off", leg.txt="Num. of BLAST hits")
-dev.off()
-
-
-png("~/Downloads/ml_core.png", width = 4000, height = 4400)
-fitStart = pml(tree, dat, k=4, inv=.2)
-fit = optim.pml(fitStart, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE)
-# root_name = "blon_2361-WP_094369814.1-ABC-transporter-ATP-binding-protein-!Romboutsia-weinsteinii!"
-# plot(ladderize(root(fit$tree, match(root_name,fit$tree$tip.label))),
-# plot(ladderize(fit$tree),type="phylogram", show.node.label=T,underscore=T,cex=0.8,no.margin=T, tip.color=tipcol)
+# png("~/Downloads/ml_core.png", width = 4000, height = 4400)
+# fitStart = pml(tree, dat, k=4, inv=.2)
+# fit = optim.pml(fitStart, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE)
+# # root_name = "blon_2361-WP_094369814.1-ABC-transporter-ATP-binding-protein-!Romboutsia-weinsteinii!"
+# # plot(ladderize(root(fit$tree, match(root_name,fit$tree$tip.label))),
+# # plot(ladderize(fit$tree),type="phylogram", show.node.label=T,underscore=T,cex=0.8,no.margin=T, tip.color=tipcol)
+# # add.scale.bar(cex = 2, font = 2, col = "red")
+# # dev.off()
+# likes[i] <- fit["logLik"]
+# 
+# # blon <- strsplit(blons[i], ".faa")[[1]]
+# # blon_names[i] <- blon
+# # png(sprintf("%s.png", blon), height=3000, width=3000)
+# 
+# # need to add boostrapping step from NCBI paper
+# png('~/Downloads/core_tree.png', width=4000, height=4400)
+# BS <- bootstrap.pml(fit, optNni=TRUE)
+# plotBS(fit$tree, BS, type = "phylogram")
 # add.scale.bar(cex = 2, font = 2, col = "red")
 # dev.off()
-likes[i] <- fit["logLik"]
 
-# blon <- strsplit(blons[i], ".faa")[[1]]
-# blon_names[i] <- blon
-# png(sprintf("%s.png", blon), height=3000, width=3000)
-# need to add boostrapping step from NCBI paper
-BS <- bootstrap.pml(fit, optNni=TRUE)
-plotBS(fit$tree, BS, type = "phylogram", tip.color=tipcol)
-add.scale.bar(cex = 2, font = 2, col = "red")
-dev.off()
-
-png('~/Downloads/ml_tree_combo.png', width=4000, height=4400)
-phylo.heatmap(fit$tree, df, colors=colorRampPalette(c("dodgerblue3", "white"))(200)[200:1],
-              fsize=c(1,4,4), grid=TRUE, ftype="off", leg.txt="Num. of BLAST hits")
-dev.off()
+# plot with just the tree to get bootstrap values
+# png('~/Downloads/ml_tree_combo.png', width=4000, height=4400)
+# phylo.heatmap(fit$tree, df, colors=colorRampPalette(c("dodgerblue3", "white"))(200)[200:1],
+#               fsize=c(1,4,4), grid=TRUE, ftype="b", lwd=6, leg.txt="Num. of BLAST hits")
+# dev.off()
 
 
